@@ -1,4 +1,38 @@
+Lesson: Introduction to the Associate Cloud Engineer Role
 
+Role Summary:
+- Deploys and secures applications and cloud infrastructure
+- Monitors operations across multiple projects
+- Maintains systems to meet performance targets
+
+Core Responsibilities:
+- Work with both public cloud and on-premises systems
+- Use Google Cloud Console and command line tools
+- Manage and scale deployed solutions
+- Support Google-managed and self-managed services
+
+Real-World Scenario (Cymbal Superstore):
+- Company migrating legacy systems to Google Cloud
+- Key systems:
+  - E-commerce platform
+  - Transportation management
+  - Supply chain system
+
+Challenges:
+- Need for better customer experience (online + offline)
+- Improve logistics with data
+- Modernize supply chain operations
+
+Engineer’s Role in Scenario:
+- Plan cloud migration
+- Configure infrastructure
+- Manage and optimize cloud systems
+- Apply best practices for access and security
+
+Key Takeaway:
+- Associate Cloud Engineers are hands-on operators responsible for deploying, managing, and scaling cloud solutions in real-world environments.
+
+---
 Write:
 
 What you learned
