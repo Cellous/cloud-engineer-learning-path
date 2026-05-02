@@ -29,13 +29,13 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ---
 
-## Projects
+## Module Overview
 
-### 1. Cloud-Based IoT Farm System
-- Description:
-- Tools:
-- Architecture Diagram:
+- ACE certification focuses on real-world cloud skills
+- Course provides structure, not full preparation
+- Key domains include compute, networking, security
 
-### 2. Cloud Lottery Prediction Engine
-- Description:
-- Tools:
+## Introduction to ACE Role
+
+- Engineers deploy, configure, and manage cloud systems
+- Focus on scalability and operations
