@@ -1,11 +1,11 @@
-## Lesson: Certification Value and Benefits
+# Lesson: Certification Value and Benefits
 
-# Key Takeaways:
+## Key Takeaways:
 - Google Cloud certification provides industry recognition
 - Validates real-world technical skills (not just theory)
 - Serves as a starting point for advanced (Professional) certifications
 
-# Associate vs Professional:
+## Associate vs Professional:
 - Associate:
   - Focus on technical execution
   - Build, deploy, manage cloud solutions
@@ -15,5 +15,5 @@
   - Evaluate case studies
   - Architect systems
 
-# Focus Area:
+## Focus Area:
 - Concentrate on technical skills and implementation at the associate level
