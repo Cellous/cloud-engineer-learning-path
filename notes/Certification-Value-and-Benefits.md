@@ -17,3 +17,44 @@
 
 ## Focus Area:
 - Concentrate on technical skills and implementation at the associate level
+
+---
+
+# Certification Process
+
+## Lesson: Certification Process
+
+### Exam Structure:
+- Based on official exam guide
+- Divided into 5 sections (domains)
+- Each section has specific objectives
+
+### Learning Approach:
+- Diagnostic questions identify knowledge gaps
+- Course provides targeted resources to improve weak areas
+
+### Resources Available:
+- Online courses and labs
+- Skill badges (hands-on practice)
+- Documentation and study guides
+- Sample exam questions
+
+### Skill Badges:
+- Lab-based learning paths
+- Provide real hands-on cloud experience
+- Demonstrate ability to solve real-world problems
+
+### Exam Strategy:
+- Questions are scenario-based (real-world situations)
+- Focus on understanding the problem, not memorizing answers
+
+### Test-Taking Tips:
+- Read the question carefully
+- Understand what is being asked before looking at answers
+- Watch for keywords:
+  - “best”
+  - “least”
+  - “except”
+- Pay attention to qualifiers:
+  - “usually”, “always”, “never”
+- Eliminate incorrect answers by mismatch
