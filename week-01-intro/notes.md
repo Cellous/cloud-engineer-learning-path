@@ -1,4 +1,15 @@
-Lesson: Introduction to the Associate Cloud Engineer Role
+## Module Overview
+
+- ACE certification focuses on real-world cloud skills
+- Course provides structure, not full preparation
+- Key domains include compute, networking, security
+
+## Introduction to ACE Role
+
+- Engineers deploy, configure, and manage cloud systems
+- Focus on scalability and operations
+
+### Lesson: Introduction to the Associate Cloud Engineer Role
 
 Role Summary:
 - Deploys and secures applications and cloud infrastructure
