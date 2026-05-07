@@ -1,9 +1,9 @@
 # Google IAM Best Practices
 
 ## Role Priority:
-- 1. Predefined roles
-- 2. Custom roles (only if necessary)
-- 3. Basic roles (avoid when possible)
+1. Predefined roles
+2. Custom roles (only if necessary)
+3. Basic roles (avoid when possible)
 
 ## Least Privilege:
 - Grant only permissions required
