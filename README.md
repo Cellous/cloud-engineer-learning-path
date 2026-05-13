@@ -39,3 +39,19 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 - Engineers deploy, configure, and manage cloud systems
 - Focus on scalability and operations
+
+---
+
+## Current Focus Areas
+- IAM & Access Control
+- Billing Configuration
+- Compute Engine
+- Cloud Storage
+- Resource Hierarchy
+- Networking Fundamentals
+
+---
+
+## Certification Goal
+Google Associate Cloud Engineer (ACE)
+
