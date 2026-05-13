@@ -67,9 +67,10 @@ Key Takeaway:
 - Track progress weekly and adjust focus areas
 
 ---
-Write:
 
-What you learned
-Commands used
-Screenshots (if possible)
+## Lesson Learned
+
+A project can only be linked to ONE billing account at a time.
+
+A billing account can support MULTIPLE projects.
 
