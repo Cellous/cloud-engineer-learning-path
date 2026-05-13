@@ -31,3 +31,12 @@ Organization → Folder → Project → Resource
 ### Common Viewer Permissions
 - compute.images.get
 - compute.images.list
+
+---
+
+## Official Documentation
+
+- [IAM roles and permissions index | Identity and Access Management (IAM) | Google Cloud Documentation](https://docs.cloud.google.com/iam/docs/roles-permissions)
+- [IAM Overview](https://docs.cloud.google.com/iam/docs/overview)
+- [Resource Hierarchy Overview](https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy)
+- [Manage Your Cloud Billing Account](https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account)
