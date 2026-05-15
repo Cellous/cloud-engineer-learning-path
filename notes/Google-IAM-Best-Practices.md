@@ -12,3 +12,22 @@
 ## Billing Relationships:
 - One project can only link to one billing account
 - One billing account can support multiple projects
+
+---
+
+# IAM Structure
+
+Who:
+- User
+- Group
+- Service Account
+
+Can do what:
+- Roles
+- Permissions
+
+On which resource:
+- Projects
+- Buckets
+- BigQuery datasets
+- Compute instances
