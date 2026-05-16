@@ -51,7 +51,20 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ---
 
+## Current Topics
+- Compute Resources
+- Cloud Storage
+- Networking & Load Balancing
 
+## Notes
+- Networking & Load Balancing
+- IAM Best Practices
+- Cloud Storage
+
+## Architecture Diagrams
+- Compute Decision Tree
+- Storage Selection Tree
+- Load Balancer Types
 
 ---
 
