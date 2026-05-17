@@ -1,4 +1,13 @@
 # Google Cloud Engineer Learning Path
+![Google Cloud](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
+![Certification](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-blue)
+![Status](https://img.shields.io/badge/Status-In_Progress-success)
+![Architecture](https://img.shields.io/badge/Focus-Cloud_Architecture-orange)
+![Networking](https://img.shields.io/badge/Networking-Load_Balancing-important)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Visio](https://img.shields.io/badge/Diagrams-Visio-blueviolet)
+![Markdown](https://img.shields.io/badge/Docs-Markdown-black)
+
 
 ## Certification Program
 Google Cloud Engineer Certification (May – June 2026 Cohort)
