@@ -18,7 +18,8 @@ This deployment uses the Google Cloud CLI (`gcloud`).
 gcloud sql instances create cymbal_supplychain_db \
 --cpu 8 \
 --memory 512MB \
---region us-central
+--region us-central \
+--availability-type=regional
 ```
 
 ---
@@ -49,3 +50,9 @@ gcloud sql instances create cymbal_supplychain_db \
 - Cloud SQL
 - Internal VPC networking
 - HTTPS Load Balancing
+
+---
+
+- HA failover
+- regional redundancy
+- Cloud SQL vs self-managed MySQL
