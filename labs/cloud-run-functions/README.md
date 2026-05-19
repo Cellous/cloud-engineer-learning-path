@@ -18,3 +18,13 @@ gcloud functions deploy trans_mg_function \
 - Event-driven architecture
 - Pub/Sub integration
 - Python runtime deployment
+
+---
+
+## ACE Recognition Notes
+
+- Cloud Run = serverless containers
+- Cloud Run functions = event-driven snippets
+- GKE = Kubernetes orchestration
+- Cloud SQL does NOT support MySQL UDFs
+- N2 = balanced production workloads
