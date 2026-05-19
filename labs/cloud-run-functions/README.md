@@ -4,6 +4,13 @@
 
 Deploy an event-driven Cloud Run function triggered by Pub/Sub.
 
+---
+gcloud Command Recognition
+
+    gcloud functions deploy → deploying event-driven serverless code.
+    gcloud run deploy → deploying containers.
+    gcloud sql instances create → creating managed databases
+
 ## Deployment Command
 
 ```bash
