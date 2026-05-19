@@ -78,3 +78,20 @@ resource "google_compute_instance" "vm_instance" {
 - `terraform apply` = deploy infrastructure
 - Infrastructure as Code (IaC) reduces human error
 - Terraform uses declarative infrastructure configuration
+
+---
+
+### Next-Level Terraform Examples Later
+
+| Example                 | Skill       |
+| ----------------------- | ----------- |
+| VPC creation            | networking  |
+| Firewall rules          | security    |
+| Managed instance groups | autoscaling |
+| Cloud SQL               | databases   |
+| GKE cluster             | Kubernetes  |
+| Load balancer           | networking  |
+| Cloud Storage bucket    | storage     |
+| IAM roles               | governance  |
+
+
