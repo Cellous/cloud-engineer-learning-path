@@ -29,12 +29,18 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ## Live Progress Tracker
 
-| Week | Topic        | Status       |
-|------|-------------|-------------|
-| 1    | Intro       | In Progress |
-| 2    | Compute     | Pending     |
-| 3    | Storage     | Pending     |
-| 4    | Networking  | Pending     |
+| Week | Topic | Status |
+|---|---|---|
+| 1 | Intro & ACE Foundations | Complete |
+| 2 | Compute Engine & VM Operations | In Progress |
+| 3 | Cloud Storage & Data Services | In Progress |
+| 4 | Networking & Load Balancing | In Progress |
+| 5 | Cloud Run & Cloud Functions | In Progress |
+| 6 | Kubernetes Engine (GKE) | Pending |
+| 7 | Infrastructure as Code (Terraform) | In Progress |
+| 8 | IAM & Governance | In Progress |
+| 9 | Architecture Diagrams & Visio | In Progress |
+| 10 | Diagnostic Reviews & Exam Prep | Active |
 
 ---
 
