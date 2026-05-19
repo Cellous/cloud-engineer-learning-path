@@ -1,4 +1,4 @@
-# Deploy a Compute Engine VM
+Deploy a Compute Engine VM
 
 # Terraform Basics
 
