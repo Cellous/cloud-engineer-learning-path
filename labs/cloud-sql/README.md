@@ -56,3 +56,13 @@ gcloud sql instances create cymbal_supplychain_db \
 - HA failover
 - regional redundancy
 - Cloud SQL vs self-managed MySQL
+
+---
+
+## ACE Recognition Notes
+
+- Cloud Run = serverless containers
+- Cloud Run functions = event-driven snippets
+- GKE = Kubernetes orchestration
+- Cloud SQL does NOT support MySQL UDFs
+- N2 = balanced production workloads
