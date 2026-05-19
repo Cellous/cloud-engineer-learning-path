@@ -11,7 +11,12 @@ Deploy a Cloud SQL instance for Cymbal Superstore's supply chain application.
 This deployment uses the Google Cloud CLI (`gcloud`).
 
 ---
+## gcloud Command Recognition
 
+    gcloud functions deploy → deploying event-driven serverless code.
+    gcloud run deploy → deploying containers.
+    gcloud sql instances create → creating managed databases
+    
 ## Example Command
 
 ```bash
