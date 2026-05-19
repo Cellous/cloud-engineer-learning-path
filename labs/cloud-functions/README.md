@@ -1,10 +1,14 @@
+## gcloud Command Recognition
 
+- gcloud functions deploy → deploying event-driven serverless code.
+- gcloud run deploy → deploying containers.
+- gcloud sql instances create → creating managed databases
 
 gcloud functions deploy trans_mg_function \
   --runtime python39 \
   --trigger-topic truck_data
 
-  ---
+---
 
 - event-driven architecture
 - Pub/Sub triggers
@@ -19,8 +23,3 @@ gcloud functions deploy trans_mg_function \
 - GKE = Kubernetes orchestration
 - Cloud SQL does NOT support MySQL UDFs
 - N2 = balanced production workloads
-gcloud Command Recognition
-
-- gcloud functions deploy → deploying event-driven serverless code.
-- gcloud run deploy → deploying containers.
-- gcloud sql instances create → creating managed databases
