@@ -27,6 +27,13 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ---
 
+### Status Legend
+
+- Pending = not started
+- In Progress = actively studying/building
+- Active = currently reviewing/testing
+- Complete = documented and reviewed
+
 ## Live Progress Tracker
 
 | Week | Topic | Status |
@@ -41,6 +48,17 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | 8 | IAM & Governance | In Progress |
 | 9 | Architecture Diagrams & Visio | In Progress |
 | 10 | Diagnostic Reviews & Exam Prep | Active |
+
+## Current Focus Areas
+
+- Compute Engine deployments
+- Managed instance groups
+- Cloud Run vs Cloud Run functions
+- Terraform workflows
+- Cloud SQL deployment scenarios
+- GKE cluster architecture
+- VPC networking
+- Load balancing models
 
 ---
 
