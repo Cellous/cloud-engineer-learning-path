@@ -2,13 +2,39 @@
 
 ## Overview
 
-Google Kubernetes Engine (GKE) is a managed Kubernetes platform used to deploy and manage containerized applications.
-
+- Google Kubernetes Engine (GKE) is a managed Kubernetes platform used to deploy and manage containerized applications.
+- You use Kubernetes APIs to deploy containers on a set of nodes called a cluster.
+  
 Kubernetes clusters consist of:
 - control plane
 - worker nodes
 - pods
 - networking
+
+User
+  ↓
+Kubernetes API
+  ↓
+Control Plane
+  ↓
+Nodes (VMs)
+  ↓
+Containers / Pods
+
+## Nodes are VMs (in GKE they're Compute Engine instances)
+
+### GKE is built ON TOP OF Compute Engine.
+- Compute Engine → Infrastructure Layer
+- GKE → Kubernetes Management Layer
+- Pods/Containers → Application Layer
+
+| Requirement                    | Usually Means   |
+| ------------------------------ | --------------- |
+| More flexibility/customization | Standard GKE    |
+| Less operational overhead      | Autopilot       |
+| High availability              | Regional        |
+| Internal-only access           | Private cluster |
+| Fast/simple deployment         | Cloud Run       |
 
 ---
 
