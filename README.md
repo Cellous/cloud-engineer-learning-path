@@ -49,6 +49,17 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | 9 | Architecture Diagrams & Visio | In Progress |
 | 10 | Diagnostic Reviews & Exam Prep | Active |
 
+## Repository Structure
+
+| Folder | Purpose |
+|---|---|
+| architecture-diagrams | Visio diagrams and exported PNGs |
+| labs | Hands-on Google Cloud labs |
+| notes | ACE concepts and diagnostic reviews |
+| definitions | Cloud terminology |
+| study-plans | Certification planning |
+| iam | IAM-focused documentation |
+
 ## Current Focus Areas
 
 - Compute Engine deployments
