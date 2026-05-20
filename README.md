@@ -100,7 +100,16 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 - Load Balancer Types
 
 ---
+## ACE Recognition Patterns
 
+| Requirement | Usually Means |
+|---|---|
+| Lowest operational overhead | Autopilot |
+| Full customization | Standard GKE |
+| Event-driven | Cloud Functions |
+| Containers | Cloud Run |
+| Rolling updates | Managed Instance Groups |
+---
 ## Certification Goal
 Google Associate Cloud Engineer (ACE)
 
