@@ -1,4 +1,17 @@
+# Compute Engine + GKE Notes
 
+## Topics Covered
+- Compute Engine machine families
+- Disk types
+- Managed Instance Groups (MIGs)
+- GKE deployment models
+- Terraform basics
+- Serverless vs VM architectures
+
+## Key ACE Recognition Patterns
+- High availability → Regional
+- Less operational overhead → Autopilot
+- Internal-only access → Private cluster
 
 ## Compute Engine Machine Families
 | Machine Type | Use Case |
