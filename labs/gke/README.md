@@ -27,6 +27,20 @@ Containers / Pods
 - Compute Engine → Infrastructure Layer
 - GKE → Kubernetes Management Layer
 - Pods/Containers → Application Layer
+---
+
+## kubectl Recognition
+
+| Command | Purpose |
+|---|---|
+| kubectl get pods | View running pods |
+| kubectl get nodes | View cluster nodes |
+| kubectl apply -f | Deploy configuration |
+| kubectl describe pod | Detailed pod information |
+| kubectl logs | View container logs |
+| kubectl delete pod | Remove pod |
+
+---
 
 | Requirement                    | Usually Means   |
 | ------------------------------ | --------------- |
