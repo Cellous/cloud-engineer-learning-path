@@ -150,6 +150,12 @@ gcloud Command Recognition
 gcloud container clusters create supply-chain-cluster \
   --zone us-central1-a
 ```
+
+## Related Notes
+
+- ../notes/02-compute/managed-instance-groups.md
+- ../notes/02-compute/gke-vs-cloud-run.md
+- ../labs/terraform/README.md
 ---
 
 - zonal vs regional clusters
