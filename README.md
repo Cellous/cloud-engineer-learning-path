@@ -75,29 +75,44 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ---
 
-## Current Focus Areas
+## Active ACE Domains
+
 - IAM & Access Control
-- Billing Configuration
 - Compute Engine
 - Cloud Storage
+- Networking & Load Balancing
+- Billing Configuration
 - Resource Hierarchy
 
 ---
 
-## Current Topics
-- Compute Resources
-- Cloud Storage
-- Networking & Load Balancing
+## Current Study Topics
 
-## Notes
-- Networking & Load Balancing
-- IAM Best Practices
-- Cloud Storage
+### Compute
+- Managed Instance Groups
+- GKE Standard vs Autopilot
+- Machine families
+- Disk types
+- Terraform basics
 
-## Architecture Diagrams
-- Compute Decision Tree
-- Storage Selection Tree
-- Load Balancer Types
+### Storage
+- Cloud Storage classes
+- Bucket configuration
+- BigQuery transfers
+
+### Networking
+- Load balancing
+- Internal vs external access
+- Private clusters
+
+---
+
+## Key Notes & References
+
+- `notes/02-compute/ACE-diagnostics.md`
+- `notes/02-compute/managed-instance-groups.md`
+- `notes/02-compute/gke-vs-cloud-run.md`
+- `notes/03-storage/storage-classes.md`
 
 ---
 ## ACE Recognition Patterns
@@ -109,6 +124,24 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | Event-driven | Cloud Functions |
 | Containers | Cloud Run |
 | Rolling updates | Managed Instance Groups |
+---
+
+Compute Engine
+    ↓
+GKE Nodes
+    ↓
+Containers
+    ↓
+Cloud Run alternative
+
+Terraform
+    ↓
+Infrastructure as Code
+    ↓
+GKE provisioning
+    ↓
+Managed infrastructure
+
 ---
 ## Certification Goal
 Google Associate Cloud Engineer (ACE)
