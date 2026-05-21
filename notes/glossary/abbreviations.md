@@ -16,3 +16,5 @@
 | HA           | High Availability                 |
 | DR           | Disaster Recovery                 |
 | IaC          | Infrastructure as Code            |
+
+# Networking Abbreviations
