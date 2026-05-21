@@ -12,9 +12,26 @@ gcloud run deploy inventory-service \
 ```
   ---
 
-- what Cloud Run is
-- when to use it
-- why serverless containers matter
+# ☁️ Cloud Run
+
+## Think:
+
+- Serverless Containers
+
+## Use when:
+
+- deploying Docker containers
+- custom packages/libs needed
+- scale-to-zero desired
+- HTTP services/APIs
+- no infrastructure management
+
+## ACE keywords:
+
+- “Serverless container management”
+- “Scales based on incoming requests”
+- “Scale to zero”
+- “Replicated across zones”
 
 ---
 
