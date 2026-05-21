@@ -54,11 +54,17 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | Folder | Purpose |
 |---|---|
 | architecture-diagrams | Visio diagrams and exported PNGs |
-| labs | Hands-on Google Cloud labs |
-| notes | ACE concepts and diagnostic reviews |
 | definitions | Cloud terminology |
 | study-plans | Certification planning |
 | iam | IAM-focused documentation |
+| labs/           | Hands-on implementation     |
+| notes/          | Study + architecture        |
+| Recognition/    | ACE trigger patterns        |
+| Diagnostics/    | Scenario reasoning          |
+| Compute-Engine/ | VM infrastructure           |
+| GKE/            | Kubernetes concepts         |
+| Cloud-Run/      | Serverless compute          |
+| Databases/      | Cloud SQL / migration logic |
 
 ## Current Focus Areas
 
