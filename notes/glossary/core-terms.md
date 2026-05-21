@@ -1,1 +1,5 @@
 # Kubernetes terms
+
+---
+
+# Terraform terms
