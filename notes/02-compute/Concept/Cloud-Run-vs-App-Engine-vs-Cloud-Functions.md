@@ -24,6 +24,8 @@ versus
 - Go
 - Java
 
+---
+
 ### Cloud Run
 
 #### You deploy:
