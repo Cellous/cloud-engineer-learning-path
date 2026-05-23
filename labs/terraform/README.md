@@ -20,6 +20,20 @@ terraform apply
 Creates infrastructure resources.
 
 ---
+## Cloud Build instruction
+| Command/File        | What it does                                  |
+| ------------------- | --------------------------------------------- |
+| `terraform init`    | Downloads providers/modules                   |
+| `terraform plan`    | Checks config and previews changes            |
+| `terraform apply`   | Creates/updates the requested resources       |
+| `terraform destroy` | Removes resources                             |
+| `main.tf`           | Terraform resource definitions                |
+| `backend.tf`        | Remote state backend setup                    |
+| `terraform.tfstate` | Tracks deployed infrastructure state          |
+| `cloudbuild.yaml`   | Cloud Build steps that run Terraform commands |
+
+
+---
 
 # Example Terraform Configuration
 
