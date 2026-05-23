@@ -1,0 +1,10 @@
+# JSON Recognition Pattern
+Table definition file
+→ JSON
+---
+| File Type       | Usage                              |
+| --------------- | ---------------------------------- |
+| YAML            | automation/configuration           |
+| JSON            | table definitions / APIs / schemas |
+| SQL             | querying                           |
+| Terraform `.tf` | infrastructure as code             |
