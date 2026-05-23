@@ -11,4 +11,6 @@ Need OS/disk/template changes
 → Propagate changes to MIG
 
 ## Important command pattern:
+```
 gcloud compute instance-groups managed rolling-action start-update
+```
