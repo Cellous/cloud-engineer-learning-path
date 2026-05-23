@@ -1,6 +1,6 @@
 # Terraform Lifecycle
 
-## YAML Example (Cloud Build)
+## YAML (Ain't Markup Language) Example (Cloud Build)
 
 ```yaml
 steps:
