@@ -1,4 +1,9 @@
 # Google Kubernetes Engine (GKE)
+![Google Cloud](https://img.shields.io/badge/Platform-Google_Cloud-blue)
+![GKE](https://img.shields.io/badge/Service-GKE-326CE5)
+![Kubernetes](https://img.shields.io/badge/Orchestration-Kubernetes-326CE5)
+![ACE](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-orange)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-844FBA)
 
 ## Overview
 
@@ -111,6 +116,23 @@ kubectl apply -f deployment.yaml
 kubectl get pods
 ```
 
+---
+
+## Internal Application Load Balancer Notes
+
+```yaml
+metadata:
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+```
+
+```yaml
+kubernetes.io/ingress.class: "gce-internal"
+```
+- Internal Application Load Balancers in GKE require NEGs.
+- `gce-internal` creates an internal Layer 7 HTTP(S) load balancer.
+- `type: LoadBalancer` creates a Layer 4 network load balancer instead.
+  
 ---
 
 ## ACE Recognition Notes
