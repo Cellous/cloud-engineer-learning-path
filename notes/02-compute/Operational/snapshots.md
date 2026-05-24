@@ -80,16 +80,24 @@ gcloud beta compute disks add-resource-policies d1 \
     --resource-policies=hourly-schedule \
     --zone=europe-west1-b
 ```
-#### Operational Notes
+### Operational Notes
+
 - Snapshot schedules are attached to Compute Engine disks.
 - Resource policies automate recurring backups.
 - Policies can be applied during disk creation or afterward.
-- Common operational workflow:
-- - 1. Create snapshot schedule
-- - 2. Attach policy to disk
-- - 3. Monitor retention lifecycle
+
+### Common Operational Workflow
+
+1. Create snapshot schedule
+2. Attach policy to disk
+3. Monitor retention lifecycle
 
 ### Snapshot Schedule UI
+ ![Snapshot Schedule Create UI](snapshot-schedule-create-ui.png)
+
+ ![Snapshot Schedule List](snapshot-schedule-list.png)
+
+ ![Snapshot Schedule Disk Policy](snapshot-schedule-disk-policy.png) 
  
 ---
 ## Disaster Recovery Notes
@@ -117,5 +125,12 @@ gcloud beta compute disks add-resource-policies d1 \
 - Automated retention reduces manual cleanup.
 - "Autodelete snapshots after X days" = lifecycle management.
 - Snapshot frequency impacts recovery point objectives (RPO).
+  
 ---
 ## Common Mistakes
+
+---
+## References
+
+- Google Cloud Compute Engine Snapshot Documentation
+  https://docs.cloud.google.com/compute/docs/disks/create-snapshots#terraform
