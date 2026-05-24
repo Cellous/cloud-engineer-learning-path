@@ -55,6 +55,17 @@ gcloud compute disks create NEW_DISK \
 - Regional or multi-regional storage locations can be selected.
 - Snapshot labels help organize backup policies.
 - Common ACE operational task for disaster recovery planning.
+
+### Create Snapshot Schedule via CLI
+
+```bash
+gcloud beta compute resource-policies create-snapshot-schedule hourly-schedule \
+    --description="create every 6 hours with 15 days retention" \
+    --start-time=04:00 \
+    --hourly-schedule=6 \
+    --max-retention-days=15 \
+    --region=europe-west1
+```
 ### Snapshot Schedule UI
 
 ---
