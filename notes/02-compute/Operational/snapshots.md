@@ -100,11 +100,71 @@ gcloud beta compute disks add-resource-policies d1 \
  ![Snapshot Schedule Disk Policy](snapshot-schedule-disk-policy.png) 
  
 ---
+
+## Snapshot Chains
+
+Google Cloud snapshots are not isolated backups.
+
+They form:
+
+- dependency chains,
+- reference structures,
+- downstream relationships.
+
+### Incremental Snapshot Flow
+
+
+### Snapshot Deletion Behavior
+
+---
+
 ## Disaster Recovery Notes
+
+- Snapshots can restore Persistent Disks after failure or corruption.
+- Snapshots can create new disks in different zones or regions.
+- Snapshots support VM migration and recovery workflows.
+- Snapshots are commonly used for:
+  - backup recovery
+  - rollback operations
+  - disaster recovery
+  - infrastructure restoration
+
+### Recovery Workflow
+
+1. Create snapshot
+2. Store snapshot policy
+3. Restore snapshot to new disk
+4. Attach restored disk to VM
+5. Resume workload operations
 ### Disaster Recovery Flow
 
 ---
 ## Incremental Snapshot Behavior
+
+- Compute Engine snapshots are incremental by default.
+- The first snapshot is a full snapshot.
+- Subsequent snapshots only store changed or newly written blocks.
+- Unchanged blocks reference previous snapshots.
+- Incremental snapshots reduce storage costs and backup time.
+- Google Cloud may occasionally create a new full snapshot automatically for storage optimization and reliability.
+
+### Incremental Snapshot Flow
+
+1. Snapshot 1 stores all disk data.
+2. Snapshot 2 stores only changed blocks since Snapshot 1.
+3. Snapshot 3 stores only changed blocks since Snapshot 2.
+4. Older unchanged blocks are referenced from previous snapshots.
+
+### Snapshot Deletion Behavior
+
+- Deleting a snapshot is irreversible.
+- If dependent snapshots exist:
+  - required blocks move to downstream snapshots
+  - snapshot chain references are updated
+  - downstream snapshot size may increase
+- Deleting one snapshot does not necessarily delete all stored data.
+- To fully remove snapshot data, all dependent snapshots may need removal.
+  
 ### Incremental Snapshot Diagram
 
 ---
@@ -118,7 +178,28 @@ gcloud beta compute disks add-resource-policies d1 \
 - snapshots can create new disks and images
 - snapshot schedules automate backups
 - snapshots are incremental after first backup
-  
+
+- `gcloud compute snapshots list`
+  → inventory snapshots
+
+- `gcloud compute snapshots describe`
+  → detailed snapshot metadata
+
+- Snapshot schedules require:
+  - resource policies
+  - attachment to Persistent Disks
+
+- You cannot delete a snapshot schedule while attached to a disk.
+
+- Incremental snapshots:
+  - reduce storage usage
+  - reduce backup cost
+  - preserve unchanged block references
+
+- Snapshot deletion:
+  - may increase downstream snapshot size
+  - updates snapshot dependency chains
+
 ### Recognition Patterns
 
 - Snapshot schedules are configured through resource policies.
