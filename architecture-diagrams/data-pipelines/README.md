@@ -1,15 +1,9 @@
 # Batch vs Streaming Pipeline Flow
-
 ![Google Cloud](https://img.shields.io/badge/Platform-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
-
 ![BigQuery](https://img.shields.io/badge/Analytics-BigQuery-669DF6?logo=googlebigquery&logoColor=white)
-
 ![Dataflow](https://img.shields.io/badge/Pipeline-Dataflow-FF6F00?logo=googlecloud&logoColor=white)
-
 ![Pub/Sub](https://img.shields.io/badge/Messaging-Pub/Sub-34A853?logo=googlecloud&logoColor=white)
-
 ![Observability](https://img.shields.io/badge/Operations-Observability-8E24AA)
-
 ![ACE](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-blue)
 
 This diagram compares two common Google Cloud data ingestion architectures:
