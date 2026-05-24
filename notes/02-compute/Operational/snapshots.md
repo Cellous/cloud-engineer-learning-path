@@ -47,13 +47,41 @@ gcloud compute disks create NEW_DISK \
 ---
 
 ## Important Commands
-
+---
 ## Snapshot Schedules
+- Snapshot schedules automate recurring Compute Engine disk backups.
+- Schedules can run hourly, daily, or weekly.
+- Retention rules automatically delete old snapshots.
+- Regional or multi-regional storage locations can be selected.
+- Snapshot labels help organize backup policies.
+- Common ACE operational task for disaster recovery planning.
+### Snapshot Schedule UI
 
+---
 ## Disaster Recovery Notes
+### Disaster Recovery Flow
 
+---
 ## Incremental Snapshot Behavior
+### Incremental Snapshot Diagram
 
+---
 ## ACE Recognition Patterns
+- snapshots belong under Compute Engine
+- snapshots commands use:
+  ```bash
+  gcloud compute snapshots
+- "list" and "describe" are common ACE command verbs
+- snapshots support disaster recovery
+- snapshots can create new disks and images
+- snapshot schedules automate backups
+- snapshots are incremental after first backup
+  
+### Recognition Patterns
 
+- Snapshot schedules are configured through resource policies.
+- Automated retention reduces manual cleanup.
+- "Autodelete snapshots after X days" = lifecycle management.
+- Snapshot frequency impacts recovery point objectives (RPO).
+---
 ## Common Mistakes
