@@ -1,6 +1,4 @@
 # Google Cloud Engineer Learning Path
-Google Cloud • BigQuery • GKE • Terraform • Dataflow • Pub/Sub • Observability
-
 ![Google Cloud](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
 ![Certification](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-blue)
 ![Status](https://img.shields.io/badge/Status-In_Progress-success)
@@ -10,6 +8,7 @@ Google Cloud • BigQuery • GKE • Terraform • Dataflow • Pub/Sub • Obs
 ![Visio](https://img.shields.io/badge/Diagrams-Visio-blueviolet)
 ![Markdown](https://img.shields.io/badge/Docs-Markdown-black)
 
+Google Cloud • BigQuery • GKE • Terraform • Dataflow • Pub/Sub • Observability
 
 ## Certification Program
 Google Cloud Engineer Certification (May – June 2026 Cohort)
