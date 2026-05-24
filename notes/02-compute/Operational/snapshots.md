@@ -148,8 +148,6 @@ They form:
 - Incremental snapshots reduce storage costs and backup time.
 - Google Cloud may occasionally create a new full snapshot automatically for storage optimization and reliability.
 
-### Incremental Snapshot Flow
-
 1. Snapshot 1 stores all disk data.
 2. Snapshot 2 stores only changed blocks since Snapshot 1.
 3. Snapshot 3 stores only changed blocks since Snapshot 2.
@@ -165,7 +163,7 @@ They form:
 - Deleting one snapshot does not necessarily delete all stored data.
 - To fully remove snapshot data, all dependent snapshots may need removal.
   
-### Incremental Snapshot Diagram
+
 
 ---
 ## ACE Recognition Patterns
@@ -195,11 +193,12 @@ They form:
   - reduce storage usage
   - reduce backup cost
   - preserve unchanged block references
-
+    
 - Snapshot deletion:
   - may increase downstream snapshot size
   - updates snapshot dependency chains
 
+  
 ### Recognition Patterns
 
 - Snapshot schedules are configured through resource policies.
