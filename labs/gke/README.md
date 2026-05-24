@@ -180,10 +180,10 @@ gcloud container clusters create supply-chain-cluster \
 
 ## Related Notes
 
-- ../notes/02-compute/managed-instance-groups.md
-- ../notes/02-compute/gke-vs-cloud-run.md
+- ../notes/02-compute/Recognition/Compute-Engine/managed-instance-groups.md
+- ../notes/02-compute/Recognition/GKE/gke-vs-cloud-run.md
 - ../labs/terraform/README.md
-- ../../notes/02-compute/snapshots.md
+- ../../notes/02-compute/Operational/snapshots.md
 ---
 
 - zonal vs regional clusters
