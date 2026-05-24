@@ -16,5 +16,6 @@
 | HA           | High Availability                 |
 | DR           | Disaster Recovery                 |
 | IaC          | Infrastructure as Code            |
+| NEG          | Network Endpoint Groups           |
 
 # Networking Abbreviations
