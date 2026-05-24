@@ -67,7 +67,7 @@ gcloud beta compute resource-policies create-snapshot-schedule hourly-schedule \
     --region=europe-west1
 ```
 ### Snapshot Schedule UI
- ![Snapshot Schedule UI](snapshot-schedule-create-ui.png) 
+ 
 ---
 ## Disaster Recovery Notes
 ### Disaster Recovery Flow
