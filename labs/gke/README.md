@@ -131,7 +131,7 @@ kubernetes.io/ingress.class: "gce-internal"
 ```
 - Internal Application Load Balancers in GKE require NEGs.
 - `gce-internal` creates an internal Layer 7 HTTP(S) load balancer.
-- `type: LoadBalancer` creates a Layer 4 network load balancer instead.
+- `type: LoadBalancer` creates a Layer 4 network load balancer, not an Application Load Balancer.
   
 ---
 
@@ -142,6 +142,11 @@ kubernetes.io/ingress.class: "gce-internal"
 - Private clusters = secure/internal access
 - Regional clusters = high availability
 - Zonal clusters = lower cost/lower HA
+
+> ACE Tip:
+> Internal HTTP(S) Load Balancers in GKE commonly require both:
+> - `gce-internal`
+> - NEG annotations
 
 ---
 
