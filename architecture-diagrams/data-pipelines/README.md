@@ -89,7 +89,7 @@ BigQuery
 
 ---
 
-## Observability Layer
+# Observability Layer
 
 Both ingestion models commonly use Google Cloud Observability services for:
 
@@ -98,9 +98,9 @@ Both ingestion models commonly use Google Cloud Observability services for:
 - Alerts
 - Operational troubleshooting
   
-## Recognition Patterns
+# Recognition Patterns
 
-### Batch Recognition Pattern
+## Batch Recognition Pattern
 
 If data:
 
@@ -112,7 +112,7 @@ then:
 
 - batch ingestion is usually preferred
 
-### Streaming Recognition Pattern
+## Streaming Recognition Pattern
 
 If workloads require:
 
@@ -126,7 +126,7 @@ then:
 
 ---
 
-## Operational Tradeoffs
+# Operational Tradeoffs
 
 | Feature         | Batch                | Streaming            |
 | --------------- | -------------------- | -------------------- |
@@ -138,7 +138,7 @@ then:
 
 ---
 
-## ACE Exam Focus Areas
+# ACE Exam Focus Areas
 
 This diagram supports learning objectives related to:
 
@@ -160,6 +160,6 @@ This diagram supports learning objectives related to:
 
 ---
 
-## Repository
+# Repository
 
 Part of the cloud-engineer-learning-path repository focused on cloud operations, data ingestion, observability, and Google Cloud architecture patterns.
