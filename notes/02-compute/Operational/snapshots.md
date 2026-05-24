@@ -43,7 +43,14 @@ gcloud compute disks create NEW_DISK \
     --source-snapshot SNAPSHOT_NAME \
     --zone us-central1-a
 ```
-
+### Create Policy
+```bash
+gcloud beta compute resource-policies create-snapshot-schedule
+```
+### Attach Policy To Disk
+```bash
+gcloud beta compute disks add-resource-policies
+```
 ---
 
 ## Important Commands
@@ -66,6 +73,22 @@ gcloud beta compute resource-policies create-snapshot-schedule hourly-schedule \
     --max-retention-days=15 \
     --region=europe-west1
 ```
+### Attach Snapshot Policy to Disk
+
+```bash
+gcloud beta compute disks add-resource-policies d1 \
+    --resource-policies=hourly-schedule \
+    --zone=europe-west1-b
+```
+#### Operational Notes
+- Snapshot schedules are attached to Compute Engine disks.
+- Resource policies automate recurring backups.
+- Policies can be applied during disk creation or afterward.
+- Common operational workflow:
+- - 1. Create snapshot schedule
+- - 2. Attach policy to disk
+- - 3. Monitor retention lifecycle
+
 ### Snapshot Schedule UI
  
 ---
