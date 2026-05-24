@@ -37,3 +37,7 @@
 - GPUs require compatible VM families
 - Persistent SSD = production workloads
 - HDD = cheaper bulk storage
+
+## Related Notes
+
+- ../../notes/02-compute/Operational/snapshots.md
