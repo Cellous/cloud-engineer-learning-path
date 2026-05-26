@@ -1,5 +1,12 @@
 # GKE Internal Application Load Balancer Flow
 
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-GKE-blue?logo=googlecloud)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.29-326CE5?logo=kubernetes&logoColor=white)
+![Ingress](https://img.shields.io/badge/Ingress-L7_Load_Balancing-informational)
+![Network Endpoint Groups](https://img.shields.io/badge/NEG-Enabled-success)
+![Architecture Diagram](https://img.shields.io/badge/Diagram-draw.io-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ## Overview
 
 This diagram documents the architecture and traffic behavior of a Google Kubernetes Engine (GKE) Internal Application Load Balancer (ALB).
