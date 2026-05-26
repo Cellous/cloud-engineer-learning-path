@@ -17,5 +17,6 @@
 | DR           | Disaster Recovery                 |
 | IaC          | Infrastructure as Code            |
 | NEG          | Network Endpoint Groups           |
+| ALB          | Application Load Balancer         |
 
 # Networking Abbreviations
