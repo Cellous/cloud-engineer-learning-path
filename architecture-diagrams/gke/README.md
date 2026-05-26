@@ -134,6 +134,18 @@ Pods
 
 ---
 
+## Skills Demonstrated
+
+- Google Kubernetes Engine (GKE)
+- Internal Application Load Balancing
+- Kubernetes Ingress
+- Network Endpoint Groups (NEGs)
+- Kubernetes Networking
+- Layer 7 Load Balancing
+- Cloud Architecture Documentation
+
+---
+
 ## References
 
 - Kubernetes Ingress Documentation  
