@@ -4,8 +4,8 @@ These diagrams document Google Cloud Compute Engine snapshot lifecycle behavior,
 
 ### Incremental Snapshot Behavior
 
-![Incremental Snapshot Diagram](incremental-snapshot-diagram.png)
+![Incremental Snapshot Diagram](../../../architecture-diagrams/operations/incremental-snapshot-diagram.png)
 
 ### Snapshot Deletion Dependency Chain
 
-![Deletion Dependency Chain](deletion-dependency-chain-diagram.png)
+![Deletion Dependency Chain](../../../architecture-diagrams/operations/deletion-dependency-chain-diagram.png)
