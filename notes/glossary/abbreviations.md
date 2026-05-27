@@ -18,5 +18,6 @@
 | IaC          | Infrastructure as Code            |
 | NEG          | Network Endpoint Groups           |
 | ALB          | Application Load Balancer         |
+| CI/CD        | Continuous Intergration / Continuous Delivery |
 
 # Networking Abbreviations
