@@ -54,6 +54,74 @@ gcloud beta compute disks add-resource-policies
 ---
 
 ## Important Commands
+### List snapshots by project
+
+```bash
+gcloud compute snapshots list --project PROJECT_ID
+```
+
+### Filter snapshots
+
+```bash
+gcloud compute snapshots list \
+    --filter="name:snapshot-prod-*"
+```
+
+### Sort snapshots by creation time
+
+```bash
+gcloud compute snapshots list \
+    --sort-by=creationTimestamp
+```
+
+### Limit returned snapshots
+
+```bash
+gcloud compute snapshots list \
+    --limit=5
+```
+
+### Output snapshot URIs only
+
+```bash
+gcloud compute snapshots list \
+    --uri
+```
+
+### Describe snapshot in JSON format
+
+```bash
+gcloud compute snapshots describe SNAPSHOT_NAME \
+    --format=json
+```
+
+### Disable interactive prompts
+
+```bash
+gcloud compute snapshots describe SNAPSHOT_NAME \
+    --quiet
+```
+
+### Operational Recognition Notes
+
+- `--filter`
+  → inventory targeting
+
+- `--sort-by`
+  → operational visibility
+
+- `--limit`
+  → scripting optimization
+
+- `--uri`
+  → automation pipelines
+
+- `--format=json`
+  → machine-readable output
+
+- `--quiet`
+  → non-interactive automation
+
 ---
 ## Snapshot Schedules
 - Snapshot schedules automate recurring Compute Engine disk backups.
