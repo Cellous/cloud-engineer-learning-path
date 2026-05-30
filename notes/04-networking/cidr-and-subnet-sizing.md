@@ -1,5 +1,16 @@
 # CIDR & Subnet Sizing
 
+## Important Networking Insight
+| Requirement         | Networking Thought       |
+| ------------------- | ------------------------ |
+| More devices        | Larger subnet            |
+| More isolation      | Smaller subnet           |
+| Kubernetes clusters | CIDR planning            |
+| Hybrid cloud        | Route management         |
+| Scaling             | IP exhaustion prevention |
+
+---
+
 ## Core Formula
 
 IPv4 = 32 bits total
@@ -40,6 +51,17 @@ Example:
 32 - 24 = 8
 
 2^8 = 256 addresses
+---
+
+## ACE Recognition Patterns
+Need ~2000 IPs
+→ Think /21
+
+Need ~1000 IPs
+→ Think /22
+
+Need ~500 IPs
+→ Think /23
 
 ---
 
