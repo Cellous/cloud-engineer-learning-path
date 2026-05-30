@@ -19,5 +19,5 @@
 | NEG          | Network Endpoint Groups           |
 | ALB          | Application Load Balancer         |
 | CI/CD        | Continuous Intergration / Continuous Delivery |
-
+| HPA          | Horizontal Pod Autoscaler         |
 # Networking Abbreviations
