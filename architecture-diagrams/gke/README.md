@@ -15,6 +15,29 @@ The flow demonstrates how Kubernetes Ingress resources interact with the GKE Ing
 
 ---
 
+# GKE Architecture Diagrams
+
+## Load Balancing
+- Internal Application Load Balancer Flow
+
+## Kubernetes Object Relationships
+- Service-to-Pod Architecture
+
+## Kubernetes Management Models
+- Imperative vs Declarative kubectl workflows
+  
+  ### Kubernetes Object Management Models
+
+This diagram compares imperative and declarative Kubernetes management workflows using kubectl commands. It illustrates how declarative orchestration uses YAML manifests, desired state reconciliation, and Infrastructure-as-Code principles compared to imperative command execution.
+
+## Kubernetes Lifecycle
+- Kubernetes Object Lifecycle via kubectl
+
+## Operational Configuration
+- Ingress annotation examples
+- NEG configuration examples
+
+---
 ## Diagram Files
 
 | File | Purpose |
@@ -55,9 +78,7 @@ The flow demonstrates how Kubernetes Ingress resources interact with the GKE Ing
 
 ---
 
-## Kubernetes Object Management Models
 
-This diagram compares imperative and declarative Kubernetes management workflows using kubectl commands. It illustrates how declarative orchestration uses YAML manifests, desired state reconciliation, and Infrastructure-as-Code principles compared to imperative command execution.
 
 ---
 ## Ingress Annotation Example
