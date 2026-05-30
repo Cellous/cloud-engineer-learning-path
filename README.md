@@ -81,8 +81,37 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 - VPC networking
 - Load balancing models
 
+## Featured Architecture Diagrams
+
+### GKE Internal Application Load Balancer
+![GKE Internal ALB](architecture-diagrams/gke/gke-internal-alb-flow.png)
+
+### Kubernetes Object Lifecycle
+![Kubernetes Lifecycle](architecture-diagrams/gke/Kubernetes-Object-Lifecycle-via-kubectl.png)
 ---
 
+## Skills Demonstrated
+
+- Kubernetes networking
+- GKE internal load balancing
+- Cloud Run autoscaling
+- Infrastructure-as-Code concepts
+- YAML orchestration
+- Terraform workflows
+- Cloud architecture documentation
+- Technical diagramming
+- Operational troubleshooting
+
+## Repository Metrics
+
+- 400+ commits
+- Multiple architecture diagrams
+- GKE operational documentation
+- Kubernetes lifecycle models
+- ACE recognition patterns
+- Infrastructure learning labs
+  
+---
 ## Module Overview
 
 - ACE certification focuses on real-world cloud skills
@@ -146,7 +175,7 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | Containers | Cloud Run |
 | Rolling updates | Managed Instance Groups |
 ---
-
+```text
 Compute Engine
     ↓
 GKE Nodes
@@ -154,7 +183,8 @@ GKE Nodes
 Containers
     ↓
 Cloud Run alternative
-
+```
+```text
 Terraform
     ↓
 Infrastructure as Code
@@ -162,6 +192,21 @@ Infrastructure as Code
 GKE provisioning
     ↓
 Managed infrastructure
+```
+---
+
+## Tools & Technologies
+
+- Google Cloud Platform (GCP)
+- Kubernetes
+- GKE
+- Cloud Run
+- Terraform
+- draw.io
+- Visio
+- GitHub
+- Markdown
+- YAML
 
 ---
 ## Certification Goal
