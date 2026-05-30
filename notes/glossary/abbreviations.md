@@ -20,4 +20,10 @@
 | ALB          | Application Load Balancer         |
 | CI/CD        | Continuous Intergration / Continuous Delivery |
 | HPA          | Horizontal Pod Autoscaler         |
+
 # Networking Abbreviations
+| Abbreviation | Meaning                           |
+| ------------ | --------------------------------- |
+| | Acronym | Meaning                        |
+| ------- | ------------------------------ |
+| CIDR    | Classless Inter-Domain Routing |
