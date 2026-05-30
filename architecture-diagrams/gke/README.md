@@ -55,6 +55,11 @@ The flow demonstrates how Kubernetes Ingress resources interact with the GKE Ing
 
 ---
 
+## Kubernetes Object Management Models
+
+This diagram compares imperative and declarative Kubernetes management workflows using kubectl commands. It illustrates how declarative orchestration uses YAML manifests, desired state reconciliation, and Infrastructure-as-Code principles compared to imperative command execution.
+
+---
 ## Ingress Annotation Example
 
 ```yaml
