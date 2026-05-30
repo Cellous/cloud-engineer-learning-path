@@ -22,8 +22,7 @@
 | HPA          | Horizontal Pod Autoscaler         |
 
 # Networking Abbreviations
-| Abbreviation | Meaning                           |
-| ------------ | --------------------------------- |
-| | Acronym | Meaning                        |
+
+| Acronym | Meaning                        |
 | ------- | ------------------------------ |
 | CIDR    | Classless Inter-Domain Routing |
