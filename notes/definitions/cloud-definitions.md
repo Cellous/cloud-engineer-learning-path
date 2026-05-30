@@ -1,5 +1,9 @@
 # Cloud Definitions
 
+## CIDR
+Classless Inter-Domain Routing.
+Method for defining subnet ranges using prefix lengths.
+
 ## Compute Engine
 Google Cloud compute and hosting service for running virtual machines.
 
