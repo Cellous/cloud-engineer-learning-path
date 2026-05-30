@@ -18,11 +18,11 @@ Host bits:
 | /21 | 2048 |
 
 ## GCP Example
-
+```bash
 gcloud compute networks subnets expand-ip-range mysubnet \
 --region us-central1 \
 --prefix-length 21
-
+```
 ## Key Rule
 
 Smaller prefix number = larger subnet
