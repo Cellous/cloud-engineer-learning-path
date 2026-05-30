@@ -91,6 +91,7 @@ Topics covered:
 - Object metadata evaluation
 - Automated storage governance
 
+![GCS Lifecycle Policy](architecture-diagrams/storage/gcs-lifecycle-policy-flow.png)
 ---
 ## Ingress Annotation Example
 
