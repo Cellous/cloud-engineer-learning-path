@@ -44,9 +44,35 @@ Expanded subnet:
 
 ---
 
+## ACE Recognition Patterns
+| Requirement | Likely Prefix |
+| ----------- | ------------- |
+| ~256 hosts  | /24           |
+| ~512 hosts  | /23           |
+| ~1024 hosts | /22           |
+| ~2048 hosts | /21           |
+
+---
+
+## Operational Notes
+- Subnet expansion is non-disruptive in many scenarios.
+- Existing IPs remain valid.
+- Cannot shrink subnet ranges directly.
+- Proper IP planning prevents exhaustion.
+
+---
 ## GCP Command
 
 ```bash
 gcloud compute networks subnets expand-ip-range mysubnet \
 --region us-central1 \
 --prefix-length 21
+```
+---
+
+## Related Topics
+- VPC Networking
+- CIDR
+- Static IPs
+- Cloud NAT
+
