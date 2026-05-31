@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="HfbkIK1nuPWUu4qr_epq">
+    <mxGraphModel dx="1082" dy="717" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="" vertex="1">
+          <mxGeometry height="222" width="164" x="597" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="gce" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;gradientColor=#7ea6e0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Compute Engine VMs&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="178" x="347" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;fontStyle=1;gradientColor=#d5739d;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Cloud Monitoring&lt;/font&gt;" vertex="1">
+          <mxGeometry height="37" width="181" x="346" y="183" as="geometry" />
+        </mxCell>
+        <mxCell id="policy" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;html=1;gradientColor=#97d077;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Alert Policy&lt;/b&gt;&lt;/font&gt;&lt;hr style=&quot;margin:3px 0;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;• Resource: VM Instance&lt;br&gt;• Metric: CPU Utilization&lt;br&gt;• Threshold: &amp;gt;60%&lt;br&gt;• Duration: 5 Mins&lt;/font&gt;" vertex="1">
+          <mxGeometry height="131" width="186" x="344" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="incident" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;fontStyle=1;gradientColor=light-dark(#FFA500,#FF8000);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Incident Created&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="184" x="345" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="channel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#E51400,#FF0000);strokeColor=#B20000;fontStyle=1;fontColor=#ffffff;gradientColor=light-dark(#000000,#E6E6E6);" value="&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Notification Channel&lt;/font&gt;&lt;/div&gt;Ops Team / Admin" vertex="1">
+          <mxGeometry height="60" width="183" x="348" y="543" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;gradientColor=default;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Email&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="189.5" y="644" as="geometry" />
+        </mxCell>
+        <mxCell id="slack" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;gradientColor=default;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Slack&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="369.5" y="644" as="geometry" />
+        </mxCell>
+        <mxCell id="pubsub" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;gradientColor=default;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Pub/Sub&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="549.5" y="644" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="gce" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;" target="monitoring">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;" target="policy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="policy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;" target="incident">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="channel" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;" target="email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="channel" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;" target="slack">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="channel" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;" target="pubsub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;Monitoring Alert Policy Flow&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="397" x="241" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" value="&lt;b&gt;Infrastructure&lt;br&gt;&amp;nbsp; &amp;nbsp; ↓&lt;br&gt;Monitoring&lt;br&gt;&amp;nbsp; &amp;nbsp; ↓&lt;br&gt;Policy Evaluation&lt;br&gt;&amp;nbsp; &amp;nbsp; ↓&lt;br&gt;Incident&lt;br&gt;&amp;nbsp; &amp;nbsp; ↓&lt;br&gt;Notification Routing&lt;/b&gt;" vertex="1">
+          <mxGeometry height="205" width="144" x="607" y="177.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-9" edge="1" parent="1" source="monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="201.5" as="sourcePoint" />
+            <mxPoint x="172" y="237.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="171.5" y="274" as="sourcePoint" />
+            <mxPoint x="172.5" y="306" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Log Buckets&lt;/font&gt;" vertex="1">
+          <mxGeometry height="37" width="181" x="83" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Cloud Logging&lt;/font&gt;" vertex="1">
+          <mxGeometry height="37" width="181" x="83" y="237" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-15" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="157" width="50" x="152" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;SIEM / Security Analytics&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="59" width="126" x="183" y="461.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;BigQuery&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="59" width="125" x="38" y="461.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Log Router&lt;/font&gt;" vertex="1">
+          <mxGeometry height="37" width="181" x="83" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-23" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="173.2" y="343" as="sourcePoint" />
+            <mxPoint x="173.2" y="377" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pU-TShAJQUJm8wdlbJ5I-24" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439.21" y="482" as="sourcePoint" />
+            <mxPoint x="439.21" y="543" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
