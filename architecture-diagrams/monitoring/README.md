@@ -18,3 +18,11 @@ Topics covered:
 - Centralized logging
 - Security event analysis
 - Cloud observability architecture
+---
+## Files
+
+| File | Purpose |
+|---|---|
+| monitoring-alert-policy-flow.drawio | Editable architecture source |
+| monitoring-alert-policy-flow.png | Exported diagram preview |
+| monitoring-alert-policy-flow.svg | Scalable vector version |
