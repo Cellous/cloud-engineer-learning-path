@@ -1,4 +1,23 @@
+# Cloud Monitoring Alert Policies
 
+## Alert Components
+- Resource
+- Metric
+- Threshold
+- Duration
+- Notification Channel
+
+## Trigger Types
+- Any time series violates
+- All time series violate
+- Percent of time series violate
+
+## Common ACE Examples
+- CPU Utilization > 60%
+- Disk Usage > 80%
+- Memory Usage > 90%
+
+## Recognition Patterns
 
 ## Simple ACE Recognition Pattern
 - Resource = VM Instance
