@@ -28,4 +28,5 @@
 
 ## CPU Load
 CPU Load = number of runnable processes
-- Example: Load = 4.2, Not a percentage.
+- Example: Load = 4.2
+- Not a percentage.
