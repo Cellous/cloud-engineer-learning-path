@@ -21,9 +21,26 @@
 - Billing Architecture
 - Observability Scoping
 
-## Oauth Service Account Security Flow
-- Demonstrates a secure Google Cloud authentication and authorization pattern using OAuth 2.0, backend APIs, service accounts, and Cloud Pub/Sub.
+# IAM Architecture Diagrams
 
+Visual reference diagrams for Google Cloud IAM, authentication,
+authorization, OAuth flows, service accounts, and workload identity.
+
+## Diagrams Included
+
+- OAuth Service Account Security Flow
+- Folder-Level IAM Inheritance
+- Workload Identity
+- Custom Role Update Flow
+
+## Topics Covered
+
+- OAuth 2.0
+- Service Accounts
+- IAM Inheritance
+- Least Privilege
+- Backend Authorization
+- Workload Identity
 ## ACE Recognition Patterns
 
 | Requirement | Usually Means |
