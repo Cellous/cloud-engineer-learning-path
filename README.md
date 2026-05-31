@@ -70,6 +70,17 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | Cloud-Run/      | Serverless compute          |
 | Databases/      | Cloud SQL / migration logic |
 
+| Area                     | Purpose                    |
+| ------------------------ | -------------------------- |
+| `notes/iam/`             | concepts & security        |
+| `architecture-diagrams/` | visual workflows           |
+| `glossary/`              | abbreviations              |
+| `definitions/`           | cloud terminology          |
+| `04-networking/`         | infrastructure networking  |
+| `03-storage/`            | storage systems            |
+| `04-operations/`         | observability & monitoring |
+
+
 ## Current Focus Areas
 
 - Compute Engine deployments
