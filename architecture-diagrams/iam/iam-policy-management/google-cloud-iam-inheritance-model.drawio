@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="yhoeqNE7froA2QCQrKsl">
+    <mxGraphModel dx="1127" dy="717" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="425" width="510" x="263" y="83" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Project Permissions&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="53" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#93CAED);" value="&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;IAM Role&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="53" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="53" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Cloud Resources&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="53" y="371" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-5" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="137.5" y="326" as="sourcePoint" />
+            <mxPoint x="137.5" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-6" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="137.5" y="168" as="sourcePoint" />
+            <mxPoint x="137.5" y="208" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-7" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="137.5" y="248" as="sourcePoint" />
+            <mxPoint x="137.5" y="288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;font&gt;Projects&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="296" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#ACD1AF);" value="&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Folders&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="296" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Organization&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="296" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;font&gt;Resources&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="296" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-12" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380.5" y="366" as="sourcePoint" />
+            <mxPoint x="380.5" y="406" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-13" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380.5" y="186" as="sourcePoint" />
+            <mxPoint x="380.5" y="226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-14" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380.5" y="276" as="sourcePoint" />
+            <mxPoint x="380.5" y="316" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;Folder-Level IAM Inheritance&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="422" x="305" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FFFFFF,#E3B383);" value="&lt;p data-start=&quot;3061&quot; data-end=&quot;3072&quot; align=&quot;center&quot;&gt;&lt;u&gt;IAM Inheritance Concept&lt;/u&gt;&lt;/p&gt;&lt;p data-start=&quot;3061&quot; data-end=&quot;3072&quot; align=&quot;left&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;Assign IAM roles at the folder level.&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p data-start=&quot;3061&quot; data-end=&quot;3072&quot; align=&quot;left&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Inheritance propagates permissions&lt;br&gt;&amp;nbsp; &amp;nbsp;to projects and resources below.&lt;/p&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="227" x="506" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FFFFFF,#E3B383);" value="&lt;div align=&quot;center&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;u&gt;ACE Recognition Pattern&lt;/u&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp; &amp;nbsp;Common use cases:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;multiple projects&lt;/li&gt;&lt;li&gt;department separation&lt;/li&gt;&lt;li&gt;environment isolation&lt;/li&gt;&lt;li&gt;dev/test/prod structures&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p data-start=&quot;3475&quot; data-end=&quot;3486&quot;&gt;&amp;nbsp; think:&lt;/p&gt;&lt;pre class=&quot;overflow-visible! px-0!&quot; data-start=&quot;3488&quot; data-end=&quot;3535&quot;&gt;&lt;div class=&quot;relative w-full mt-4 mb-1&quot;&gt;&lt;div class=&quot;&quot;&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;h-full min-h-0 min-w-0&quot;&gt;&lt;div class=&quot;h-full min-h-0 min-w-0&quot;&gt;&lt;div class=&quot;border border-token-border-light border-radius-3xl corner-superellipse/1.1 rounded-3xl&quot;&gt;&lt;div class=&quot;h-full w-full border-radius-3xl bg-token-bg-elevated-secondary corner-superellipse/1.1 overflow-clip rounded-3xl lxnfua_clipPathFallback&quot;&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;pe-11 pt-3&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;pre class=&quot;cm-content q9tKkq_readonly m-0&quot;&gt;&lt;code&gt;&lt;span&gt; folders + inherited IAM&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="195" width="190" x="556" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-18" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="516" y="386" as="sourcePoint" />
+            <mxPoint x="516" y="276" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-19" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7LKlITw_TPIWDjA2B8K1-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="516" y="386" as="sourcePoint" />
+            <mxPoint x="546" y="381" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LKlITw_TPIWDjA2B8K1-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Inherited IAM permissions reduce&lt;br&gt;administrative overhead.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="66" width="221" x="23" y="442" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
