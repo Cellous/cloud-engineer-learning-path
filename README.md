@@ -57,7 +57,7 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 | Folder | Purpose |
 |---|---|
-| architecture-diagrams | Visio diagrams and exported PNGs |
+| architecture-diagrams/ | draw.io, SVG, and PNG cloud architecture diagrams |
 | definitions | Cloud terminology |
 | study-plans | Certification planning |
 | iam | IAM-focused documentation |
@@ -69,6 +69,10 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | GKE/            | Kubernetes concepts         |
 | Cloud-Run/      | Serverless compute          |
 | Databases/      | Cloud SQL / migration logic |
+| architecture-diagrams/iam/ | IAM, OAuth, service account, and policy diagrams |
+| architecture-diagrams/monitoring/ | Cloud Monitoring, alerting, logging, and observability diagrams |
+| architecture-diagrams/storage/ | Storage lifecycle and data solution diagrams |
+| architecture-diagrams/gke/ | GKE, Ingress, Kubernetes lifecycle, and load balancing diagrams |
 
 | Area                     | Purpose                    |
 | ------------------------ | -------------------------- |
@@ -99,6 +103,16 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ### Kubernetes Object Lifecycle
 ![Kubernetes Lifecycle](architecture-diagrams/gke/Kubernetes-Object-Lifecycle-via-kubectl.png)
+
+### Monitoring Alert Policy Flow
+![Monitoring Alert Policy Flow](architecture-diagrams/monitoring/monitoring-alert-policy-flow.png)
+
+### IAM Service Account Security Flow
+![IAM Service Account Security Flow](architecture-diagrams/iam/security-architecture/google-cloud-service-account-security-flow.png)
+
+### Application Cloud Authentication Flow
+![Application Cloud Authentication Flow](architecture-diagrams/iam/security-architecture/application-cloud-authentication-flow.png)
+
 ---
 
 ## Skills Demonstrated
@@ -112,10 +126,14 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 - Cloud architecture documentation
 - Technical diagramming
 - Operational troubleshooting
+- IAM policy inheritance
+- Service account authentication
+- OAuth vs service account security patterns
+- Cloud Monitoring and Cloud Logging 
 
 ## Repository Metrics
 
-- 400+ commits
+- 465+ commits
 - Multiple architecture diagrams
 - GKE operational documentation
 - Kubernetes lifecycle models
