@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="HbR5Nx-ItKvOi0108wVB">
+    <mxGraphModel dx="893" dy="573" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E7ky4292UcgeLV7LOHQc-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Folder-Level IAM Administration Flow&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="440" x="210" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#FFFF00);fillColor=light-dark(#FFFFFF,#FFA500);" value="&lt;font style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Need IAM policy management&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="49" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#FFA500);fillColor=light-dark(#FFFFFF,#FFBF00);" value="&lt;font style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Too many individual bindings&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="49" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#6C7A89);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Prod Project&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="164" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="158.76" y="255" as="sourcePoint" />
+            <mxPoint x="158.76" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-11" edge="1" parent="1" source="E7ky4292UcgeLV7LOHQc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="368" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#8A5FBF);fillColor=light-dark(#FFFFFF,#6A4C93);strokeColor=light-dark(#000000,#D3D3D3);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Ecommerce Folder&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="293" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-13" edge="1" parent="1" source="E7ky4292UcgeLV7LOHQc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="368" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#274C77);fillColor=light-dark(#FFFFFF,#1E3A5F);strokeColor=light-dark(#000000,#D3D3D3);" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Organization&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="293" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-15" edge="1" parent="1" source="E7ky4292UcgeLV7LOHQc-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="368" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#4F5D75);gradientColor=light-dark(#000000,#6C7A89);strokeColor=light-dark(#000000,#D3D3D3);" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Dev Project&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="293" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#6C7A89);strokeColor=light-dark(#000000,#D3D3D3);" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Prod Project&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="293" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#008000);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;roles/resourcemanager.folderIamAdmin&lt;br&gt;assigned at folder level&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="407" x="49" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-20" edge="1" parent="1" source="E7ky4292UcgeLV7LOHQc-19" style="endArrow=none;html=1;rounded=0;exitX=0.272;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="149" y="385" as="sourcePoint" />
+            <mxPoint x="159" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.812;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.509;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;" target="E7ky4292UcgeLV7LOHQc-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="369.48400000000004" y="395.7" as="sourcePoint" />
+            <mxPoint x="371" y="374" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FFFFFF,#6E6E6E);" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp; Benefits&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; •&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt; least privilege&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;• centralized administration&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;• inherited IAM&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;• fewer policy bindings&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;• scalable governance&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="202" width="224" x="569" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; Multiple projects&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;+ shared administration&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;→ folder-level IAM&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="222" x="570" y="378.7" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#6C7A89);fillColor=light-dark(#FFFFFF,#4F5D75);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Dev Project&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="49" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-25" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="101.28" y="194.3" as="sourcePoint" />
+            <mxPoint x="101.28" y="214.3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;IAM inherited to child resources&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="188" x="373" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Folder-level IAM reduces administrative overhead across multiple projects." vertex="1">
+          <mxGeometry height="32" width="439" x="211" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#FFA500);fillColor=light-dark(#FFFFFF,#FFBF00);" value="&lt;font style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;folderIamAdmin at folder level&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="49" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="E7ky4292UcgeLV7LOHQc-30" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="158.8" y="315" as="sourcePoint" />
+            <mxPoint x="158.8" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
