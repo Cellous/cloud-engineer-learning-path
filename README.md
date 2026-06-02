@@ -73,9 +73,6 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | architecture-diagrams/monitoring/ | Cloud Monitoring, alerting, logging, and observability diagrams |
 | architecture-diagrams/storage/ | Storage lifecycle and data solution diagrams |
 | architecture-diagrams/gke/ | GKE, Ingress, Kubernetes lifecycle, and load balancing diagrams |
-
-| Area                     | Purpose                    |
-| ------------------------ | -------------------------- |
 | `notes/iam/`             | concepts & security        |
 | `architecture-diagrams/` | visual workflows           |
 | `glossary/`              | abbreviations              |
