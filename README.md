@@ -38,20 +38,20 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 - Active = currently reviewing/testing
 - Complete = documented and reviewed
 
-## Live Progress Tracker
+## 📈 Live Progress Tracker
 
-| Week | Topic | Status |
-|---|---|---|
-| 1 | Intro & ACE Foundations | Complete |
-| 2 | Compute Engine & VM Operations | In Progress |
-| 3 | Cloud Storage & Data Services | In Progress |
-| 4 | Networking & Load Balancing | In Progress |
-| 5 | Cloud Run & Cloud Functions | In Progress |
-| 6 | Kubernetes Engine (GKE) | Pending |
-| 7 | Infrastructure as Code (Terraform) | In Progress |
-| 8 | IAM & Governance | In Progress |
-| 9 | Architecture Diagrams & Visio | In Progress |
-| 10 | Diagnostic Reviews & Exam Prep | Active |
+| Module | Topic | Status | Portfolio Evidence |
+|---|---|---|---|
+| 1 | Intro & ACE Foundations | 🟢 Complete | Core GCP notes and architecture fundamentals |
+| 2 | Compute Engine & VM Operations | 🟡 In Progress | VM authentication and monitoring workflows |
+| 3 | Cloud Storage & Data Services | 🟡 In Progress | Cloud Storage API authentication diagrams |
+| 4 | Networking & Load Balancing | 🟡 In Progress | Monitoring and infrastructure routing diagrams |
+| 5 | Cloud Run & Cloud Functions | 🟡 In Progress | IAM custom role administration workflows |
+| 6 | Kubernetes Engine (GKE) | ⚪ Pending | Planned GKE workload identity diagrams |
+| 7 | Infrastructure as Code (Terraform) | 🟡 In Progress | Terraform infrastructure deployment workflows |
+| 8 | IAM & Governance | 🟡 In Progress | Service account, OAuth, inheritance, and IAM models |
+| 9 | Cloud Architecture & Security Diagrams | 🟡 In Progress | Enterprise security and authentication flows |
+| 10 | Diagnostic Reviews & Exam Prep | 🔵 Active | ACE recognition-pattern documentation |
 
 ## Repository Structure
 
@@ -81,17 +81,21 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | `03-storage/`            | storage systems            |
 | `04-operations/`         | observability & monitoring |
 
+---
 
-## Current Focus Areas
+## Key Focus Areas
 
-- Compute Engine deployments
-- Managed instance groups
-- Cloud Run vs Cloud Run functions
-- Terraform workflows
-- Cloud SQL deployment scenarios
-- GKE cluster architecture
-- VPC networking
-- Load balancing models
+- Google Cloud Platform (GCP)
+- Associate Cloud Engineer (ACE) Preparation
+- IAM & Governance
+- Kubernetes Engine (GKE)
+- Terraform & Infrastructure as Code
+- Cloud Monitoring & Logging
+- Workload Identity
+- OAuth & Service Accounts
+- Enterprise Cloud Security Patterns
+- Architecture Modeling & Documentation
+- Cloud Operations & Automation
 
 ## Featured Architecture Diagrams
 
