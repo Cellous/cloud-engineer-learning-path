@@ -47,10 +47,11 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | 3 | Cloud Storage & Data Services | 🟡 In Progress | Cloud Storage API authentication diagrams |
 | 4 | Networking & Load Balancing | 🟡 In Progress | Monitoring and infrastructure routing diagrams |
 | 5 | Cloud Run & Cloud Functions | 🟡 In Progress | IAM custom role administration workflows |
-| 6 | Kubernetes Engine (GKE) | ⚪ Pending | Planned GKE workload identity diagrams |
+| 6 | Kubernetes Engine (GKE) | 🟡 In Progress | Planned GKE workload identity diagrams |
 | 7 | Infrastructure as Code (Terraform) | 🟡 In Progress | Terraform infrastructure deployment workflows |
-| 8 | IAM & Governance | 🟡 In Progress | Service account, OAuth, inheritance, and IAM models |
-| 9 | Cloud Architecture & Security Diagrams | 🟡 In Progress | Enterprise security and authentication flows |
+| 8 | IAM & Governance | 🟢 Complete | IAM inheritance, folder IAM, custom roles, least privilege |
+| 8 | Service Accounts | 🟡 Reviewing 5.2 | OAuth, service accounts, ADC, workload identity, authentication patterns |
+| 9 | Cloud Architecture & Security Diagrams | 🟢 Active Portfolio Development | Enterprise security and authentication flows |
 | 10 | Diagnostic Reviews & Exam Prep | 🔵 Active | ACE recognition-pattern documentation |
 
 ## Repository Structure
@@ -96,6 +97,14 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 - Enterprise Cloud Security Patterns
 - Architecture Modeling & Documentation
 - Cloud Operations & Automation
+
+## Progress Snapshot
+
+- ✅ IAM & Governance Review 5.1
+- 🟡 Service Accounts Review 5.2
+- ✅ 10+ Cloud Security Diagrams Created
+- ✅ IAM Architecture Library Established
+- 🟡 Terraform & GKE Documentation In Progress
 
 ## Featured Architecture Diagrams
 
@@ -167,6 +176,12 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 ---
 
 ## Current Study Topics
+
+- Completing ACE Diagnostic Reviews
+- Reviewing IAM & Service Accounts
+- Building cloud architecture diagrams
+- Documenting ACE recognition patterns
+- Preparing for Associate Cloud Engineer certification
 
 ### Compute
 - Managed Instance Groups
