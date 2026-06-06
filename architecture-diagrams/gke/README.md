@@ -17,6 +17,15 @@ The flow demonstrates how Kubernetes Ingress resources interact with the GKE Ing
 
 # GKE Architecture Diagrams
 
+| Diagram                            | Topic                                      |
+| ---------------------------------- | ------------------------------------------ |
+| Internal Application Load Balancer | GKE Ingress & Layer 7 Networking           |
+| Service to Pod Deployment          | Kubernetes Service Discovery               |
+| Kubernetes Object Lifecycle        | Desired State & Controllers                |
+| kubectl Management Models          | Imperative vs Declarative Management       |
+| Workload Identity                  | Secure Authentication to Google Cloud APIs |
+
+
 ## Load Balancing
 - Internal Application Load Balancer Flow
 
