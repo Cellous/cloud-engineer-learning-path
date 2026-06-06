@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="PuFiBmLPQxTbtdORp7aE">
+    <mxGraphModel dx="1128" dy="717" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;GKE to Cloud Spanner Authentication Flow&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="519" x="164" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="207" as="sourcePoint" />
+            <mxPoint x="315" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-13" edge="1" parent="1" source="QppOWiNkWAg8c7Yez4jf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="537" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=light-dark(#FFFFFF,#66BB6A);gradientColor=light-dark(#000000,#2E7D32);" value="&lt;span&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;IAM Role:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Cloud Spanner Database User&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="205" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=light-dark(#0E0E0E,#6FA8DC);gradientColor=light-dark(#070707,#3D85C6);" value="&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;GKE Pod&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="205" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="277" as="sourcePoint" />
+            <mxPoint x="315" y="307" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=light-dark(#FFFFFF,#00FFFF);strokeColor=light-dark(#000000,#FFFFFF);gradientColor=light-dark(#000000,#00BCD4);" value="&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(26, 26, 26));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Kubernetes Service Account&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="205" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="347" as="sourcePoint" />
+            <mxPoint x="315" y="377" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=light-dark(#FFFFFF,#C158DC);gradientColor=light-dark(#FFFFFF,#8E24AA);" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Workload Identity&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="205" y="317" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="417" as="sourcePoint" />
+            <mxPoint x="315" y="447" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=light-dark(#FFFFFF,#FFD54F);gradientColor=light-dark(#000000,#F9A825);strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(26, 26, 26));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Google Service Account&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="205" y="387" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=light-dark(#FFFFFF,#808080);gradientColor=default;" value="&lt;font style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;b&gt;Cloud Spanner&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="205" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Identity → Authentication → Authorization&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="330" x="150" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1E1E1E);strokeColor=light-dark(#000000,#B0BEC5);" value="&lt;font style=&quot;font-size: 14px; color: light-dark(rgb(0, 0, 0), rgb(251, 250, 245));&quot;&gt;Applications should not use&lt;br&gt;user credentials for backend access.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="205" x="480" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px; color: light-dark(rgb(0, 0, 0), rgb(251, 250, 245));&quot;&gt;Service accounts enable&lt;br&gt;machine-to-machine authentication.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="205" x="480" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="QppOWiNkWAg8c7Yez4jf-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;b&gt;Security Chain&lt;/b&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • GKE workload&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • Service account&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • IAM role&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • Managed service access&lt;/font&gt;" vertex="1">
+          <mxGeometry height="119" width="203" x="484" y="427" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
