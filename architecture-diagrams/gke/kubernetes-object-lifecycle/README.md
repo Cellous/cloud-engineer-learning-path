@@ -19,7 +19,7 @@ Understanding this lifecycle is fundamental for operating Google Kubernetes Engi
 
 # Architecture Diagram
 
-![Kubernetes Object Lifecycle](Kubernetes-Object-Lifecycle-via-kubectl.png)
+![Kubernetes Object Lifecycle](kubernetes-object-lifecycle.png)
 
 ---
 
