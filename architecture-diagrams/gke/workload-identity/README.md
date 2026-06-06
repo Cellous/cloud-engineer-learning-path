@@ -16,7 +16,7 @@ Instead of storing credentials inside a Pod, Kubernetes identities are mapped to
 
 ## Architecture Diagram
 
-![GKE to Cloud Spanner Authentication Flow]([workload-identity/workload-identity-spanner-access.png))
+![GKE to Cloud Spanner Authentication Flow]([workload-identity-spanner-access.png)
 
 ---
 
