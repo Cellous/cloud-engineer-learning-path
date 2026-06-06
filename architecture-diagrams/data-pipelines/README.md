@@ -15,6 +15,20 @@ The goal is to demonstrate operational differences, architectural patterns, and 
 
 ---
 
+## Architecture Diagram
+
+![Batch vs Streaming Pipeline Flow](batch-vs-streaming-flow.png)
+
+---
+
+## Architecture Overview
+
+This architecture compares scheduled batch ingestion with event-driven streaming ingestion in Google Cloud.
+
+Batch pipelines prioritize simplicity and cost efficiency, while streaming pipelines prioritize low-latency processing and real-time analytics. Both patterns are foundational architectures for cloud engineers and data engineers designing scalable analytics systems.
+
+---
+
 ## Purpose
 
 Understanding the difference between batch and streaming architectures is important for:
@@ -132,15 +146,24 @@ then:
 
 ---
 
+> **ACE Exam Tip**
+>
+> - Cloud Storage → BigQuery generally indicates a batch workload.
+> - Pub/Sub → Dataflow → BigQuery generally indicates a streaming workload.
+> - Questions involving IoT devices, clickstream events, or sensor telemetry usually require a streaming architecture.
+
+---
 # Operational Tradeoffs
 
-| Feature         | Batch                | Streaming            |
-| --------------- | -------------------- | -------------------- |
-| Cost            | Lower                | Higher               |
-| Complexity      | Lower                | Higher               |
-| Analytics Speed | Delayed              | Real-time            |
-| Ingestion Style | Scheduled            | Continuous           |
-| Best For        | Historical analytics | Event-driven systems |
+| Feature     | Batch               | Streaming           |
+| ----------- | ------------------- | ------------------- |
+| Processing  | Scheduled           | Continuous          |
+| Latency     | Minutes to Hours    | Seconds             |
+| Cost        | Lower               | Higher              |
+| Complexity  | Lower               | Higher              |
+| Scalability | High                | Very High           |
+| Best For    | Historical Analysis | Real-time Analytics |
+| Example     | Daily Sales Report  | IoT Sensor Data     |
 
 ---
 
@@ -164,8 +187,34 @@ This diagram supports learning objectives related to:
 - batch-vs-streaming-flow.png
 - batch-vs-streaming-flow.svg
 
+## Related Architecture Diagrams
+
+- IAM Authentication Models
+- GKE Workload Identity
+- Cloud Storage Architecture
+- BigQuery Analytics Patterns
+- Terraform Infrastructure Deployment Workflow
+---
+
+## Skills Demonstrated
+
+- Google Cloud Architecture
+- Data Pipelines
+- Pub/Sub
+- Dataflow
+- BigQuery
+- Cloud Storage
+- Observability
+- Event-Driven Systems
+- Batch Processing
+- Streaming Analytics
+
 ---
 
 # Repository
 
 Part of the cloud-engineer-learning-path repository focused on cloud operations, data ingestion, observability, and Google Cloud architecture patterns.
+
+## Portfolio Note
+
+This diagram was created as part of the **Google Cloud Associate Cloud Engineer Learning Path** to reinforce architectural decision-making and recognition of common Google Cloud data ingestion patterns through visual documentation.
