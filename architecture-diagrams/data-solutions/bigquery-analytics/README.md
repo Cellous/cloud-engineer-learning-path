@@ -39,6 +39,27 @@ Typical workloads include:
 
 ---
 
+Cloud Storage
+        │
+        ▼
+External Tables
+        │
+        ▼
+BigQuery Data Warehouse
+        │
+        ▼
+Partitioning & Clustering
+        │
+        ▼
+Scheduled Queries
+        │
+        ▼
+Looker Dashboards
+        │
+        ▼
+BigQuery ML
+
+---
 # BigQuery Features
 
 - Serverless architecture
