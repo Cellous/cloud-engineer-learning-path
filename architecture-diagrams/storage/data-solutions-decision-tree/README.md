@@ -139,19 +139,22 @@ This diagram supports study objectives related to:
 
 ## Files Included
 
-| File                                  | Description                     |
-| ------------------------------------- | ------------------------------- |
-| `data-solutions-decision-tree.drawio` | Editable draw.io source diagram |
-| `data-solutions-decision-tree.png`    | Preview image                   |
-| `data-solutions-decision-tree.svg`    | Scalable vector version         |
+| File | Description |
+|------------------------------------------|---------------------------------------------|
+| `data-solutions-decision-tree.drawio` | Editable draw.io version |
+| `data-solutions-decision-tree.png` | Preview image exported from draw.io |
+| `data-solutions-decision-tree.svg` | Scalable vector version |
+| `storage-selection-architecture.vsdx` | Editable Microsoft Visio version |
+| `storage-selection-architecture.png` | Preview image exported from Microsoft Visio |
 
 ---
 
 ## Created With
 
-* draw.io
-* Google Cloud Architecture Icons
-* Custom Google Cloud ACE recognition patterns
+- draw.io
+- Microsoft Visio Professional
+- Google Cloud Architecture Icons
+- Custom Google Cloud ACE study annotations
 
 ---
 
