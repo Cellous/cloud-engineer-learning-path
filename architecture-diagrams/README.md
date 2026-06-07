@@ -50,3 +50,14 @@ authorization, OAuth flows, service accounts, and workload identity.
 | Event-driven | Cloud Functions |
 | Containers | Cloud Run |
 | Rolling updates | Managed Instance Groups |
+
+---
+
+| Folder                               | Source Files              |
+| ------------------------------------ | ------------------------- |
+| `gke/internal-alb-flow`              | `.drawio`, `.png`, `.svg` |
+| `gke/workload-identity`              | `.drawio`, `.png`, `.svg` |
+| `iam/iam-resource-model`             | `.vsdx`, `.png`           |
+| `iam/resource-hierarchy`             | `.vsdx`, `.png`           |
+| `networking/load-balancer-framework` | `.drawio`, `.png`, `.svg` |
+| `storage/storage-selection`          | `.vsdx`, `.png`           |
