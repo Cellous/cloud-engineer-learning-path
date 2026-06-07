@@ -1,63 +1,114 @@
-## Storage & Lifecycle Architecture
+# Storage & Lifecycle Architecture
 
-This section contains Google Cloud storage architecture diagrams,
-lifecycle automation flows, and data solution decision models used
-for Associate Cloud Engineer (ACE) preparation.
+This section contains Google Cloud Storage architecture diagrams, lifecycle automation workflows, and data service selection models created as part of the **cloud-engineer-learning-path** repository.
+
+The diagrams demonstrate storage management concepts, cost optimization strategies, and architecture recognition patterns commonly encountered in Google Cloud environments and the Associate Cloud Engineer (ACE) certification exam.
 
 ---
 
-## Google Cloud Storage Lifecycle Policy Flow
+# Contents
 
-Demonstrates how Cloud Storage lifecycle rules evaluate object metadata
-and automatically transition storage classes using policy-based automation.
+## GCS Lifecycle Policy Flow
 
-Topics covered:
+Directory:
+
+`gcs-lifecycle-policy-flow/`
+
+Illustrates how Google Cloud Storage Lifecycle Management evaluates object metadata and automatically performs policy-driven actions.
+
+Topics include:
 
 - Lifecycle conditions
-- Storage class transitions
-- Cost optimization
 - Object metadata evaluation
-- Automated storage governance
+- Storage class transitions
+- Automated cost optimization
+- Policy-based storage governance
 
-### Diagram Files
+Technologies:
 
-- gcs-lifecycle-policy-flow.drawio
-- gcs-lifecycle-policy-flow.png
-- gcs-lifecycle-policy-flow.svg
-
-![GCS Lifecycle Policy](gcs-lifecycle-policy-flow.png)
+- Cloud Storage
+- Lifecycle Policies
+- Nearline
+- Coldline
+- Archive
 
 ---
 
-## Google Cloud Data Solutions Decision Tree
+## Data Services Decision Tree
 
-Demonstrates decision-making patterns for selecting Google Cloud
-data storage and analytics services.
+Directory:
 
-Topics covered:
+`data-solutions-decision-tree/`
+
+Provides a decision framework for selecting the appropriate Google Cloud data platform based on workload requirements.
+
+Topics include:
+
+- Relational databases
+- Analytical workloads
+- NoSQL architectures
+- Global transaction processing
+- Data service selection
+
+Google Cloud services covered:
 
 - Cloud SQL
+- Cloud Spanner
 - BigQuery
-- Firestore
-- Spanner
-- Data architecture selection
-- Operational tradeoffs
-
-### Diagram Files
-
-- data-solutions-decision-tree.drawio
-- data-solutions-decision-tree.png
-- data-solutions-decision-tree.svg
-
-![Data Solutions Decision Tree](data-solutions-decision-tree.png)
+- Bigtable
 
 ---
 
-## Key ACE Concepts
+# Learning Objectives
+
+These diagrams reinforce key Associate Cloud Engineer concepts including:
 
 - Cloud Storage lifecycle management
-- Object versioning
 - Storage class optimization
-- Data platform selection
-- Cost-aware architecture
+- Automated data retention
 - Managed storage services
+- Relational vs NoSQL databases
+- Data warehouse architecture
+- Cost-aware cloud design
+- Cloud architecture decision making
+
+---
+
+# Directory Structure
+
+```text
+storage/
+├── README.md
+├── data-solutions-decision-tree/
+│   ├── README.md
+│   ├── data-solutions-decision-tree.drawio
+│   ├── data-solutions-decision-tree.png
+│   └── data-solutions-decision-tree.svg
+│
+└── gcs-lifecycle-policy-flow/
+    ├── README.md
+    ├── gcs-lifecycle-policy-flow.drawio
+    ├── gcs-lifecycle-policy-flow.png
+    └── gcs-lifecycle-policy-flow.svg
+```
+
+---
+
+# Skills Demonstrated
+
+- Google Cloud Storage
+- Lifecycle Management
+- Storage Cost Optimization
+- Cloud SQL
+- Cloud Spanner
+- BigQuery
+- Bigtable
+- Cloud Architecture
+- Solution Design
+- Google Cloud Operations
+
+---
+
+## Repository Context
+
+This directory is part of the **cloud-engineer-learning-path** repository and serves as a collection of architecture diagrams and study materials supporting Google Cloud design patterns, operational best practices, and Associate Cloud Engineer certification preparation.
