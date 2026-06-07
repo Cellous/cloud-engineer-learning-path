@@ -15,6 +15,22 @@ The goal is to demonstrate operational differences, architectural patterns, and 
 
 ---
 
+## Table of Contents
+
+- Architecture Diagram
+- Architecture Overview
+- Purpose
+- Batch Pipeline
+- Streaming Pipeline
+- Observability Layer
+- Recognition Patterns
+- Operational Tradeoffs
+- ACE Exam Focus Areas
+- Files Included
+- Skills Demonstrated
+  
+---
+
 ## Architecture Diagram
 
 ![Batch vs Streaming Pipeline Flow](batch-vs-streaming-flow.png)
@@ -29,7 +45,7 @@ Batch pipelines prioritize simplicity and cost efficiency, while streaming pipel
 
 ---
 
-## Purpose
+## Why This Architecture Matters
 
 Understanding the difference between batch and streaming architectures is important for:
 
