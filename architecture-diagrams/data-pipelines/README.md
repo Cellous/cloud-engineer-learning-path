@@ -1,234 +1,235 @@
-# Batch vs Streaming Pipeline Flow
+# Google Cloud Data Pipelines
+
 ![Google Cloud](https://img.shields.io/badge/Platform-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
-![BigQuery](https://img.shields.io/badge/Analytics-BigQuery-669DF6?logo=googlebigquery&logoColor=white)
-![Dataflow](https://img.shields.io/badge/Pipeline-Dataflow-FF6F00?logo=googlecloud&logoColor=white)
-![Pub/Sub](https://img.shields.io/badge/Messaging-Pub/Sub-34A853?logo=googlecloud&logoColor=white)
-![Observability](https://img.shields.io/badge/Operations-Observability-8E24AA)
-![ACE](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-blue)
+![Data Pipelines](https://img.shields.io/badge/Category-Data_Pipelines-orange)
+![Associate Cloud Engineer](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-blue)
 
-## Table of Contents
+This section contains architecture diagrams and learning resources for common Google Cloud data ingestion and processing patterns.
 
-- Architecture Diagram
-- Architecture Overview
-- Purpose
-- Batch Pipeline
-- Streaming Pipeline
-- Observability Layer
-- Recognition Patterns
-- Operational Tradeoffs
+The diagrams demonstrate how data moves through Google Cloud services using both scheduled and event-driven architectures while emphasizing operational concepts commonly tested on the **Associate Cloud Engineer (ACE)** exam.
+
+---
+
+# Table of Contents
+
+- Overview
+- Pipeline Categories
+- Architecture Collection
+- Common Google Cloud Services
+- Operational Concepts
 - ACE Exam Focus Areas
-- Files Included
-- Skills Demonstrated
-
-This diagram compares two common Google Cloud data ingestion architectures:
-
-- Batch ingestion pipelines
-- Streaming ingestion pipelines
-
-The goal is to demonstrate operational differences, architectural patterns, and recognition concepts commonly used in cloud engineering and analytics systems.
+- Repository Structure
 
 ---
 
-## Architecture Diagram
+# Overview
 
-![Batch vs Streaming Pipeline Flow](batch-vs-streaming-flow.png)
+Google Cloud supports multiple data ingestion strategies depending on workload requirements.
 
----
+Some systems process data on a schedule using batch jobs, while others continuously process events in real time using streaming pipelines.
 
-## Architecture Overview
-
-This architecture compares scheduled batch ingestion with event-driven streaming ingestion in Google Cloud.
-
-Batch pipelines prioritize simplicity and cost efficiency, while streaming pipelines prioritize low-latency processing and real-time analytics. Both patterns are foundational architectures for cloud engineers and data engineers designing scalable analytics systems.
+Understanding when to use each architecture is a core cloud engineering skill.
 
 ---
 
-## Why This Architecture Matters
+# Pipeline Categories
 
-Understanding the difference between batch and streaming architectures is important for:
+## Batch Processing
 
-- Associate Cloud Engineer (ACE) certification preparation
-- Data engineering workflows
-- Cloud analytics systems
-- Real-time event processing
-- Cost optimization decisions
-- Operational monitoring
+Processes data at scheduled intervals.
 
----
+Characteristics:
 
-# Batch Pipeline Flow
+- Scheduled execution
+- Lower operational complexity
+- Cost efficient
+- Historical reporting
+- ETL workloads
 
-## Architecture
+Example technologies:
 
-```text
-CSV/JSON Files
-        ↓
-Cloud Storage
-        ↓
-BigQuery Data Transfer
-        ↓
-BigQuery
-```
-### Characteristics
-- Lower operational cost
-- Scheduled ingestion
-- High throughput
-- Delayed analytics
-- Easier operational management
-  
-### Common Use Cases
-- Daily reporting
-- Periodic ETL jobs
-- Historical analytics
-- CSV imports
-- Business intelligence dashboards
-  
-### Technologies Used
 - Cloud Storage
 - BigQuery Data Transfer Service
 - BigQuery
 
 ---
 
-# Streaming Pipeline Flow
+## Streaming Processing
 
-## Architecture
-``` text
-IoT/Event Stream
-        ↓
-Pub/Sub
-        ↓
-Dataflow
-        ↓
-BigQuery
-```
-### Characteristics
-- Real-time analytics
+Processes events continuously as they occur.
+
+Characteristics:
+
+- Near real-time analytics
 - Event-driven architecture
 - Continuous ingestion
-- Higher operational complexity
-- Low-latency processing
-  
-### Common Use Cases
-- IoT telemetry
-- Sensor monitoring
-- Real-time dashboards
-- Clickstream analytics
-- Live event processing
-  
-### Technologies Used
+- Low latency
+- Highly scalable
+
+Example technologies:
+
 - Pub/Sub
 - Dataflow
 - BigQuery
+- Bigtable
 
 ---
 
-# Observability Layer
+# Architecture Collection
 
-Both ingestion models commonly use Google Cloud Observability services for:
+## Batch vs Streaming Flow
 
-- Monitoring
-- Logging
-- Alerts
-- Operational troubleshooting
-  
-# Recognition Patterns
+Compares scheduled batch ingestion with event-driven streaming architectures.
 
-## Batch Recognition Pattern
+Topics include:
 
-If data:
+- Batch ingestion
+- Streaming ingestion
+- Operational tradeoffs
+- Cost vs latency
+- Analytics pipeline design
 
-- changes slowly
-- arrives periodically
-- can tolerate delayed analytics
+Folder:
 
-then:
-
-- batch ingestion is usually preferred
-
-## Streaming Recognition Pattern
-
-If workloads require:
-
-- real-time analytics
-- continuous processing
-- event-driven workflows
-
-then:
-
-- streaming architectures are preferred
+```
+batch-vs-streaming-flow/
+```
 
 ---
 
-> **ACE Exam Tip**
->
-> - Cloud Storage → BigQuery generally indicates a batch workload.
-> - Pub/Sub → Dataflow → BigQuery generally indicates a streaming workload.
-> - Questions involving IoT devices, clickstream events, or sensor telemetry usually require a streaming architecture.
+## BigQuery Batch Ingestion
+
+Demonstrates scheduled ingestion into BigQuery using Cloud Storage and Data Transfer Service.
+
+Topics include:
+
+- Batch loading
+- Scheduled analytics
+- Historical reporting
+- Cloud Storage integration
+
+Folder:
+
+```
+bigquery-batch-ingestion/
+```
 
 ---
-# Operational Tradeoffs
 
-| Feature     | Batch               | Streaming           |
-| ----------- | ------------------- | ------------------- |
-| Processing  | Scheduled           | Continuous          |
-| Latency     | Minutes to Hours    | Seconds             |
-| Cost        | Lower               | Higher              |
-| Complexity  | Lower               | Higher              |
-| Scalability | High                | Very High           |
-| Best For    | Historical Analysis | Real-time Analytics |
-| Example     | Daily Sales Report  | IoT Sensor Data     |
+## Pub/Sub → Dataflow Pipeline
+
+Demonstrates a real-time streaming architecture using managed Google Cloud services.
+
+Topics include:
+
+- Event ingestion
+- Stream processing
+- Analytics pipelines
+- Archive storage
+- Operational serving
+
+Folder:
+
+```
+pubsub-dataflow/
+```
+
+---
+
+# Common Google Cloud Services
+
+This section includes architectures involving:
+
+- Cloud Storage
+- Pub/Sub
+- Dataflow
+- BigQuery
+- Bigtable
+- Cloud Monitoring
+- Cloud Logging
+- Alerting
+- Observability
+
+---
+
+# Operational Concepts
+
+The diagrams reinforce several production architecture patterns:
+
+- Batch processing
+- Streaming analytics
+- Event-driven design
+- Decoupled systems
+- Data ingestion
+- Analytics pipelines
+- Archive storage
+- Low-latency serving
+- Operational monitoring
 
 ---
 
 # ACE Exam Focus Areas
 
-This diagram supports learning objectives related to:
+These diagrams support learning objectives related to:
 
-- BigQuery
 - Pub/Sub
 - Dataflow
+- BigQuery
 - Cloud Storage
+- Streaming data
+- Batch processing
 - Data ingestion
-- Analytics pipelines
-- Observability
+- Analytics
 - Cloud operations
+- Observability
 
 ---
 
-## Files Included
-- batch-vs-streaming-flow.drawio
-- batch-vs-streaming-flow.png
-- batch-vs-streaming-flow.svg
+# Repository Structure
 
-## Related Architecture Diagrams
+```text
+data-pipelines/
+│
+├── README.md
+│
+├── batch-vs-streaming-flow/
+│   ├── README.md
+│   ├── batch-vs-streaming-flow.drawio
+│   ├── batch-vs-streaming-flow.png
+│   └── batch-vs-streaming-flow.svg
+│
+├── bigquery-batch-ingestion/
+│   ├── README.md
+│   ├── *.drawio
+│   ├── *.png
+│   └── *.svg
+│
+└── pubsub-dataflow/
+    ├── README.md
+    ├── *.drawio
+    ├── *.png
+    └── *.svg
+```
 
-- IAM Authentication Models
-- GKE Workload Identity
-- Cloud Storage Architecture
-- BigQuery Analytics Patterns
-- Terraform Infrastructure Deployment Workflow
 ---
 
-## Skills Demonstrated
+# Skills Demonstrated
 
 - Google Cloud Architecture
-- Data Pipelines
+- Data Engineering Fundamentals
+- Batch Processing
+- Streaming Analytics
+- Event-Driven Systems
 - Pub/Sub
 - Dataflow
 - BigQuery
 - Cloud Storage
-- Observability
-- Event-Driven Systems
-- Batch Processing
-- Streaming Analytics
+- Bigtable
+- Cloud Observability
+- Production Pipeline Design
 
 ---
 
 # Repository
 
-Part of the cloud-engineer-learning-path repository focused on cloud operations, data ingestion, observability, and Google Cloud architecture patterns.
-
-## Portfolio Note
-
-This diagram was created as part of the **Google Cloud Associate Cloud Engineer Learning Path** to reinforce architectural decision-making and recognition of common Google Cloud data ingestion patterns through visual documentation.
+Part of the **cloud-engineer-learning-path** repository documenting Google Cloud architecture patterns, operational workflows, and certification study materials through professionally designed architecture diagrams.
