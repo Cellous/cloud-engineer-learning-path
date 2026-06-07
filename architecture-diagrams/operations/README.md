@@ -1,167 +1,97 @@
-# Operations Flow Across Cymbal Superstore Apps
+# Operations Architecture Diagrams
 
-This diagram documents operational workflows and cloud resource management patterns across multiple Cymbal Superstore applications in Google Cloud.
+This directory contains Google Cloud operations, infrastructure management, billing, backup, and deployment workflow diagrams created as part of the `cloud-engineer-learning-path` repository.
 
-## Purpose
-
-The goal of this architecture diagram is to demonstrate how different Google Cloud services are managed and operated in production environments as part of Associate Cloud Engineer (ACE) learning and operational recognition practice.
-
-The diagram focuses on:
-
-- Compute operations
-- Kubernetes networking
-- Data pipeline management
-- Bigtable and BigQuery integrations
-- Monitoring and observability
-- Safe infrastructure updates
+The purpose of this section is to document operational patterns commonly used in Google Cloud environments and reinforced through Associate Cloud Engineer (ACE) certification preparation.
 
 ---
 
-## Applications Covered
+## Included Architecture Modules
 
-### Supply Chain App
-Technologies:
-- Compute Engine
-- Managed Instance Groups (MIGs)
-- Rolling updates
-
-Operational concepts:
-- Updating instance templates
-- Rolling-action start-update
-- Managing VM lifecycle changes
-- High availability across zones
+| Folder                                          | Topic                                                                                         |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `billing-architecture/`                         | Cloud Billing accounts, payment profiles, projects, and FinOps organization                   |
+| `operations-flow-cymbal-superstore/`            | Operational workflows across Compute Engine, GKE, Cloud Run, Dataflow, Bigtable, and BigQuery |
+| `terraform-infrastructure-deployment-workflow/` | Terraform plan, apply, Google Cloud APIs, provisioned infrastructure, and state file tracking |
+| `google-cloud-documentation/`                   | Reference screenshots from official Google Cloud documentation                                |
 
 ---
 
-### Ecommerce App
-Technologies:
-- Google Kubernetes Engine (GKE)
-- Ingress
-- External HTTP(S) Load Balancer
+## Key Operations Concepts
 
-Operational concepts:
-- External connectivity
-- Layer 7 load balancing
-- Kubernetes ingress management
-- Traffic routing
+This section supports learning around:
 
----
-
-### Transportation App
-Technologies:
-- Cloud Run
-- Dataflow
-- Bigtable
-- BigQuery External Tables
-
-Operational concepts:
-- Streaming analytics
-- Bigtable external querying
-- JSON table definition files
-- BigQuery SQL integrations
-- Data pipeline monitoring
+* Cloud Billing and cost organization
+* FinOps and billing account structure
+* Managed Instance Group updates
+* Terraform Infrastructure as Code workflows
+* Snapshot scheduling and backup planning
+* Cloud resource dependencies
+* Cloud Monitoring and Cloud Logging
+* Production operations and incident readiness
 
 ---
 
-## Observability Layer
+## ACE Recognition Patterns
 
-Shared operations tooling includes:
-
-- Monitoring
-- Logging
-- Alerts
-- Dashboards
-
-These services support operational visibility and troubleshooting across all applications.
-
----
-
-## Recognition Patterns
-
-### Compute Engine Pattern
-OS/disk/template changes require:
-1. Updating the instance template
-2. Performing a rolling-action update
-3. Safely propagating changes to VM instances
+| Scenario                                | Recognition Pattern                   |
+| --------------------------------------- | ------------------------------------- |
+| VM template or OS update                | Managed Instance Group rolling update |
+| Infrastructure described in `.tf` files | Terraform Infrastructure as Code      |
+| Reviewing changes before deployment     | `terraform plan`                      |
+| Applying infrastructure changes         | `terraform apply`                     |
+| Tracking deployed infrastructure        | `terraform.tfstate`                   |
+| Paying for project usage                | Cloud Billing Account                 |
+| Enterprise payment method               | Google Payments Profile               |
+| Backup scheduling                       | Persistent Disk snapshot schedule     |
 
 ---
 
-### GKE Networking Pattern
-Ingress resources commonly provide:
-- Layer 7 HTTP(S) load balancing
-- External connectivity
-- Global traffic routing
+## Repository Organization
+
+```text
+operations/
+│
+├── billing-architecture/
+├── operations-flow-cymbal-superstore/
+├── terraform-infrastructure-deployment-workflow/
+├── google-cloud-documentation/
+└── README.md
+```
 
 ---
 
-### Bigtable + BigQuery Pattern
-Bigtable analytics workflows often involve:
-1. Creating a JSON table definition file
-2. Defining a BigQuery external table
-3. Querying data using BigQuery SQL
+## Original Architecture Work
+
+The following folders contain original architecture diagrams created for this repository:
+
+* `billing-architecture/`
+* `operations-flow-cymbal-superstore/`
+* `terraform-infrastructure-deployment-workflow/`
 
 ---
 
-## ACE Exam Focus Areas
+## Reference Material
 
-This diagram supports learning objectives related to:
-
-- Compute
-- Containers
-- Data Pipelines
-- Observability
-- Infrastructure Operations
-- Cloud Resource Management
+The `google-cloud-documentation/` folder contains screenshots and reference images from official Google Cloud documentation. These are kept separate from original architecture diagrams for clarity.
 
 ---
 
-## Files Included
+## Skills Demonstrated
 
-- `operations-flow-cymbal-superstore.drawio`
-- `operations-flow-cymbal-superstore.png`
-- `operations-flow-cymbal-superstore.svg`
-
----
-
-## Related Technologies
-
-- Google Compute Engine
-- Managed Instance Groups
-- Google Kubernetes Engine (GKE)
-- Cloud Run
-- Dataflow
-- Bigtable
-- BigQuery
+* Google Cloud Operations
+* Cloud Billing
+* FinOps
+* Terraform
+* Infrastructure as Code
+* Managed Instance Groups
+* Backup and Recovery
+* Observability
+* Technical Documentation
+* Associate Cloud Engineer exam preparation
 
 ---
 
-# Operations Architecture
+## Repository Context
 
-This section contains operational workflows, cloud administration screenshots, and architecture diagrams related to Google Cloud operational management.
-
-## Snapshot Scheduling
-
-### Snapshot Schedule Creation
-![Snapshot Schedule UI](snapshot-schedule-create-ui.png)
-
-### Snapshot Schedule Inventory
-![Snapshot Schedule List](snapshot-schedule-list.png)
-
-### Disk Policy Attachment
-![Snapshot Disk Policy](snapshot-schedule-disk-policy.png)
-
-## Key Operational Concepts
-
-- Automated backup scheduling
-- Snapshot lifecycle management
-- Regional vs multi-regional storage
-- Disaster recovery preparation
-- Compute Engine operational administration
-
-- Google Cloud Observability
-
----
-
-## Repository
-
-Part of the `cloud-engineer-learning-path` repository focused on Google Cloud architecture, operations, and certification preparation.
+This section is part of the **cloud-engineer-learning-path** repository and supports Google Cloud operations learning, architecture documentation, and professional portfolio development.
