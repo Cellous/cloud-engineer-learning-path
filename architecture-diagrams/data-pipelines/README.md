@@ -77,6 +77,14 @@ Example technologies:
 
 # Architecture Collection
 
+## Architecture Collection
+
+| Diagram | Description |
+|----------|-------------|
+| **Batch vs Streaming Pipeline Flow** | Compares scheduled batch ingestion with event-driven streaming architectures. |
+| **BigQuery Batch Ingestion Pipeline** | Demonstrates loading Cloud Storage data into BigQuery using Data Transfer Service. |
+| **Pub/Sub → Dataflow Streaming Pipeline** | Demonstrates a real-time event processing architecture using Pub/Sub and Dataflow. |
+
 ## Batch vs Streaming Flow
 
 Compares scheduled batch ingestion with event-driven streaming architectures.
@@ -200,16 +208,59 @@ data-pipelines/
 │
 ├── bigquery-batch-ingestion/
 │   ├── README.md
-│   ├── *.drawio
-│   ├── *.png
-│   └── *.svg
+│   ├── bigquery-batch-ingestion.drawio
+│   ├── bigquery-batch-ingestion.png
+│   └── bigquery-batch-ingestion.svg
 │
 └── pubsub-dataflow/
     ├── README.md
-    ├── *.drawio
-    ├── *.png
-    └── *.svg
+    ├── pubsub-dataflow.drawio
+    ├── pubsub-dataflow.png
+    └── pubsub-dataflow.svg
 ```
+
+---
+
+## Learning Path
+
+These diagrams build upon one another:
+
+1. **BigQuery Batch Ingestion**
+   - Scheduled data loading
+   - Cloud Storage
+   - BigQuery Data Transfer Service
+
+↓
+
+2. **Pub/Sub → Dataflow**
+   - Event-driven architecture
+   - Streaming analytics
+   - Real-time processing
+
+↓
+
+3. **Batch vs Streaming Comparison**
+   - Architectural tradeoffs
+   - Cost vs latency
+   - Operational complexity
+
+---
+
+## Associate Cloud Engineer Topics
+
+These diagrams reinforce concepts including:
+
+- Cloud Storage
+- Pub/Sub
+- Dataflow
+- BigQuery
+- Data ingestion
+- Batch processing
+- Streaming analytics
+- Event-driven architecture
+- Data pipelines
+- Cloud Observability
+- Operational best practices
 
 ---
 
@@ -227,6 +278,11 @@ data-pipelines/
 - Bigtable
 - Cloud Observability
 - Production Pipeline Design
+- Streaming Processing
+- Analytics Pipelines
+- Cloud Operations
+- Solution Architecture
+- Technical Documentation
 
 ---
 
