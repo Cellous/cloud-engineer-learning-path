@@ -6,8 +6,6 @@
 ![Dataflow](https://img.shields.io/badge/Pipeline-Dataflow-FF6F00?logo=googlecloud&logoColor=white)
 ![ACE](https://img.shields.io/badge/Certification-Associate_Cloud_Engineer-blue)
 
-# Data Solutions Architecture Diagrams
-
 This directory contains architecture diagrams illustrating common Google Cloud data processing and analytics patterns used in enterprise environments.
 
 The diagrams focus on selecting the appropriate storage, ingestion, and processing technologies based on workload requirements while reinforcing concepts covered in the Google Cloud Associate Cloud Engineer certification.
@@ -28,21 +26,57 @@ Examples include:
 
 ---
 
-## Included Diagrams
+## Included Architecture Collections
 
-### BigQuery Batch Ingestion
+### BigQuery Analytics
 
-Demonstrates scheduled data ingestion using:
+Architecture diagrams covering:
 
-- Cloud Storage
-- BigQuery Data Transfer Service
+- Partitioning and clustering
+- Scheduled query workflows
+- External tables
+- Looker Studio dashboards
+- Enterprise data warehouse patterns
+- BigQuery ML
+
+---
+
+### Cloud Storage Patterns
+
+Architecture diagrams covering:
+
+- Object storage design
+- Lifecycle policies
+- Storage class optimization
+- Cost-aware storage management
+- Backup and archival strategies
+
+---
+
+### Data Processing Patterns
+
+Architecture diagrams covering:
+
+- Batch processing
+- Streaming processing
+- Pub/Sub pipelines
+- Dataflow architectures
+- BigQuery batch ingestion
+- Real-time analytics
+
+---
+
+### Data Service Selection
+
+Decision trees and architecture diagrams demonstrating when to choose:
+
+- Cloud SQL
+- Cloud Spanner
+- Bigtable
 - BigQuery
+- Cloud Storage
 
-Ideal for:
-
-- Daily reports
-- ETL pipelines
-- Historical analytics
+based on workload type, scalability requirements, latency, and consistency needs.
 
 ---
 
@@ -118,22 +152,40 @@ For the Associate Cloud Engineer exam:
 
 ## Repository Structure
 
-```
+```text
 data-solutions/
 │
-├── bigquery-batch-ingestion/
-├── batch-vs-streaming/
-├── data-service-architecture.png
-├── data-service-selection/
-    │   ├── README.md
-    │   ├── data-solutions-decision-tree.drawio
-    │   ├── data-solutions-decision-tree.png
-    │   ├── data-solutions-decision-tree.svg
-    │   ├── google-cloud-data-service-selection-architecture.png
-    │   └── google-cloud-data-service-selection-architecture.vsdx
-└── README.md
+├── bigquery-analytics/
+│
+├── cloud-storage-patterns/
+│
+├── data-processing-patterns/
+│
+└── data-service-selection/
+    ├── README.md
+    ├── data-solutions-decision-tree.drawio
+    ├── data-solutions-decision-tree.png
+    ├── data-solutions-decision-tree.svg
+    ├── google-cloud-data-service-selection-architecture.png
+    └── google-cloud-data-service-selection-architecture.vsdx
 ```
+---
+
+## Learning Objectives
+
+This section demonstrates the ability to:
+
+- Design scalable data architectures
+- Select appropriate Google Cloud managed services
+- Differentiate batch and streaming pipelines
+- Optimize storage and analytics costs
+- Apply architectural decision-making patterns
+- Build enterprise-ready data platforms
+
+---
 
 ## Portfolio Note
 
-These diagrams were created as part of the **Google Cloud Associate Cloud Engineer Learning Path** to document architectural patterns, improve visual learning, and demonstrate practical understanding of Google Cloud data solutions.
+This collection was created as part of the **Google Cloud Associate Cloud Engineer Learning Path** and serves as a visual architecture portfolio demonstrating cloud design, data engineering concepts, and enterprise decision-making patterns.
+
+The diagrams emphasize practical service selection, operational workflows, and scalable data platform architectures commonly encountered in modern Google Cloud environments.
