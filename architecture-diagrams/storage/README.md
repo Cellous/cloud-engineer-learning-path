@@ -34,31 +34,6 @@ Technologies:
 
 ---
 
-## Data Services Decision Tree
-
-Directory:
-
-`data-solutions-decision-tree/`
-
-Provides a decision framework for selecting the appropriate Google Cloud data platform based on workload requirements.
-
-Topics include:
-
-- Relational databases
-- Analytical workloads
-- NoSQL architectures
-- Global transaction processing
-- Data service selection
-
-Google Cloud services covered:
-
-- Cloud SQL
-- Cloud Spanner
-- BigQuery
-- Bigtable
-
----
-
 # Learning Objectives
 
 These diagrams reinforce key Associate Cloud Engineer concepts including:
