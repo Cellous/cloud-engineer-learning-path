@@ -63,6 +63,29 @@ Compares two common ingestion architectures:
 
 Illustrates when to choose various Google Cloud data services based on workload requirements, latency expectations, and scalability needs.
 
+## Data Services Decision Tree
+
+Directory:
+
+`data-solutions-decision-tree/`
+
+Provides a decision framework for selecting the appropriate Google Cloud data platform based on workload requirements.
+
+Topics include:
+
+- Relational databases
+- Analytical workloads
+- NoSQL architectures
+- Global transaction processing
+- Data service selection
+
+Google Cloud services covered:
+
+- Cloud SQL
+- Cloud Spanner
+- BigQuery
+- Bigtable
+  
 ---
 
 ## ACE Exam Focus Areas
@@ -101,10 +124,15 @@ data-solutions/
 ├── bigquery-batch-ingestion/
 ├── batch-vs-streaming/
 ├── data-service-architecture.png
+├── data-service-selection/
+    │   ├── README.md
+    │   ├── data-solutions-decision-tree.drawio
+    │   ├── data-solutions-decision-tree.png
+    │   ├── data-solutions-decision-tree.svg
+    │   ├── google-cloud-data-service-selection-architecture.png
+    │   └── google-cloud-data-service-selection-architecture.vsdx
 └── README.md
 ```
-
----
 
 ## Portfolio Note
 
