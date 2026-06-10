@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="EjBtT8Ug5yzUpI8_MR8O">
+    <mxGraphModel dx="1491" dy="956" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L1P-uYteUQBk6CWacdvG-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="&lt;font style=&quot;font-size: 33px;&quot;&gt;&lt;b&gt;&lt;font&gt;Startup Script Workflow&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="747" x="54" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-46" edge="1" parent="1" source="L1P-uYteUQBk6CWacdvG-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439" y="577" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;gradientColor=light-dark(#000000,#FFFF00);" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Configure Services&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="43" width="209" x="335" y="499" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-42" edge="1" parent="1" source="L1P-uYteUQBk6CWacdvG-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="438.28571428571445" y="488.4285888671875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;gradientColor=light-dark(#000000,#FFFF00);" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Install Packages&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="43" width="209" x="334" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-41" edge="1" parent="1" source="L1P-uYteUQBk6CWacdvG-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440.1428571428571" y="399.7142857142858" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFCD28,#FF9933);gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Execute Script&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="43" width="209" x="335" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Metadata Server&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;(&lt;/b&gt;&lt;/font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Startup-Script&lt;/font&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="209" x="334" y="217" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-45" edge="1" parent="1" source="L1P-uYteUQBk6CWacdvG-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439.28571428571433" y="205.5428466796875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;VM Created&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="43" width="209" x="335" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-47" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="438.50428571428563" y="277" as="sourcePoint" />
+            <mxPoint x="437.78999999999996" y="311.5428466796875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-49" edge="1" parent="1" source="L1P-uYteUQBk6CWacdvG-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="646" />
+            </Array>
+            <mxPoint x="438.8571428571429" y="663.4285888671875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;gradientColor=light-dark(#000000,#00CC00);" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Deploy Application&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="43" width="209" x="335" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;gradientColor=light-dark(#000000,#009900);" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Instance Ready &lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="43" width="209" x="334" y="671" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="373" width="228" x="54" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;font&gt;Recognition Pattern&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="181" x="77.5" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;gradientColor=light-dark(#000000,#FFFF00);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Automatic Configuration&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="176" x="77.5" y="423.5" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;VM Creation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="176" x="77.5" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Metadata Server&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="176" x="77.5" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Startup Script&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="176" x="77.5" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;gradientColor=light-dark(#000000,#009900);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Application Ready&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="176" x="80" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-61" edge="1" parent="1" source="L1P-uYteUQBk6CWacdvG-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0.673;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;" target="L1P-uYteUQBk6CWacdvG-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-62" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0.673;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="166" y="268" as="sourcePoint" />
+            <mxPoint x="165" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-63" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0.673;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="166" y="332" as="sourcePoint" />
+            <mxPoint x="165" y="354" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-64" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0.673;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="166" y="457.5" as="sourcePoint" />
+            <mxPoint x="165" y="479.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Startup Script Tasks&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Update OS packages&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Install Apache/Nginx&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Install Docker&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Download application code&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Configure firewall&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Start system services&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Register monitoring agent&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;• Join cluster&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="216" width="218" x="583" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P-uYteUQBk6CWacdvG-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;ACE Topics&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;✓ Compute Engine&lt;br&gt;✓ Metadata Server&lt;br&gt;✓ Startup Scripts&lt;br&gt;✓ VM Automation&lt;br&gt;✓ Infrastructure as Code&lt;br&gt;✓ Instance Templates&lt;br&gt;✓ Managed Instance Group&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;s&lt;/font&gt;" vertex="1">
+          <mxGeometry height="181.5" width="218" x="583" y="434" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
