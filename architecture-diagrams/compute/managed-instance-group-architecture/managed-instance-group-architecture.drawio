@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="vLNlmg4K7G6VpgPqFsQm">
+    <mxGraphModel dx="1032" dy="662" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fqULNQndcP9LjWu_ykC9-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 23px;&quot;&gt;Managed Instance Group Architecture&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="440" x="204.5" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Managed Instance Group&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="29" width="233" x="289.5" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-9" edge="1" parent="1" source="fqULNQndcP9LjWu_ykC9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="408.5" y="209" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Instance Template&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="29" width="233" x="292" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;VM Instance #1&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="233" x="39" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;VM Instance #2&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="233" x="292" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;VM Instance #3&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="29" width="233" x="545" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="154" y="296" as="sourcePoint" />
+            <mxPoint x="664" y="296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="296" as="sourcePoint" />
+            <mxPoint x="154.79000000000002" y="340.71430315290183" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="413" y="297" as="sourcePoint" />
+            <mxPoint x="413" y="340.71430315290183" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="663" y="295" as="sourcePoint" />
+            <mxPoint x="664" y="344.0043031529018" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="408.31" y="295" as="sourcePoint" />
+            <mxPoint x="408.31" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fqULNQndcP9LjWu_ykC9-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; Managed Instance Group Features&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • Autoscaling&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • Self-healing&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; • Rolling updates" vertex="1">
+          <mxGeometry height="123" width="230" x="570" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="y7CV-BJbs25OgAhqtHXy-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Google Cloud Compute Engine&amp;nbsp; |&amp;nbsp;&amp;nbsp;Managed Instance Groups (MIG)&amp;nbsp; |&amp;nbsp; Associate Cloud Engineer&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40.23" width="630" x="110" y="412" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
