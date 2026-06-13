@@ -1,5 +1,17 @@
 # Architecture Diagrams
 
+| Category       | Diagrams |
+| -------------- | -------- |
+| Compute        | 6        |
+| Storage        | 2        |
+| Data Pipelines | 3        |
+| Data Solutions | 7        |
+| IAM            | 5        |
+| Networking     | 4        |
+| GKE            | 6        |
+| Monitoring     | 3        |
+
+
 ## Compute
 - Compute Resource Selection Architecture
 - GKE vs Cloud Run
