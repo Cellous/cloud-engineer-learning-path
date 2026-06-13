@@ -185,7 +185,16 @@ compute-services-decision-tree.png
 compute-services-decision-tree.svg
 README.md
 ```
+---
 
+## Related Diagrams
+
+- Compute Engine Autoscaling Workflow
+- Managed Instance Group Scale-Out Workflow
+- Instance Template Architecture
+- Snapshot Restore Workflow
+- Google Cloud Service Continuum
+- Compute Services Decision Tree
 ---
 
 ## Portfolio Note
