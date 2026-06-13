@@ -38,7 +38,59 @@ Engine          │
           ▼
       Cloud Run
 ```
+Absolutely. I strongly recommend including a PNG preview in every architecture diagram README.
 
+When recruiters or GitHub visitors browse your repository, they are much more likely to engage with a visual than open a separate image file.
+
+Recommended README structure
+# Google Cloud Service Continuum
+
+## Overview
+
+This diagram illustrates the progression from Infrastructure as a Service (IaaS) to Software as a Service (SaaS), demonstrating how increasing abstraction shifts operational responsibility from the customer to Google Cloud.
+
+---
+
+## Diagram Preview
+
+![Google Cloud Service Continuum](google-cloud-service-continuum.png)
+
+---
+
+## Key Concepts
+
+- Increasing Google-managed infrastructure
+- Increasing developer productivity
+- Reduced operational overhead
+- Infrastructure abstraction
+- Compute service selection
+
+...
+For your Compute Services Decision Tree
+# Compute Services Decision Tree
+
+## Overview
+
+This decision tree provides a framework for selecting the appropriate Google Cloud compute service based on workload requirements and operational preferences.
+
+---
+
+## Diagram Preview
+
+![Compute Services Decision Tree](compute-services-decision-tree.png)
+
+---
+
+## Decision Logic
+
+Need Compute?
+
+- Need OS control → Compute Engine
+- Need Kubernetes → GKE
+- Need managed containers → Cloud Run
+- Need event-driven execution → Cloud Run Functions
+
+...
 ---
 
 ## Service Selection Guide
