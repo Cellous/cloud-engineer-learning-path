@@ -13,6 +13,22 @@ As abstraction increases, Google assumes more operational responsibility, allowi
 
 ---
 
+## Diagram Preview
+
+![Google Cloud Service Continuum](google-cloud-service-continuum.png)
+
+---
+
+## Key Concepts
+
+- Increasing Google-managed infrastructure
+- Increasing developer productivity
+- Reduced operational overhead
+- Infrastructure abstraction
+- Compute service selection
+
+...
+
 ## Service Continuum
 
 ```
@@ -92,7 +108,16 @@ google-cloud-service-continuum.png
 google-cloud-service-continuum.svg
 README.md
 ```
+---
 
+## Related Diagrams
+
+- Compute Engine Autoscaling Workflow
+- Managed Instance Group Scale-Out Workflow
+- Instance Template Architecture
+- Snapshot Restore Workflow
+- Google Cloud Service Continuum
+- Compute Services Decision Tree
 ---
 
 ## Portfolio Note
