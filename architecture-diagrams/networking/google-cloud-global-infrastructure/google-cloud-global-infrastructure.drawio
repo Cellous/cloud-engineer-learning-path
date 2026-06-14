@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="A1MS65WACfDnEU0CH2p2">
+    <mxGraphModel dx="1220" dy="782" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;Google Cloud Global Infrastructure&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="762" x="45" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="592" y="251" as="sourcePoint" />
+            <mxPoint x="592" y="219" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="592" y="337" as="sourcePoint" />
+            <mxPoint x="592" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590.5" y="425" as="sourcePoint" />
+            <mxPoint x="590.5" y="393" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-10" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590.23" y="507" as="sourcePoint" />
+            <mxPoint x="590.23" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#660000);gradientColor=light-dark(#000000,#FF0000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Zone A&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="36" width="182" x="132" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#660000);gradientColor=light-dark(#000000,#FF0000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Zone B&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="36" width="182" x="375" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#660000);gradientColor=light-dark(#000000,#FF0000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Zone C&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="36" width="182" x="614" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="222.69" y="563" as="sourcePoint" />
+            <mxPoint x="222.69" y="531" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="465.69" y="564" as="sourcePoint" />
+            <mxPoint x="465.69" y="532" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-16" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="704.69" y="566" as="sourcePoint" />
+            <mxPoint x="704.69" y="534" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-17" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="215" y="522" as="sourcePoint" />
+            <mxPoint x="708" y="522" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="&lt;p data-start=&quot;907&quot; data-end=&quot;934&quot;&gt;&lt;b&gt;&lt;span data-start=&quot;907&quot; data-end=&quot;934&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;ACE Recognition Pattern&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;✓ Users connect to the nearest Edge PoP&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;✓ Traffic traverses Google&#39;s private global network&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;✓ Regions contain multiple zones&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;✓ Zones provide fault tolerance&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;✓ Applications can span zones for high availability&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="344" x="45" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;p data-start=&quot;1264&quot; data-end=&quot;1298&quot; align=&quot;center&quot;&gt;&lt;strong data-start=&quot;1264&quot; data-end=&quot;1298&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Global Infrastructure Features&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;div align=&quot;left&quot;&gt;&lt;div&gt;&lt;ul data-start=&quot;1300&quot; data-end=&quot;1430&quot;&gt;&lt;li data-start=&quot;1300&quot; data-end=&quot;1321&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Low latency routing&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li data-start=&quot;1322&quot; data-end=&quot;1346&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Private fiber backbone&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li data-start=&quot;1347&quot; data-end=&quot;1365&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Multiple regions&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li data-start=&quot;1366&quot; data-end=&quot;1389&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Multi-zone redundancy&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li data-start=&quot;1390&quot; data-end=&quot;1409&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;High availability&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li data-start=&quot;1410&quot; data-end=&quot;1430&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Global scalability&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="146" width="233" x="100.5" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#7F00FF);fillColor=light-dark(#FFFFFF,#330066);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Google Private Global Fiber Network&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="368" x="414" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#000066);gradientColor=light-dark(#000000,#0000FF);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Edge Point of Presence (PoP)&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="368" x="415.5" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#663300);gradientColor=light-dark(#000000,#FF8000);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Google Cloud Region&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="368" x="414" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#006600);gradientColor=light-dark(#000000,#00FF00);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Users&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="368" x="415.5" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-24" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=4;strokeColor=light-dark(#000000,#666666);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="715" as="sourcePoint" />
+            <mxPoint x="50" y="648" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8XMgaBBbLGXFm_0eq8-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp; User requests enter Google&#39;s nearest Edge Point of Presence, traverse Google&#39;s private global fiber backbone, arrive at the selected region, and are served by resources running across multiple zones for high availability and resilience.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="63" width="726" x="74" y="649" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
