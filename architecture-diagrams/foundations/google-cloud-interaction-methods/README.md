@@ -70,10 +70,10 @@ After studying this diagram, learners should be able to:
 
 ## Files
 
-google-cloud-interaction-methods.drawio
-google-cloud-interaction-methods.svg
-google-cloud-interaction-methods.png
-README.md
+- `google-cloud-interaction-methods.drawio`
+- `google-cloud-interaction-methods.svg`
+- `google-cloud-interaction-methods.png`
+- `README.md`
 ---
 
 ### Related Diagrams
