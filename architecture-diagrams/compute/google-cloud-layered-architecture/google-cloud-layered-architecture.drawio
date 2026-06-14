@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="g2g7xa3_SHdX8vsuLP6J">
+    <mxGraphModel dx="1118" dy="717" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;Google Cloud Layered Architecture&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="697" x="91" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-12" edge="1" parent="1" source="SoF-ZgAtm8QvCgqA0AWT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="631" y="466.319970703125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#7F00FF);fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#6600CC);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Software Defined Network&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="278" x="492" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-10" edge="1" parent="1" source="SoF-ZgAtm8QvCgqA0AWT-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="631" y="277.67998046875005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#00FF00);fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#00FF00);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;span&gt;&lt;b&gt;Applications&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;span&gt;(Business Apps • APIs • Mobile)&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="62" width="278" x="492" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-11" edge="1" parent="1" source="SoF-ZgAtm8QvCgqA0AWT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="631" y="382.79997558593755" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#0000FF);fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#0000CC);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;span&gt;&lt;b&gt;Cloud Services&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;span&gt;(Compute • Storage • AI • Databases)&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="278" x="492" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-13" edge="1" parent="1" source="SoF-ZgAtm8QvCgqA0AWT-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="631" y="572.87998046875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#FF8000);fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FF8000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;span&gt;&lt;b&gt;Global Infrastructure&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;span&gt;(Regions • Zones • Data Centers)&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="278" x="492" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#FF0000);fillColor=light-dark(#FFFFFF,#000000);strokeColor=light-dark(#000000,#FF0000);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Global Private Fiber Network&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="278" x="492" y="579" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=4;strokeColor=light-dark(#000000,#4D4D4D);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="109" y="182" as="sourcePoint" />
+            <mxPoint x="108" y="131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp; Each layer abstracts the complexity of the layer below, enabling developers to focus on delivering applications rather than managing infrastructure.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="41" width="629" x="119" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;p data-start=&quot;1572&quot; data-end=&quot;1599&quot;&gt;&lt;strong data-start=&quot;1572&quot; data-end=&quot;1599&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;ACE Recognition Pattern&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;div align=&quot;left&quot;&gt;✓ Applications consume cloud services&lt;br&gt;✓ Cloud services run on software-defined networking&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;✓ SDN operates on Google&#39;s global infrastructure&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;✓ Global infrastructure is connected by Google&#39;s private fiber network&lt;br&gt;✓ Google abstracts hardware complexity from customers&lt;/div&gt;" vertex="1">
+          <mxGeometry height="142" width="405" x="46" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=4;strokeColor=light-dark(#000000,#4D4D4D);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="722" as="sourcePoint" />
+            <mxPoint x="130" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoF-ZgAtm8QvCgqA0AWT-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp; Higher layers depend on lower layers, while Google Cloud abstracts infrastructure complexity to simplify application development and operations.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="602" x="138.5" y="668" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
