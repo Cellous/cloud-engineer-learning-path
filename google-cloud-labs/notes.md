@@ -5,7 +5,7 @@ Learn to navigate the Google Cloud Console and create Cloud Storage resources us
 
 ### Task 1 - Create a Cloud Storage Bucket
 
-Completed successfully.
+🏆Completed successfully.
 
 Key concepts:
 - Buckets are globally unique.
