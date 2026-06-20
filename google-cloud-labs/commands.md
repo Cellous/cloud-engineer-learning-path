@@ -1,3 +1,7 @@
+# Create a Cloud Storage bucket from Cloud Shell
+
+gcloud storage buckets create gs://marcellous-searcy-lab01-cli-6142026
+
 # Cloud Shell started automatically
 
 # Prompt example
