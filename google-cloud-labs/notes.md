@@ -1,3 +1,15 @@
+## Storage Bucket
+
+A bucket is a logical container for objects stored in Google Cloud Storage.
+
+Characteristics:
+- Globally unique name
+- Stores objects (files)
+- Highly durable
+- Scalable
+- Used for backups, static websites, logs, media, and datasets
+
+---
 
 If someone asks:
 
