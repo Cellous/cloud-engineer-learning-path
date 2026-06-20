@@ -1,5 +1,8 @@
 ## Lab Progress
 
+## Objective
+Learn to navigate the Google Cloud Console and create Cloud Storage resources using the web interface.
+
 ### Task 1 - Create a Cloud Storage Bucket
 
 Completed successfully.
@@ -22,8 +25,16 @@ Characteristics:
 - Used for backups, static websites, logs, media, and datasets
 
 ---
-## Objective
-Learn to navigate the Google Cloud Console and create Cloud Storage resources using the web interface.
+## Cloud Shell
+
+Cloud Shell is a browser-based Linux terminal provided by Google Cloud.
+
+Features:
+- 5 GB persistent home directory storage
+- Temporary Compute Engine VM
+- Preinstalled Google Cloud SDK
+- Built-in authentication to the active project
+- Accessible from any browser
 
 ---
 ## Steps Performed
