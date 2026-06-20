@@ -1,3 +1,15 @@
+## Lab Progress
+
+### Task 1 - Create a Cloud Storage Bucket
+
+Completed successfully.
+
+Key concepts:
+- Buckets are globally unique.
+- Buckets store objects rather than files in a traditional filesystem.
+- Public access is blocked by default.
+- Resources are created within the active Google Cloud project.
+
 ## Storage Bucket
 
 A bucket is a logical container for objects stored in Google Cloud Storage.
@@ -10,7 +22,18 @@ Characteristics:
 - Used for backups, static websites, logs, media, and datasets
 
 ---
+## Objective
+Learn to navigate the Google Cloud Console and create Cloud Storage resources using the web interface.
 
+---
+## Steps Performed
+- Logged into the temporary Google Cloud lab environment
+- Navigated to Cloud Storage → Buckets
+- Created a globally unique Cloud Storage bucket
+- Used default security settings
+- Verified successful creation through the lab assessment
+
+---
 If someone asks:
 
 "What is a Cloud Storage bucket?"
