@@ -1,3 +1,12 @@
+Lab01-CloudShell.md
+
+1. Objective
+2. Skills Learned
+3. Screenshots
+4. Commands Used
+5. Challenges and Troubleshooting
+6. Lessons Learned
+
 # Skills Demonstrated
 
 - Created Cloud Storage bucket using Google Cloud Console
