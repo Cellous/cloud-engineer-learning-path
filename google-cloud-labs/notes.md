@@ -45,6 +45,12 @@ Features:
 - Verified successful creation through the lab assessment
 
 ---
+
+HTTP Error 409: Your previous request to create the named bucket succeeded and you already own it.
+
+That means the bucket was successfully created the first time.
+
+---
 If someone asks:
 
 "What is a Cloud Storage bucket?"
