@@ -26,84 +26,132 @@ This lab demonstrates the use of Google Cloud Storage and Cloud Shell within Goo
 ## Lab Workflow
 ### Step 1 – Create a Cloud Storage Bucket
 
-A new Cloud Storage bucket was created through the Google Cloud Console.
+A new Google Cloud Storage bucket was created using the Google Cloud Console. The bucket was configured with a multi-region location and Standard storage class.
 
-Figure 1. Creating a Google Cloud Storage bucket using the Google Cloud Console.
+![Create Bucket](screenshots/01-create-bucket.png)
+
+*Figure 1. Creating a Google Cloud Storage bucket using the Google Cloud Console.*
+
 ---
 
 ### Step 2 – Verify Bucket Creation
 
-After creation, the bucket details page confirmed that the bucket was successfully provisioned.
+The Bucket Details page was used to verify that the bucket was successfully created.
 
-Figure 2. Verifying successful bucket creation.
+![Bucket Created](screenshots/02-bucket-created.png)
+
+*Figure 2. Verifying successful Cloud Storage bucket creation.*
+
 ---
 
 ### Step 3 – Open Cloud Shell
 
 Cloud Shell was launched from the Google Cloud Console to perform command-line operations.
 
-Figure 3. Cloud Shell terminal connected to the active Google Cloud project.
+![Cloud Shell](screenshots/03-cloud-shell-terminal.png)
+
+*Figure 3. Activating Cloud Shell and connecting to the active Google Cloud project.*
+
 ---
 
 ### Step 4 – Upload a File to Cloud Shell
 
-A text file named `hello-cloud-shell.txt` was uploaded from the local workstation into the Cloud Shell environment.
+A local text file named `hello-cloud-shell.txt` was uploaded into the Cloud Shell environment.
 
-Figure 4. Uploading a file from the local computer into Cloud Shell.
+![Upload File](screenshots/04-upload-file-to-cloud-shell.png)
+
+*Figure 4. Uploading a local file into Cloud Shell.*
+
 ---
 
-### Step 5 – Verify File Upload
+### Step 5 – Verify Uploaded Files
 
-The uploaded file was verified using the Linux ls command.
-bash`
+The uploaded file was verified using the Linux `ls` command.
+
+```bash
 ls
-`
-Figure 5. Verifying that hello-cloud-shell.txt exists in the Cloud Shell home directory.
+```
+
+Expected output:
+
+```text
+hello-cloud-shell.txt
+README-cloudshell.txt
+```
+
+![List Files](screenshots/06-list-files.png)
+
+*Figure 5. Listing files in Cloud Shell and verifying the uploaded file.*
+
 ---
 
 ### Step 6 – Copy File to Cloud Storage
 
-The file was copied from Cloud Shell into the Cloud Storage bucket using the `gcloud storage cp` command.
-bash`
-gcloud storage cp hello-cloud-shell.txt gs://BUCKET_NAME
-`
+The uploaded file was copied from Cloud Shell to the Cloud Storage bucket.
 
-Figure 6. Uploading a file from Cloud Shell into Google Cloud Storage.
+```bash
+gcloud storage cp hello-cloud-shell.txt gs://marcellous-searcy-lab01-6192026
+```
+
+![Copy File](screenshots/07-copy-file-to-bucket.png)
+
+*Figure 6. Copying a file from Cloud Shell to Google Cloud Storage.*
+
 ---
 
-### Step 7 – Create a Bucket Using Cloud Shell
+### Step 7 – Create a Second Bucket Using Cloud Shell
 
-A second bucket was created directly from Cloud Shell to demonstrate command-line resource creation.
-bash`
-gcloud storage buckets create gs://BUCKET_NAME
-`
+A second Cloud Storage bucket was created using the Google Cloud CLI.
 
-Figure 7. Creating a Cloud Storage bucket from Cloud Shell.
+```bash
+gcloud storage buckets create gs://marcellous-searcy-lab01-6192026-2
+```
+
+![Second Bucket](screenshots/08-second-bucket-from-cloud-shell.png)
+
+*Figure 7. Creating a Cloud Storage bucket from Cloud Shell.*
+
+---
+
+### Step 8 – Verify Multiple Buckets
+
+The Cloud Storage Browser was used to verify that both buckets were successfully created.
+
+```bash
+gcloud storage buckets list
+```
+
+![Bucket List](screenshots/09-bucket-list.png)
+
+*Figure 8. Viewing Cloud Storage buckets created through both the Google Cloud Console and Cloud Shell.*
+
+---
 
 ## Key Commands
 Create Bucket
-bash`
+```bash
 gcloud storage buckets create gs://BUCKET_NAME
-`
+```
 
 List Files
-bash`
-ls`
+```bash
+ls
+```
 
 Upload File to Cloud Storage
-bash`
+```bash
 gcloud storage cp hello-cloud-shell.txt gs://BUCKET_NAME
-`
+```
 
 List Available Compute Regions
-bash`
+```bash
 gcloud compute regions list
-`
+```
 
 Display Environment Variable
-bash`
+```bash
 echo $INFRACLASS_REGION
-`
+```
 
 ## Learning Outcomes
 
@@ -135,9 +183,11 @@ google-cloud-labs/
 ├── commands.md
 └── notes.md
 ```
-Author
+## Author
 
-Marcellous Searcy
-Bachelor of Computer Information Systems / Software Engineering
-Google Cloud Associate Cloud Engineer Learning Path
+**Marcellous Searcy**
+
+Bachelor of Computer Information Systems / Software Engineering  
+Google Cloud Associate Cloud Engineer Candidate  
+Cloud Infrastructure • Networking • Automation • DevOps
 GitHub Repository: `cloud-engineer-learning-path`
