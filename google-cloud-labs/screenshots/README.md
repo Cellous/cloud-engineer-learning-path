@@ -30,24 +30,28 @@ A new Cloud Storage bucket was created through the Google Cloud Console.
 
 Figure 1. Creating a Google Cloud Storage bucket using the Google Cloud Console.
 ---
+
 ### Step 2 – Verify Bucket Creation
 
 After creation, the bucket details page confirmed that the bucket was successfully provisioned.
 
 Figure 2. Verifying successful bucket creation.
 ---
+
 ### Step 3 – Open Cloud Shell
 
 Cloud Shell was launched from the Google Cloud Console to perform command-line operations.
 
 Figure 3. Cloud Shell terminal connected to the active Google Cloud project.
 ---
+
 ### Step 4 – Upload a File to Cloud Shell
 
 A text file named `hello-cloud-shell.txt` was uploaded from the local workstation into the Cloud Shell environment.
 
 Figure 4. Uploading a file from the local computer into Cloud Shell.
 ---
+
 ### Step 5 – Verify File Upload
 
 The uploaded file was verified using the Linux ls command.
@@ -56,26 +60,31 @@ ls
 `
 Figure 5. Verifying that hello-cloud-shell.txt exists in the Cloud Shell home directory.
 ---
+
 ### Step 6 – Copy File to Cloud Storage
 
 The file was copied from Cloud Shell into the Cloud Storage bucket using the `gcloud storage cp` command.
 bash`
-gcloud storage cp hello-cloud-shell.txt gs://BUCKET_NAME`
+gcloud storage cp hello-cloud-shell.txt gs://BUCKET_NAME
+`
 
 Figure 6. Uploading a file from Cloud Shell into Google Cloud Storage.
 ---
+
 ### Step 7 – Create a Bucket Using Cloud Shell
 
 A second bucket was created directly from Cloud Shell to demonstrate command-line resource creation.
 bash`
-gcloud storage buckets create gs://BUCKET_NAME`
+gcloud storage buckets create gs://BUCKET_NAME
+`
 
 Figure 7. Creating a Cloud Storage bucket from Cloud Shell.
 
 ## Key Commands
 Create Bucket
 bash`
-gcloud storage buckets create gs://BUCKET_NAME`
+gcloud storage buckets create gs://BUCKET_NAME
+`
 
 List Files
 bash`
@@ -83,15 +92,18 @@ ls`
 
 Upload File to Cloud Storage
 bash`
-gcloud storage cp hello-cloud-shell.txt gs://BUCKET_NAME`
+gcloud storage cp hello-cloud-shell.txt gs://BUCKET_NAME
+`
 
 List Available Compute Regions
 bash`
-gcloud compute regions list`
+gcloud compute regions list
+`
 
 Display Environment Variable
 bash`
-echo $INFRACLASS_REGION`
+echo $INFRACLASS_REGION
+`
 
 ## Learning Outcomes
 
