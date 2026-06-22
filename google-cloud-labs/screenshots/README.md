@@ -28,7 +28,7 @@ This lab demonstrates the use of Google Cloud Storage and Cloud Shell within Goo
 
 A new Google Cloud Storage bucket was created using the Google Cloud Console. The bucket was configured with a multi-region location and Standard storage class.
 
-![Create Bucket](screenshots/01-create-bucket.png)
+![Create Bucket](01-create-bucket.png)
 
 *Figure 1. Creating a Google Cloud Storage bucket using the Google Cloud Console.*
 
@@ -38,7 +38,7 @@ A new Google Cloud Storage bucket was created using the Google Cloud Console. Th
 
 The Bucket Details page was used to verify that the bucket was successfully created.
 
-![Bucket Created](screenshots/02-bucket-created.png)
+![Bucket Created](02-bucket-created.png)
 
 *Figure 2. Verifying successful Cloud Storage bucket creation.*
 
@@ -48,7 +48,7 @@ The Bucket Details page was used to verify that the bucket was successfully crea
 
 Cloud Shell was launched from the Google Cloud Console to perform command-line operations.
 
-![Cloud Shell](screenshots/03-cloud-shell-terminal.png)
+![Cloud Shell](03-cloud-shell-terminal.png)
 
 *Figure 3. Activating Cloud Shell and connecting to the active Google Cloud project.*
 
@@ -58,7 +58,7 @@ Cloud Shell was launched from the Google Cloud Console to perform command-line o
 
 A local text file named `hello-cloud-shell.txt` was uploaded into the Cloud Shell environment.
 
-![Upload File](screenshots/04-upload-file-to-cloud-shell.png)
+![Upload File](04-upload-file-to-cloud-shell.png)
 
 *Figure 4. Uploading a local file into Cloud Shell.*
 
@@ -79,7 +79,7 @@ hello-cloud-shell.txt
 README-cloudshell.txt
 ```
 
-![List Files](screenshots/06-list-files.png)
+![List Files](06-list-files.png)
 
 *Figure 5. Listing files in Cloud Shell and verifying the uploaded file.*
 
@@ -93,7 +93,7 @@ The uploaded file was copied from Cloud Shell to the Cloud Storage bucket.
 gcloud storage cp hello-cloud-shell.txt gs://marcellous-searcy-lab01-6192026
 ```
 
-![Copy File](screenshots/07-copy-file-to-bucket.png)
+![Copy File](07-copy-file-to-bucket.png)
 
 *Figure 6. Copying a file from Cloud Shell to Google Cloud Storage.*
 
@@ -107,7 +107,7 @@ A second Cloud Storage bucket was created using the Google Cloud CLI.
 gcloud storage buckets create gs://marcellous-searcy-lab01-6192026-2
 ```
 
-![Second Bucket](screenshots/08-second-bucket-from-cloud-shell.png)
+![Second Bucket](08-second-bucket-from-cloud-shell.png)
 
 *Figure 7. Creating a Cloud Storage bucket from Cloud Shell.*
 
@@ -121,7 +121,7 @@ The Cloud Storage Browser was used to verify that both buckets were successfully
 gcloud storage buckets list
 ```
 
-![Bucket List](screenshots/09-bucket-list.png)
+![Bucket List](09-bucket-list.png)
 
 *Figure 8. Viewing Cloud Storage buckets created through both the Google Cloud Console and Cloud Shell.*
 
