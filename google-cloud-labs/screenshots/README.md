@@ -121,7 +121,7 @@ The Cloud Storage Browser was used to verify that both buckets were successfully
 gcloud storage buckets list
 ```
 
-![Bucket List](09-bucket-list.png)
+![Bucket List](08-second-bucket-from-cloud-shell.png)
 
 *Figure 8. Viewing Cloud Storage buckets created through both the Google Cloud Console and Cloud Shell.*
 
