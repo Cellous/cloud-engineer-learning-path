@@ -117,7 +117,7 @@ By completing this lab I learned how to:
 - Understand how Cloud Shell can automate administrative tasks.
 
 ## Repository Structure
-`
+```text
 google-cloud-labs/
 │
 ├── screenshots/
@@ -134,7 +134,7 @@ google-cloud-labs/
 ├── Lab02-Storage.md
 ├── commands.md
 └── notes.md
-`
+```
 Author
 
 Marcellous Searcy
