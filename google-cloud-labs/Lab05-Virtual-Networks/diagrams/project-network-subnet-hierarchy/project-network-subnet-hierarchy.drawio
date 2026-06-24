@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="QhYutpzvxWUPD1IPSceH">
+    <mxGraphModel dx="2129" dy="1229" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#FBBC05);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;VM&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;(web-server-01)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="57" width="204" x="358" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-10" edge="1" parent="1" source="P0j4nBRwaFd8FbshdgL0-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="459" y="189.10000610351562" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#5F6368);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Project&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;(my-training-project)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="63" width="204" x="357" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#4285F4);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Network (Global)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;(default)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="61" width="204" x="357" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-12" edge="1" parent="1" source="P0j4nBRwaFd8FbshdgL0-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="461" y="378.20001220703125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#34A853);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Subnet (Regional)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;(us-east1)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="58" width="204" x="359" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Internal&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;10.10.0.2&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="63" width="204" x="212" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;External IP&amp;nbsp;&lt;/b&gt;(Optional)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;34.x.x.x&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="204" x="514" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-15" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="296" width="50" x="438" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp; Legend&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Gray&amp;nbsp; &amp;nbsp;=&amp;nbsp; Resource Organization&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Blue&amp;nbsp; &amp;nbsp;=&amp;nbsp; Global Network&lt;br&gt;&amp;nbsp; &amp;nbsp; Green&amp;nbsp; =&amp;nbsp; Regional Network Segment&lt;br&gt;&amp;nbsp; &amp;nbsp;Orange =&amp;nbsp; Compute Resource&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Purple =&amp;nbsp; Connectivity&lt;/div&gt;" vertex="1">
+          <mxGeometry height="131" width="230" x="89" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; Key Concept:&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;u&gt;Projects contain VPC Networks.&lt;br&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp;&lt;u&gt;VPC Networks contain Subnets.&lt;br&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp;&lt;u&gt;Subnets contain VM IP addresses.&lt;br&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp;&lt;u&gt;VPC Networks are global.&lt;br&gt;&lt;/u&gt;&amp;nbsp; &amp;nbsp;&lt;u&gt;Subnets are regional.&lt;/u&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="141" width="253" x="333.5" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="P0j4nBRwaFd8FbshdgL0-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;&lt;b&gt;&lt;font&gt;Project Network Subnet Hierarchy&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="53" width="537" x="157" y="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
