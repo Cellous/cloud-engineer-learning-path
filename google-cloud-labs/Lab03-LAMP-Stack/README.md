@@ -53,7 +53,7 @@ Deployment parameters including machine type, networking, and firewall settings 
 
 The deployment process created a Compute Engine virtual machine and installed the required software stack.
 
-![VM Running](screenshots/vm-instances-page-showing-lamp-1-vm-running.png)
+![VM Running](screenshots/vm-Instances-page-showing-lamp-1-vm-running.png)
 
 *Figure 4. Compute Engine instance successfully deployed and running.*
 
