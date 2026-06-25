@@ -2,10 +2,19 @@
 
 ## Objective
 
-Learn how to expand a custom VPC subnet without interrupting running workloads.
+Learn how to expand a custom VPC subnet without interrupting running virtual machines.
 
 ---
 
+## Diagram
+
+diagrams/subnet-expansion-no-downtime/
+├── subnet-expansion-no-downtime.drawio
+├── subnet-expansion-no-downtime.png
+└── subnet-expansion-no-downtime.svg
+
+Figure 1 – Subnet Expansion Without Downtime
+---
 ## Why Expand a Subnet?
 
 A subnet can run out of available IP addresses as additional VM instances are created.
@@ -110,3 +119,20 @@ VM3 ✔
 VM4 ✔
 VM5 ✔ (after subnet expansion)
 ```
+
+## 
+
+---
+## Diagram Information
+
+Author: Marcellous Searcy
+
+Tool: diagrams.net (draw.io)
+
+Files:
+- subnet-expansion-no-downtime.drawio
+- subnet-expansion-no-downtime.svg
+- subnet-expansion-no-downtime.png
+
+Purpose:
+Illustrates live subnet expansion in a Custom VPC without interrupting running VM instances.
