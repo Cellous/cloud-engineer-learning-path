@@ -7,31 +7,50 @@ Learn how to expand a custom VPC subnet without interrupting running virtual mac
 ---
 
 ## Diagram
-
+```text
 diagrams/subnet-expansion-no-downtime/
 ├── subnet-expansion-no-downtime.drawio
 ├── subnet-expansion-no-downtime.png
 └── subnet-expansion-no-downtime.svg
-
+```
 Figure 1 – Subnet Expansion Without Downtime
+
 ---
+
 ## Why Expand a Subnet?
 
-A subnet can run out of available IP addresses as additional VM instances are created.
+As more VM instances are created, a subnet may eventually exhaust its available IP addresses.
 
-Google Cloud allows subnet expansion without shutting down virtual machines.
+Google Cloud allows administrators to expand a subnet's CIDR range without shutting down running workloads.
 
 ---
 
-## Demo Summary
+## Initial Configuration
 
-### Initial Configuration
+| Setting       | Value         |
+| ------------- | ------------- |
+| Network Type  | Custom VPC    |
+| Original CIDR | `10.0.0.0/29` |
+| Running VMs   | 4             |
+| Available IPs | Exhausted     |
 
-- Custom VPC subnet
-- CIDR: `10.0.0.0/29`
-- Four VM instances running
+A `/29` subnet contains 8 total IP addresses.
 
-Attempting to create a fifth VM fails because no IP addresses remain.
+Google Cloud reserves 4 addresses, leaving only 4 usable IP addresses for VM instances.
+---
+
+## Demonstration
+
+The instructor attempted to create a fifth VM.
+
+Result:
+```
+VM5
+    ↓
+IP space exhausted
+```
+-Attempting to create a fifth VM fails because no IP addresses remain. 
+-In other words, the deployment failed because every usable IP address had already been assigned.
 
 Error:
 
@@ -41,7 +60,7 @@ IP space exhausted
 
 ---
 
-## Subnet Expansion
+## Expanding the Subnet
 
 The subnet is edited from:
 
@@ -57,42 +76,81 @@ to
 
 The change completes while all existing VM instances remain online.
 
+During the expansion:
+
+- VM1 remained online
+- VM2 remained online
+- VM3 remained online
+- VM4 remained online
+
+No VM restart occurred.
+
+No downtime occurred.
+
 ---
 
 ## Result
 
 After the subnet expansion:
 
-- Existing VMs continue running
-- No downtime occurs
-- New VM deployment succeeds
-- Additional IP addresses become available
+- Existing workloads continued running.
+- The subnet immediately had additional IP addresses.
+- VM5 was successfully created using the newly available address space.
 
 ---
 
 # Key Concepts
 
 - Google Cloud supports live subnet expansion.
-- Existing workloads continue running.
+- Existing VM instances remain online during expansion.
 - Expanding a subnet does not require VM restarts.
-- Expanded IP ranges cannot overlap other subnet ranges.
-- Subnet expansion cannot be reversed.
+- Expanded CIDR ranges must not overlap other subnet ranges within the VPC.
+- CIDR expansion is one-way. In that, Subnet expansion cannot be reversed.
+- The new subnet range must be larger than the original range.
 
 ---
 
 # ACE Exam Notes
 
-✔ Expand subnet without downtime
+✔ Custom VPC networks allow subnet expansion.
 
-✔ Existing VM instances remain online
+✔ Existing workloads remain online.
 
-✔ Custom mode provides full subnet control
+✔ No VM downtime is required.
 
-✔ New subnet range must not overlap existing ranges
+✔ New subnet ranges cannot overlap existing subnet ranges.
 
-✔ Subnet expansion is one-way
+✔ CIDR expansion cannot be reversed.
+
+✔ Larger subnet = More available VM IP addresses.
 
 ---
+# Diagram Walkthrough
+```
+Custom Subnet
+      │
+10.0.0.0/29
+      │
+ ├── VM1
+ ├── VM2
+ ├── VM3
+ └── VM4
+
+Attempt VM5
+      │
+      ▼
+IP Exhausted
+      │
+Expand Subnet
+      │
+10.0.0.0/23
+      │
+ ├── VM1
+ ├── VM2
+ ├── VM3
+ ├── VM4
+ └── VM5 ✓
+```
 
 # Example
 
@@ -120,9 +178,14 @@ VM4 ✔
 VM5 ✔ (after subnet expansion)
 ```
 
-## 
+## Takeaway
+
+> **Key Point**
+>
+> Google Cloud supports **live subnet expansion**, allowing administrators to increase available IP addresses **without restarting existing VM instances or causing downtime**. After the expansion completes, new VM deployments can immediately use the additional IP address space.
 
 ---
+
 ## Diagram Information
 
 Author: Marcellous Searcy
