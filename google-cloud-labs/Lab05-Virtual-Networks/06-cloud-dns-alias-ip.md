@@ -1,10 +1,26 @@
 # Cloud DNS and Alias IP Ranges
 
+## Objective
+
+Understand the difference between Cloud DNS and Alias IP ranges in Google Cloud networking.
+
+Cloud DNS provides managed DNS name resolution.
+
+Alias IP ranges allow a VM network interface to use additional internal IP ranges for workloads such as containers, applications, and GKE Pods.
+
+---
+
+## Diagram
+
+![Alias IP Range](diagrams/cloud-dns-alias-ip/alias-ip-range.png)
+
+---
+
 ## Cloud DNS
 
-Cloud DNS is Google's managed authoritative DNS service.
+Cloud DNS is Google Cloud's managed DNS service.
 
-It translates domain names into IP addresses.
+DNS translates human-readable names into IP addresses.
 
 Example
 
