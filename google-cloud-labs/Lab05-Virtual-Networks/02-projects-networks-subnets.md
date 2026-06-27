@@ -1,5 +1,4 @@
-
-
+# Subnet
 
 Default = Auto Mode
 
@@ -12,6 +11,7 @@ Custom Mode
 
 Auto → Custom = Yes
 Custom → Auto = No
+---
 
 # Demo 03 – Expand a Subnet
 
