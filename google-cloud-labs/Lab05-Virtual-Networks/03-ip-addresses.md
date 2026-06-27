@@ -2,21 +2,26 @@
 
 ## Objective
 
-Understand how Google Cloud assigns internal and external IP addresses to VM instances.
+Understand how Google Cloud assigns internal and external IP addresses to Compute Engine VM instances.
 
 ---
 
 ## Internal IP Addresses
 
-Every VM receives an Internal IP address.
+Every Compute Engine VM network interface receives a primary internal IP address.
 
-Characteristics
+Internal IP addresses are used for private communication inside a VPC network.
 
-- Assigned automatically by DHCP
+Characteristics:
+
+- Required for VM network communication
 - Allocated from the subnet IP range
-- DHCP lease renews every 24 hours
-- Registered automatically in the network DNS
-- Used for private communication inside the VPC
+- Automatically assigned if no specific address is selected
+- Can be ephemeral or static
+- Not publicly routable from the internet
+- Used for private communication between resources in the VPC network
+
+Google Cloud can automatically assign an internal IP address from the subnet range. If a fixed internal address is required, you can reserve a static internal IP address or promote an existing ephemeral internal IP address to static.
 
 ---
 
@@ -24,83 +29,55 @@ Characteristics
 
 External IP addresses are optional.
 
-Use an external IP when a VM must communicate with the Internet.
+Use an external IP address when a VM needs direct public internet access or must be reachable from the internet.
 
-Types
+External IP addresses are publicly routable. Resources with external IP addresses can communicate with the public internet.
 
-### Ephemeral
+Types:
 
-- Assigned automatically
-- Comes from Google's public IP pool
-- May change if released
+### Ephemeral External IP
 
-### Static
+- Assigned automatically when requested
+- Comes from Google Cloud's public IP address pool
+- Does not persist beyond the life of the resource
+- May be released when the resource is stopped or deleted
+
+### Static External IP
 
 - Reserved by your project
-- Remains the same until released
-- Charged if reserved but unused
+- Remains assigned to the project until released
+- Useful when a service needs a fixed public address
+- Can cost more when reserved but not attached to a resource
+
+---
+
+## Cloud NAT Note
+
+A VM does not always need an external IP address for outbound internet access.
+
+Cloud NAT can allow VMs without external IPv4 addresses to reach IPv4 destinations on the internet. Cloud NAT supports outbound connections and return traffic, but it does not allow unsolicited inbound connections from the internet.
 
 ---
 
 ## Bring Your Own IP (BYOIP)
 
-Organizations may advertise their own public IP ranges through Google Cloud.
+Bring Your Own IP allows an organization to bring its own public IP address ranges to Google Cloud.
 
-Requirements
+Requirements:
 
-- Own a public IPv4 block
-- Minimum size: /24
+- Own a public IP address range
+- Provision the range into Google Cloud
+- Use the imported addresses with supported Google Cloud resources
 
----
-
-## DNS
-
-Google Cloud automatically registers
-
-VM Name → Internal IP
-
-DNS works only inside the same VPC network.
-
-It cannot resolve VM names located in another VPC network.
+BYOIP addresses are managed similarly to Google-provided external IP addresses after they are imported.
 
 ---
 
-## Key Concepts
+## Internal DNS
 
-Internal IP
+Google Cloud automatically creates internal DNS records for Compute Engine instances.
 
-- Required
-- Private communication
-- DHCP assigned
+Default internal DNS mapping:
 
-External IP
-
-- Optional
-- Internet access
-- Ephemeral or Static
-
----
-
-## ACE Exam Notes
-
-✔ Every VM receives an internal IP.
-
-✔ External IPs are optional.
-
-✔ Internal IPs come from the subnet.
-
-✔ DNS is scoped to the VPC network.
-
-✔ Static external IPs cost more if reserved but not attached.
-
-✔ BYOIP requires at least a /24 public block.
-
----
-
-## Takeaway
-
-> Every Google Cloud VM receives an internal IP address.
->
-> External IP addresses are optional and can be ephemeral or static.
->
-> Internal communication uses private subnet addresses while Internet access uses external addresses.
+```text
+VM name -> Internal IP address
