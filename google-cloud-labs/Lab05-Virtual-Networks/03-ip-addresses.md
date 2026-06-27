@@ -6,13 +6,19 @@ Understand how Google Cloud assigns internal and external IP addresses to Comput
 
 ---
 
+## Diagram
+
+![Internal vs External IP](diagrams/internal-vs-external-ip/internal-vs-external-ip.png)
+
+---
+
 ## Internal IP Addresses
 
 Every Compute Engine VM network interface receives a primary internal IP address.
 
 Internal IP addresses are used for private communication inside a VPC network.
 
-Characteristics:
+### Characteristics
 
 - Required for VM network communication
 - Allocated from the subnet IP range
@@ -21,7 +27,9 @@ Characteristics:
 - Not publicly routable from the internet
 - Used for private communication between resources in the VPC network
 
-Google Cloud can automatically assign an internal IP address from the subnet range. If a fixed internal address is required, you can reserve a static internal IP address or promote an existing ephemeral internal IP address to static.
+Google Cloud automatically assigns an internal IP address from the subnet range when one is not specified.
+
+If a fixed internal address is required, you can reserve a static internal IP address or promote an ephemeral internal IP address to static.
 
 ---
 
@@ -31,31 +39,40 @@ External IP addresses are optional.
 
 Use an external IP address when a VM needs direct public internet access or must be reachable from the internet.
 
-External IP addresses are publicly routable. Resources with external IP addresses can communicate with the public internet.
-
-Types:
+External IP addresses are publicly routable.
 
 ### Ephemeral External IP
 
 - Assigned automatically when requested
-- Comes from Google Cloud's public IP address pool
-- Does not persist beyond the life of the resource
-- May be released when the resource is stopped or deleted
+- Comes from Google's public IP address pool
+- Does not permanently belong to the VM
+- May be released when the resource is stopped, deleted, or reconfigured
 
 ### Static External IP
 
 - Reserved by your project
 - Remains assigned to the project until released
 - Useful when a service needs a fixed public address
-- Can cost more when reserved but not attached to a resource
+- Can increase cost when reserved but unused
 
 ---
 
-## Cloud NAT Note
+## No External IP + Cloud NAT
 
-A VM does not always need an external IP address for outbound internet access.
+A VM does not always need its own external IP address for outbound internet access.
 
-Cloud NAT can allow VMs without external IPv4 addresses to reach IPv4 destinations on the internet. Cloud NAT supports outbound connections and return traffic, but it does not allow unsolicited inbound connections from the internet.
+Cloud NAT can allow VMs without external IPv4 addresses to reach IPv4 destinations on the internet.
+
+Cloud NAT supports outbound connections and return traffic, but it does not allow unsolicited inbound connections from the internet.
+
+### Cloud NAT Use Case
+
+Use Cloud NAT when VMs need to:
+
+- Download operating system updates
+- Pull packages or dependencies
+- Call external APIs
+- Reach the internet without exposing each VM with its own external IP address
 
 ---
 
@@ -63,13 +80,15 @@ Cloud NAT can allow VMs without external IPv4 addresses to reach IPv4 destinatio
 
 Bring Your Own IP allows an organization to bring its own public IP address ranges to Google Cloud.
 
-Requirements:
+After the IP address range is imported, Google Cloud manages the imported addresses similarly to Google-provided external IP addresses.
+
+### Requirements
 
 - Own a public IP address range
 - Provision the range into Google Cloud
 - Use the imported addresses with supported Google Cloud resources
 
-BYOIP addresses are managed similarly to Google-provided external IP addresses after they are imported.
+For IPv4 BYOIP, Google Cloud public advertised prefixes support `/16` through `/24` ranges.
 
 ---
 
