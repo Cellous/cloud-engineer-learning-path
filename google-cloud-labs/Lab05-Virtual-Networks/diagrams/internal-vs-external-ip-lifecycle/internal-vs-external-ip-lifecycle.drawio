@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="0nk7aTor4a7pzt6MM8ho">
+    <mxGraphModel dx="1242" dy="717" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#FFFF00);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;New Public IP&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="528" y="506.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#80FF00);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Start VM&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="528" y="446.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#FF0000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;IP Released&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="528" y="386.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#FF0000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Stop VM&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="528" y="326.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#FF8000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Ephemeral&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="528" y="267.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#0000FF);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Never Changes&lt;br&gt;                    &lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;(Normally)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="479" y="581.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#0000FF);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Internal IP&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;(&lt;font&gt;Required&lt;/font&gt;&lt;font&gt;)&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="196" y="189.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(transparent,#FF8000);" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;External IP&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;(&lt;font&gt;Optional&lt;/font&gt;&lt;font&gt;)&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="528" y="189.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=light-dark(#000000,#00FF00);" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;VM Created&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="354" y="90.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-11" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="339.75" width="50" x="409.63" y="-5.000000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="605" y="326.12" as="sourcePoint" />
+            <mxPoint x="605" y="297.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="602.66" y="386.12" as="sourcePoint" />
+            <mxPoint x="602.66" y="357.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="605" y="445.12" as="sourcePoint" />
+            <mxPoint x="605" y="416.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="606" y="505.12" as="sourcePoint" />
+            <mxPoint x="606" y="476.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-16" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="602.41" y="268.12" as="sourcePoint" />
+            <mxPoint x="602.41" y="239.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-17" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;dashPattern=12 12;" target="0fVEOVQgXPCzIwfvVOL7-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="271" y="609.12" as="sourcePoint" />
+            <mxPoint x="317" y="284.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="607.12" as="sourcePoint" />
+            <mxPoint x="478" y="609.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;strong data-start=&quot;3729&quot; data-end=&quot;3868&quot;&gt;A subnet may have enough IP addresses, but Google Cloud also enforces resource quotas (such as the number of VM instances per network).&lt;/strong&gt; Available IP space alone does not guarantee that you can create more VMs.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="87" width="552.5" x="196" y="658.12" as="geometry" />
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-20" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=5;strokeColor=light-dark(#000000,#999999);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="174" y="741.12" as="sourcePoint" />
+            <mxPoint x="174" y="667.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0fVEOVQgXPCzIwfvVOL7-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 33px;&quot;&gt;Internal vs External IP Lifecycle&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="528" x="170" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
