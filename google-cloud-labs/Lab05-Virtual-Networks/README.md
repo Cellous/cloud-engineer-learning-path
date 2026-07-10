@@ -1,5 +1,13 @@
 # Lab 05 - Create and Configure VPC Networks
 
+## Infrastructure as Code Preparation
+
+Google Cloud automatically generates equivalent gcloud CLI commands for resources created through the Cloud Console.
+
+These commands can be reused in automation scripts, CI/CD pipelines, or Infrastructure as Code workflows.
+
+![Equivalent gcloud Command](screenshots/07-equivalent-gcloud-command.png)
+
 ## Skills Learned
 
 - Google Cloud VPC
