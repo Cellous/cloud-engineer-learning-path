@@ -133,6 +133,29 @@ The lab deploys two Compute Engine virtual machines in different Google Cloud re
 - The VMs are deployed in different regions to demonstrate cross-region networking.
 ---
 
+## Connectivity Test
+
+After deploying the VM instances, connectivity was verified using ICMP (`ping`).
+
+![Successful Ping Tests](screenshots/05-successful-ping-tests.png)
+
+### Results
+
+- SSH connection to **mynet-us-vm** succeeded.
+- Internal IP connectivity was verified.
+- External IP connectivity was verified.
+- All tests completed with **0% packet loss**.
+
+### Commands Used
+
+```bash
+ping -c 3 <internal-ip>
+ping -c 3 <external-ip>
+```
+
+This confirms that the configured firewall rules, routing, and network connectivity are functioning correctly.
+
+---
 ## ACE Exam Notes
 
 ✔ Every VM receives an internal IP.
