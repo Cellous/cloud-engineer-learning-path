@@ -113,6 +113,23 @@ After the subnet expansion:
 - VM5 was successfully created using the newly available address space.
 
 ---
+## Auto Mode VPC Network
+
+When an Auto Mode VPC network is created, Google Cloud automatically provisions one subnet in every supported region.
+
+This eliminates the need to manually create subnets during initial deployment.
+
+### Example
+
+![Auto Mode VPC Subnets](screenshots/auto-mode-subnets-by-region.png)
+
+### Observations
+
+- One subnet is created for each Google Cloud region.
+- Each subnet receives a predefined CIDR block (for example, 10.128.0.0/20).
+- The network operates in IPv4 single-stack mode by default.
+- Auto Mode is convenient for learning and small deployments but is generally not recommended for production environments.
+---
 
 # Key Concepts
 
