@@ -110,6 +110,28 @@ External IP
 ✔ Static remains the same
 
 ---
+# Demo – Internal and External IP Addresses
+
+## Objective
+
+Deploy Compute Engine VM instances and observe their assigned internal and external IP addresses.
+
+---
+
+## VM Instances
+
+The lab deploys two Compute Engine virtual machines in different Google Cloud regions.
+
+![VM Instances](screenshots/04-vm-instances.png)
+
+### Observations
+
+- Both VM instances are in the **Running** state.
+- Each VM has its own internal IPv4 address.
+- Each VM has an ephemeral external IP address.
+- SSH access is available through the Google Cloud Console.
+- The VMs are deployed in different regions to demonstrate cross-region networking.
+---
 
 ## ACE Exam Notes
 
