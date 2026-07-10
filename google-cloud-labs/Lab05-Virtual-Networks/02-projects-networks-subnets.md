@@ -121,7 +121,7 @@ This eliminates the need to manually create subnets during initial deployment.
 
 ### Example
 
-![Auto Mode VPC Subnets](screenshots/auto-mode-subnets-by-region.png)
+![Auto Mode VPC Subnets](screenshots/02-auto-mode-subnets-by-region.png)
 
 ### Observations
 
