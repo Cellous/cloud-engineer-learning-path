@@ -299,7 +299,7 @@ Firewall rules control which traffic is allowed into Google Cloud VM instances.
 - mynetwork-allow-rdp
 - mynetwork-allow-custom
 
-![Firewall Rules](screenshots/04-firewall-rules.png)
+![Firewall Rules](screenshots/03-firewall-rules.png)
 
 ### Notes
 
