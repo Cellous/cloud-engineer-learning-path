@@ -287,6 +287,27 @@ Example use cases:
 | Example	| Send 0.0.0.0/0 to internet gateway	| Allow tcp:80 from 0.0.0.0/0 |
 
 ---
+## Firewall Rules
+
+Firewall rules control which traffic is allowed into Google Cloud VM instances.
+
+### Configured Rules
+
+- allow-iap-ssh
+- mynetwork-allow-icmp
+- mynetwork-allow-ssh
+- mynetwork-allow-rdp
+- mynetwork-allow-custom
+
+![Firewall Rules](screenshots/04-firewall-rules.png)
+
+### Notes
+
+- ICMP allows ping testing.
+- SSH (TCP 22) allows Linux administration.
+- RDP (TCP 3389) allows Windows Remote Desktop.
+- IAP SSH provides secure administrative access without exposing SSH directly to the Internet.
+---
 
 ## ACE Exam Notes
 - A route maps an IP range to a destination or next hop.
