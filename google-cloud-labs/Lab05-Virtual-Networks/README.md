@@ -22,6 +22,8 @@ These commands can be reused in automation scripts, CI/CD pipelines, or Infrastr
 - Cloud Shell
 - gcloud CLI
 
+![Final VPC Networks](screenshots/08-final-vpc-networks.png)
+
 ## Key Commands
 
 gcloud compute ssh
