@@ -49,7 +49,7 @@ The management network firewall rule was configured using:
 
 ## Lab Configuration
 
-![Firewall Configuration](screenshots/10-management-firewall-rule.png)
+![Firewall Configuration](screenshots/12-management-firewall-rule.png)
 
 This configuration allows administrators to remotely manage virtual machines in the management network.
 
