@@ -12,7 +12,9 @@
 
 ## Create managementnet-us-vm
 
-![VM Instances](screenshots/04-vm-instances.png)
+![Instruction allow](screenshots/12-managementnet-firewall-rule.png)
+
+![Settings](screenshots/13-firewall-rule-properties)
 
 Configuration
 
@@ -43,4 +45,15 @@ gcloud compute instances create privatenet-us-vm ...
 
 ![Create privatenet VM](screenshots/16-create-privatenet-vm.png)
 
+## Equivalent gcloud Command
+
 ![Equivalent gcloud command](screenshots/07-equivalent-gcloud-command.png)
+The Console automatically generates the CLI command.
+---
+
+## Verify VM Deployment
+![VM Instances](screenshots/04-vm-instances.png)
+
+> **ACE Exam Tip**
+>
+> The Google Cloud Console can generate the equivalent `gcloud` command for many actions. This is a useful way to learn the CLI while working in the graphical interface.
