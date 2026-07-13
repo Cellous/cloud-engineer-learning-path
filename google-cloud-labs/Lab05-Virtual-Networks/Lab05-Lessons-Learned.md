@@ -13,6 +13,8 @@ Benefits
 - Easier automation later
 - Better preparation for the ACE exam
 
+![Equivalent Command Line Button](screenshots/07-equivalent-gcloud-command.png)
+
 ## Key Concepts
 
 - Auto Mode VPCs automatically create one subnet in every region.
