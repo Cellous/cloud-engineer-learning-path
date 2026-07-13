@@ -26,17 +26,17 @@ Benefits
 
 ## Commands Used
 
-gcloud compute networks list
+`gcloud compute networks list`
 
-gcloud compute networks subnets list
+`gcloud compute networks subnets list`
 
-gcloud compute firewall-rules list
+`gcloud compute firewall-rules list`
 
-gcloud compute instances list
+`gcloud compute instances list`
 
-ping -c 3 <ip-address>
+`ping -c 3 <ip-address>`
 
-gcloud compute ssh <vm-name>
+`gcloud compute ssh <vm-name>`
 
 ## Skills Demonstrated
 
