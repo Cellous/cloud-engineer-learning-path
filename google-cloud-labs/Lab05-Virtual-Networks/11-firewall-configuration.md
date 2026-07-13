@@ -27,7 +27,7 @@ Each firewall rule specifies:
 
 ## Management Network Firewall
 
-![Firewall Rule List](screenshots/09-firewall-rules.png)
+![Firewall Rule List](screenshots/03-firewall-rules.png)
 
 The management network firewall rule was configured using:
 
