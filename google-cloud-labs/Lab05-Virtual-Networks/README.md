@@ -1,5 +1,7 @@
 # Lab 05 - Create and Configure VPC Networks
 
+![Google Cloud VPC Networking](screenshots/google-cloud-vpc-networking-lab.png)
+
 ## Infrastructure as Code Preparation
 
 Google Cloud automatically generates equivalent gcloud CLI commands for resources created through the Cloud Console.
