@@ -9,7 +9,7 @@ The Networking tab reports:
 
 "No local network available."
 
-![Compute Engine required VPC](screenshots/03-no-network-error.png)
+![No Network Error](screenshots/03-no-network-error.png)
 
 ![Create management VM](screenshots/14-create-management-vm.png)
 
