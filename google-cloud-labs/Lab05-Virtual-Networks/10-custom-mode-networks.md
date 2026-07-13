@@ -19,11 +19,10 @@ The lab converts **mynetwork** from Auto Mode to Custom Mode and introduces two 
 
 These networks use manually created subnets instead of automatically generated regional subnets.
 
-![Auto vs Custom note](screenshots/11-custom-vpc-networks.png)
-
 ---
 
 ### Verify the Networks
+![Auto vs Custom note](screenshots/11-custom-vpc-networks.png)
 
 The following Cloud Shell command lists every subnet grouped by VPC network.
 
