@@ -1,5 +1,18 @@
 # Lessons Learned
 
+## Learning Tip
+
+Whenever possible, click **Equivalent command line**.
+
+This shows the gcloud command that performs the same task as the Cloud Console.
+
+Benefits
+
+- Learn the CLI automatically
+- Understand Infrastructure as Code
+- Easier automation later
+- Better preparation for the ACE exam
+
 ## Key Concepts
 
 - Auto Mode VPCs automatically create one subnet in every region.
