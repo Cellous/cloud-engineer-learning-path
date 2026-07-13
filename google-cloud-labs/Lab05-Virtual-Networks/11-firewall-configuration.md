@@ -49,7 +49,7 @@ The management network firewall rule was configured using:
 
 ## Lab Configuration
 
-![Firewall Configuration](screenshots/12-management-firewall-rule.png)
+![Firewall Configuration](screenshots/12-managementnet-firewall-rule.png)
 
 This configuration allows administrators to remotely manage virtual machines in the management network.
 
@@ -65,7 +65,4 @@ Without firewall rules:
 
 Firewall rules determine what traffic is permitted to reach Compute Engine instances.
 
-
-![Firewall overview](screenshots/03-firewall-rules.png)
-![Firewall instructions](screenshots/12-managementnet-firewall-rule.png)
 ![Firewall properties](screenshots/13-firewall-rule-properties.png)
