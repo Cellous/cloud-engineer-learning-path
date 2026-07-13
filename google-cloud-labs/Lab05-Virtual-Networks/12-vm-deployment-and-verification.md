@@ -14,7 +14,7 @@
 
 ![Instruction allow](screenshots/12-managementnet-firewall-rule.png)
 
-![Settings](screenshots/13-firewall-rule-properties)
+![Settings](screenshots/13-firewall-rule-properties.png)
 
 Configuration
 
