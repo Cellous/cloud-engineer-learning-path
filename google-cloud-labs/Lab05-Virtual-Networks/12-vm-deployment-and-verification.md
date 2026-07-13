@@ -48,6 +48,7 @@ gcloud compute instances create privatenet-us-vm ...
 ## Equivalent gcloud Command
 
 ![Equivalent gcloud command](screenshots/07-equivalent-gcloud-command.png)
+
 The Console automatically generates the CLI command.
 ---
 
