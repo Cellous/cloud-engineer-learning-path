@@ -1,5 +1,15 @@
 
+## Why VM creation failed
 
+Deleting the default VPC removes all associated subnets and routes.
+
+Because Compute Engine instances must be attached to a VPC network, Google Cloud prevents VM creation until another network exists.
+
+The Networking tab reports:
+
+"No local network available."
+
+![Compute Engine required VPC](screenshots/03-no-network-error.png)
 
 ![Create management VM](screenshots/14-create-management-vm.png)
 
