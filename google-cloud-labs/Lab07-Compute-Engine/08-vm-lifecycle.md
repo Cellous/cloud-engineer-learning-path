@@ -1,4 +1,13 @@
 # VM Lifecycle
+
+# VM Lifecycle
+
+## Quick Overview
+
+![VM Lifecycle Overview](diagrams/vm-lifecycle-overview.svg)
+
+---
+
 `
 Create
    ↓
@@ -128,3 +137,8 @@ Configure:
 - Automatic Restart
 - Live Migration
 - Terminate on Host Maintenance
+---
+
+## Detailed Reference
+
+![Detailed VM Lifecycle](diagrams/vm-lifecycle.svg)
