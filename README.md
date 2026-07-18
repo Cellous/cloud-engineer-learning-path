@@ -16,9 +16,20 @@ Google Cloud • BigQuery • GKE • Terraform • Dataflow • Pub/Sub • Obs
 ## Certification Program
 Google Cloud Engineer Certification (May – June 2026 Cohort)
 
-Status: In Progress
-Duration: 11 Weeks (Self-Paced)
+Status: Active Learning Journey
+Latest Milestone
+✅ Essential Google Cloud Infrastructure: Foundation Completed
+---
+## Recent Achievements
 
+- ✅ Completed Google Cloud Infrastructure: Foundation
+- ✅ Created 20+ Compute Engine architecture diagrams
+- ✅ Completed hands-on VM deployment labs
+- ✅ Documented VM lifecycle and availability policies
+- ✅ Completed Compute Engine troubleshooting exercises
+- ✅ Built reusable draw.io cloud architecture diagrams
+  
+---
 This repository documents my journey through the Google Cloud Engineer Certification program, focusing on building real-world cloud infrastructure skills.
 
 Background:
@@ -29,6 +40,17 @@ Background:
 Goal:
 Transition into Cloud / Systems Engineering roles by building production-ready cloud solutions.
 
+---
+## Portfolio Highlights
+
+- Enterprise Google Cloud architecture diagrams
+- VM Lifecycle reference models
+- IAM inheritance documentation
+- Compute Engine deployment labs
+- Cloud Storage workflows
+- Terraform learning repository
+- Kubernetes reference diagrams
+  
 ---
 
 ### Status Legend
@@ -43,16 +65,16 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 | Module | Topic | Status | Portfolio Evidence |
 |---|---|---|---|
 | 1 | Intro & ACE Foundations | 🟢 Complete | Core GCP notes and architecture fundamentals |
-| 2 | Compute Engine & VM Operations | 🟡 In Progress | VM authentication and monitoring workflows |
-| 3 | Cloud Storage & Data Services | 🟡 In Progress | Cloud Storage API authentication diagrams |
-| 4 | Networking & Load Balancing | 🟡 In Progress | Monitoring and infrastructure routing diagrams |
-| 5 | Cloud Run & Cloud Functions | 🟡 In Progress | IAM custom role administration workflows |
-| 6 | Kubernetes Engine (GKE) | 🟡 In Progress | Planned GKE workload identity diagrams |
-| 7 | Infrastructure as Code (Terraform) | 🟡 In Progress | Terraform infrastructure deployment workflows |
+| 2 | Compute Engine & VM Operations | 🟢 Complete | 12+ documentation files, diagrams, lab walkthroughs |
+| 3 | Cloud Storage & Data Services | 🟢 Complete | Cloud Storage API authentication diagrams |
+| 4 | Networking & Load Balancing | 🟢 Complete | Monitoring and infrastructure routing diagrams |
+| 5 | Cloud Run & Cloud Functions | 🟢 Complete | IAM custom role administration workflows |
+| 6 | Kubernetes Engine (GKE) | 🟢 Complete | Planned GKE workload identity diagrams |
+| 7 | Infrastructure as Code (Terraform) | 🟢 Complete | Terraform infrastructure deployment workflows |
 | 8 | IAM & Governance | 🟢 Complete | IAM inheritance, folder IAM, custom roles, least privilege |
-| 8 | Service Accounts | 🟡 Reviewing 5.2 | OAuth, service accounts, ADC, workload identity, authentication patterns |
+| 8 | Service Accounts | 🟢 Complete | OAuth, service accounts, ADC, workload identity, authentication patterns |
 | 9 | Cloud Architecture & Security Diagrams | 🟢 Active Portfolio Development | Enterprise security and authentication flows |
-| 10 | Diagnostic Reviews & Exam Prep | 🔵 Active | ACE recognition-pattern documentation |
+| 10 | Diagnostic Reviews & Exam Prep | 🟢 Complete | ACE recognition-pattern documentation |
 
 ## Repository Structure
 
@@ -101,10 +123,10 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 ## Progress Snapshot
 
 - ✅ IAM & Governance Review 5.1
-- 🟡 Service Accounts Review 5.2
+- ✅ Service Accounts Review 5.2
 - ✅ 10+ Cloud Security Diagrams Created
 - ✅ IAM Architecture Library Established
-- 🟡 Terraform & GKE Documentation In Progress
+- ✅ Terraform & GKE Documentation 
 
 ## Featured Architecture Diagrams
 
@@ -143,12 +165,34 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 
 ## Repository Metrics
 
-- 465+ commits
+- 1147+ commits
+- 20+ architecture diagrams
+- 40+ technical documents
+- Multiple completed Google Cloud labs
+- Hands-on Compute Engine experience
 - Multiple architecture diagrams
 - GKE operational documentation
 - Kubernetes lifecycle models
 - ACE recognition patterns
 - Infrastructure learning labs
+  
+---
+## Skills Gained
+
+- Compute Engine
+- Virtual Machine Deployment
+- Cloud Shell
+- SSH Administration
+- Persistent Disk Management
+- Cloud Storage
+- IAM Fundamentals
+- Resource Hierarchy
+- Machine Families
+- Load Balancing
+- Terraform Basics
+- Cloud Monitoring
+- Cloud Logging
+- Infrastructure Documentation
   
 ---
 ## Module Overview
@@ -173,6 +217,16 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 - Billing Configuration
 - Resource Hierarchy
 
+---
+## Hands-on Labs
+
+| Lab | Status |
+|------|---------|
+| Create Virtual Machines | ✅ Complete |
+| VM Lifecycle | ✅ Documented |
+| VM Availability Policies | ✅ Documented |
+| OS Patch Management | ✅ Documented |
+| Working with Virtual Machines | ✅ Complete |
 ---
 
 ## Current Study Topics
@@ -254,6 +308,24 @@ Managed infrastructure
 - YAML
 
 ---
+## Repository Gallery
+
+Screenshots from Google Cloud Skills and Google Cloud Console are included throughout this repository to demonstrate:
+
+- VM deployment
+- Cloud Console
+- Cloud Shell
+- SSH connectivity
+- Architecture diagrams
+- Compute Engine labs
+  
+---
 ## Certification Goal
 Google Associate Cloud Engineer (ACE)
 
+---
+## Completed Courses
+
+| Course | Status |
+|----------|---------|
+| Essential Google Cloud Infrastructure: Foundation | ✅ Completed |
