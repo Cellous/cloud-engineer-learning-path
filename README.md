@@ -131,13 +131,13 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 ## Featured Architecture Diagrams
 
 ### GKE Internal Application Load Balancer
-![GKE Internal ALB](.architecture-diagrams/gke/gke-internal-alb-flow.png)
+![GKE Internal ALB](architecture-diagrams/gke/internal-alb-flow/gke-internal-alb-flow.png)
 
 ### Kubernetes Object Lifecycle
-![Kubernetes Lifecycle](architecture-diagrams/gke/Kubernetes-Object-Lifecycle-via-kubectl.png)
+![Kubernetes Lifecycle](architecture-diagrams/gke/kubernetes-object-lifecycle/kubernetes-object-lifecycle.png)
 
 ### Monitoring Alert Policy Flow
-![Monitoring Alert Policy Flow](architecture-diagrams/monitoring/monitoring-alert-policy-flow.png)
+![Monitoring Alert Policy Flow](architecture-diagrams/monitoring/monitoring-alert-policy-flow/monitoring-alert-policy-flow.png)
 
 ### IAM Service Account Security Flow
 ![IAM Service Account Security Flow](architecture-diagrams/iam/security-architecture/google-cloud-service-account-security-flow.png)
