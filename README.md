@@ -131,7 +131,7 @@ Transition into Cloud / Systems Engineering roles by building production-ready c
 ## Featured Architecture Diagrams
 
 ### GKE Internal Application Load Balancer
-![GKE Internal ALB](architecture-diagrams/gke/gke-internal-alb-flow.png)
+![GKE Internal ALB](..architecture-diagrams/gke/gke-internal-alb-flow.png)
 
 ### Kubernetes Object Lifecycle
 ![Kubernetes Lifecycle](architecture-diagrams/gke/Kubernetes-Object-Lifecycle-via-kubectl.png)
