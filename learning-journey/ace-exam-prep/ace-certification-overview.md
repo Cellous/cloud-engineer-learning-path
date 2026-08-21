@@ -39,3 +39,8 @@ https://cloud.google.com/learn/certification/cloud-engineer/
 
 Associate Cloud Engineer Exam Guide:
 https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf
+
+## Study Tools
+
+- [Gemini Notebook / NotebookLM](https://notebooklm.google.com/)
+- — source-grounded study workspace used with the official ACE exam guide and Google Cloud learning path.
