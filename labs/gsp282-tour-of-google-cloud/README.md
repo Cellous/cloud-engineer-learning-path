@@ -14,3 +14,8 @@
 ## Service Activation at the Project Level
 
 ![Service Activation at the Project Level](images/service-activation-at-project-level.png)
+
+## Resources
+
+- [Google APIs Explorer](https://developers.google.com/apis-explorer/)
+- [Dialogflow CX API Documentation](https://docs.cloud.google.com/dialogflow/cx/docs/reference/api-overview)
