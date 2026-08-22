@@ -17,7 +17,9 @@ Answer only using the provided sources. [ENTER YOUR QUESTION HERE].
 ```
 
 **default ACE prompt**
+
 **use only your sources → admit when information is missing → cite its evidence.**
+
 For higher-confidence study responses:
 
 ```text
