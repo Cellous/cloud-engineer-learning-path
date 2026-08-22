@@ -1,19 +1,30 @@
 # Gemini Notebook Prompts for ACE Exam Preparation
 
-## Source-Grounding Rule
+## Source-Grounding Rules
 
-Use one of these instructions with technical study prompts:
+Use one of these base instructions with technical study prompts.
 
-- Based only on the provided sources...
-- Based strictly on the provided sources...
-- Answer only using the provided sources.
+### Basic Source Grounding
 
+```text
+Based only on the provided sources, [ENTER YOUR QUESTION HERE].
+```
+```text
+Based strictly on the provided sources, [ENTER YOUR QUESTION HERE].
+```
+```text
+Answer only using the provided sources. [ENTER YOUR QUESTION HERE].
+```
+
+**default ACE prompt**
+**use only your sources → admit when information is missing → cite its evidence.**
 For higher-confidence study responses:
 
-> Answer only using the provided sources. If the sources do not contain
-> enough information to answer the question, state that clearly rather
-> than filling in missing information. Cite the relevant source for each
-> major conclusion.
+```text
+Answer only using the provided sources. If the sources do not contain enough information to answer the question, state that clearly rather than filling in missing information. Cite the relevant source for each major conclusion.
+
+Question: [ENTER YOUR QUESTION HERE]
+```
 
 ## Find Training Content
 
