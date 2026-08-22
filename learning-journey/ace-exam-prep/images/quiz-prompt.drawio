@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Td_mrJkWm9PeIYGdA8l6">
+    <mxGraphModel dx="1118" dy="717" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#000000)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Generate source-grounded study material&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="34" width="343" x="235" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Choose Studio mode&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="343" x="235" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Customize with pencil&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="343" x="235" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Check only the sources needed&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="343" x="235" y="209" as="geometry" />
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-6" edge="1" parent="1" source="pcjw9_Or8ekzIZU_N9mW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="199.99998474121094" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Sources available in notebook&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="343" x="235" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="406" y="243" as="sourcePoint" />
+            <mxPoint x="406" y="266.99998474121094" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="406" y="310" as="sourcePoint" />
+            <mxPoint x="406" y="333.99998474121094" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="406" y="377" as="sourcePoint" />
+            <mxPoint x="406" y="400.99998474121094" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pcjw9_Or8ekzIZU_N9mW-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;Quiz Prompt&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="210" x="301.5" y="69" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
