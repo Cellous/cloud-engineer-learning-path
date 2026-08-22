@@ -92,3 +92,18 @@ Test Understanding
 Identify Knowledge Gaps
        ↓
 Return to Training as Needed
+```
+---
+
+## Related Repository Areas
+
+ACE preparation is supported by technical work throughout this repository:
+
+| ACE Area                            | Repository Evidence                                         |
+| ----------------------------------- | ----------------------------------------------------------- |
+| Set up a cloud solution environment | `compute-engine/`, projects, CLI work                       |
+| Plan and implement a cloud solution | `compute-engine/`, `storage/`, `networking/`, `kubernetes/` |
+| Configure access and security       | `iam-security/`                                             |
+| Ensure successful operation         | `operations-monitoring/`                                    |
+| Hands-on practice                   | `labs/`                                                     |
+| Architecture understanding          | `architecture-diagrams/`                                    |
