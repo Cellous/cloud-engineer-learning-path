@@ -1,4 +1,16 @@
 
+## Organization Roles
+
+![Organization Admin and Project Creator](diagrams/organization-admin-and-project-creator.png)
+
+## Folder Hierarchy
+
+![Folder Resource Hierarchy](diagrams/folder-resource-hierarchy.png)
+
+## Resource Manager Roles
+
+![Resource Manager Roles](diagrams/resource-manager-roles.png)
+
 
 | Scope        | Role    | Purpose                                           |
 | ------------ | ------- | ------------------------------------------------- |
