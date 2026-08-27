@@ -26,3 +26,4 @@
 | Acronym | Meaning                        |
 | ------- | ------------------------------ |
 | CIDR    | Classless Inter-Domain Routing |
+| SSO     | Single Sign-On                 |
