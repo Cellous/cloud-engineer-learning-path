@@ -136,7 +136,7 @@ for a particular job function.
 
 #### Example: Instance Operator
 
-![Custom IAM Roles](diagram/custom-iam-roles.png)
+![Custom IAM Roles](diagrams/custom-iam-roles.png)
 
 An organization may need a user who can operate virtual machines without being able to reconfigure them.
 
@@ -154,6 +154,30 @@ Not granted:
 This provides the permissions required for the operational task without granting broader administrative authority.
 
 ---
+
+## Custom Role Creation Workflow
+
+A custom role can be created by defining the role identity, selecting the
+required permissions, reviewing the permission set, and then creating
+the role.
+
+![Custom Role Creation Workflow](diagrams/custom-role-creation-workflow.png)
+
+### Workflow
+
+1. Open **IAM & Admin → Roles** and begin creating a custom role.
+2. Enter the role **Title** and **ID**.
+3. Select the appropriate **role launch stage**.
+   - In the course demonstration, **Alpha** is used for an early/testing-stage role.
+4. Select **Add Permissions**.
+5. Filter and select only the permissions required for the job function.
+6. Review the complete permission set.
+7. Create the custom role.
+8. Verify that the role is enabled and available for assignment.
+
+> **Important:** Custom roles are not automatically updated when Google Cloud
+> introduces new permissions, features, or services. Custom roles should
+> therefore be reviewed as the platform and operational requirements change.
 
 ## Custom Role Creation Demo
 
