@@ -120,6 +120,7 @@ The course introduces several Compute Engine IAM roles.
 | Storage Admin | Manage disks, images, and snapshots                                                    |
 
 Predefined roles allow administrators to grant service-specific access without granting the broader permissions associated with a project-wide basic role.
+
 ---
 
 ## Custom IAM Roles
