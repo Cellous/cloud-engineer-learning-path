@@ -37,7 +37,7 @@ These roles are hierarchical:
 - Owner includes Editor permissions.
 - Editor includes Viewer permissions.
 
-![Basic IAM Roles](diagrams/basic-iam-roles.png)
+![Basic IAM Roles](diagrams/three-types-of-iam-roles.png)
 
 ### Basic Role Relationship
 
