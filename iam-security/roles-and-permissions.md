@@ -155,6 +155,52 @@ This provides the permissions required for the operational task without granting
 
 ---
 
+## Custom Role Creation Demo
+
+The course demonstrates creating a custom **Instance Operator** role in the Google Cloud Console.
+
+The workflow is:
+
+```text
+IAM & Admin
+    ↓
+Roles
+    ↓
+Create Role
+    ↓
+Define role name and ID
+    ↓
+Add selected permissions
+    ↓
+Create
+    ↓
+Review the resulting custom role
+```
+
+### Demo Role
+
+**Role:** Instance Operator
+The completed role contains seven Compute Engine instance permissions:
+
+```text
+compute.instances.get
+compute.instances.list
+compute.instances.reset
+compute.instances.resume
+compute.instances.start
+compute.instances.stop
+compute.instances.suspend
+```
+
+The custom role is then visible in the IAM Roles list and can be reviewed to verify its assigned permissions.
+
+### Why Custom Roles Matter
+Custom roles allow administrators to define permissions around a specific operational responsibility instead of granting a broader predefined or basic role.
+
+This supports the principle of least privilege by limiting users to the actions required for their job.
+
+---
+
 ## Principle of Least Privilege
 
 The `principle of least privilege` means granting a principal only the permissions required to perform their assigned responsibilities.
