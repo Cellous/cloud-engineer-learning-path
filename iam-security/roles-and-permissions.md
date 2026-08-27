@@ -136,7 +136,7 @@ for a particular job function.
 
 #### Example: Instance Operator
 
-![Custom IAM Roles](custom-iam-roles.png)
+![Custom IAM Roles](diagram/custom-iam-roles.png)
 
 An organization may need a user who can operate virtual machines without being able to reconfigure them.
 
@@ -200,7 +200,8 @@ Custom and predefined roles can support least-privilege access more precisely th
 ---
 
 ## Related IAM Documentation
-![IAM Fundamentals](iam-fundamentals.md)
-![Organizations and Folders](organization-and-folders.md)
-![Service Accounts](service-accounts.md)
-![IAM Best Practices](iam-best-practices.md)
+
+- ![IAM Fundamentals](iam-fundamentals.md)
+- ![Organizations and Folders](organization-and-folders.md)
+- ![Service Accounts](service-accounts.md)
+- ![IAM Best Practices](iam-best-practices.md)
