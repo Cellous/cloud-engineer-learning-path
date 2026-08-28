@@ -177,6 +177,15 @@ Organization policies should not be confused with IAM allow policies or IAM deny
 
 ---
 
+| Mechanism               | Main purpose                                                      |
+| ----------------------- | ----------------------------------------------------------------- |
+| **IAM Allow Policy**    | Grants principals roles/permissions                               |
+| **IAM Deny Policy**     | Explicitly prevents specified permissions                         |
+| **IAM Conditions**      | Makes a role grant dependent on conditions                        |
+| **Organization Policy** | Places constraints/restrictions on resources across the hierarchy |
+
+
+---
 ## Least Privilege
 
 The principle of least privilege applies to:
