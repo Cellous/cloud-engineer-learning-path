@@ -16,6 +16,8 @@ The course identifies five types of IAM members:
 4. Google Workspace Domains
 5. Cloud Identity Domains
 
+![IAM Principals and Member Types](diagrams/iam-member-types.png)
+
 ### Google Account
 
 A Google Account represents an individual such as a developer or administrator.
@@ -184,8 +186,14 @@ Organization policies should not be confused with IAM allow policies or IAM deny
 | **IAM Conditions**      | Makes a role grant dependent on conditions                        |
 | **Organization Policy** | Places constraints/restrictions on resources across the hierarchy |
 
+## IAM Policy Evaluation
+
+Google Cloud evaluates access controls using applicable IAM policies and role bindings.
+
+![IAM Policy Evaluation and Controls](diagrams/iam-policy-evaluation-and-controls.png)
 
 ---
+
 ## Least Privilege
 
 The principle of least privilege applies to:
@@ -211,6 +219,14 @@ into a Cloud Identity domain.
 
 The course describes this synchronization as one-way, meaning the existing Active Directory or LDAP directory is not modified by the synchronization process.
 
+## Directory Synchronization
+
+Google Cloud Directory Sync can synchronize users and groups from an existing Active Directory or LDAP environment into Cloud Identity.
+
+![Google Cloud Directory Sync Identity Flow](diagrams/directory-sync-identity-flow.png)
+
+The course describes this as a **scheduled one-way synchronization**, meaning the source Active Directory or LDAP directory is not modified by the synchronization process.
+
 ---
 
 ## Single Sign-On
@@ -220,6 +236,14 @@ Organizations can continue using an existing identity system through single sign
 When Google Cloud requires authentication, the user can be redirected to the organization's identity system.
 
 If authentication succeeds, the user receives access according to the applicable Google Cloud access policies.
+
+## Single Sign-On
+
+Organizations can continue using an existing identity provider through single sign-on.
+
+![Single Sign-On Identity Flow](diagrams/sso-identity-flow.png)
+
+When authentication is required, Google Cloud can redirect the user to the organization's identity provider. Successful authentication allows the Google Cloud access process to continue according to the applicable IAM policies.
 
 ---
 
