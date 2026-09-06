@@ -25,13 +25,13 @@ supports those requirements.
 
 ## Storage Service Overview
 
-![Storage and Database Services](diagrams/storage-and-database-services.png)
+![Storage and Database Services](diagrams/storage-database-services.png)
 
 ## Choosing a Storage or Database Service
 
 The service selection process starts with the workload and data requirements.
 
-![Google Cloud Storage and Database Decision Chart](diagrams/storage-database-decision-chart.jpg)
+![Google Cloud Storage and Database Decision Chart](diagrams/storage-service-decision-chart.jpg)
 
 ### Decision Questions
 
