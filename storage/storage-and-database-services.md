@@ -141,15 +141,15 @@ Best for frequently accessed hot data.
 - Interactive workloads
 - Data used by Compute Engine or GKE
 
-#### Nearline Storage
+### Nearline Storage
 
 Designed for infrequently accessed data where lower storage cost is more important than frequent retrieval.
 
-#### Coldline Storage
+### Coldline Storage
 
 Designed for even less frequently accessed data and accepts higher retrieval costs in exchange for lower storage cost.
 
-#### Archive Storage
+### Archive Storage
 
 Designed for long-term archival, backup, and disaster recovery.
 
@@ -183,6 +183,12 @@ This allows less frequently accessed objects to be moved to:
 to reduce storage cost.
 
 Object Lifecycle Management can automate these transitions.
+
+### Object Lifecycle Management
+
+Object Lifecycle Management can automatically change an object's storage class or perform another lifecycle action when defined conditions are met.
+
+![Google Cloud Storage Lifecycle Policy Flow](../architecture-diagrams/storage/gcs-lifecycle-policy-flow/gcs-lifecycle-policy-flow.png)
 
 ---
 
