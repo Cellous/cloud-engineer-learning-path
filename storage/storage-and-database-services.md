@@ -77,7 +77,7 @@ The service selection process starts with the workload and data requirements.
 
 ## Storage Service Selection
 
-![Google Cloud Storage Service Decision Chart](diagrams/storage-service-decision-chart.png)
+![Google Cloud Storage Service Decision Chart](diagrams/storage-service-decision-chart.jpg)
 
 The selection process begins with the structure and access characteristics
 of the data rather than the database product itself.
