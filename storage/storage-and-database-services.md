@@ -96,6 +96,20 @@ Key characteristics include:
 
 ---
 
+## Choosing a Cloud Storage Class
+
+![Cloud Storage Class Selection](diagrams/cloud-storage-class-selection.png)
+
+### Storage Class Selection Logic
+...
+
+## Autoclass
+
+![Cloud Storage Autoclass Flow](diagrams/cloud-storage-autoclass-flow.png)
+
+Autoclass automatically manages storage class transitions based on object access patterns.
+
+---
 ## Buckets and Objects
 
 Cloud Storage is organized around **buckets** and **objects**.
