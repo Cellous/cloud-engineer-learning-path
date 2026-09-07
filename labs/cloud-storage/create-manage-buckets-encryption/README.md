@@ -14,3 +14,17 @@ This lab applies several Google Cloud Storage concepts through hands-on configur
 - Configure Object Lifecycle Management
 - Automatically archive or delete objects based on lifecycle rules
 - Use directory synchronization
+
+---
+
+## Concepts Reinforced
+
+This lab reinforces concepts documented in:
+
+- Cloud Storage bucket and object architecture
+- Access control
+- ACLs
+- Encryption
+- Object versioning
+- Object Lifecycle Management
+- Directory synchronization
