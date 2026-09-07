@@ -274,6 +274,35 @@ Cloud Storage can be accessed using:
 
 ---
 
+## Filestore
+
+Filestore is Google Cloud's managed file storage service for workloads requiring a shared file-system interface.
+
+![Filestore Overview](diagrams/filestore-overview.png)
+
+### Key Characteristics
+
+- Fully managed network-attached storage (NAS)
+- Supports Compute Engine and GKE workloads
+- NFSv3 compatible
+- Predictable performance
+- Capacity and performance can be adjusted
+- Supports large, high-performance file workloads
+
+### Common Use Cases
+
+- Enterprise application migration
+- Media rendering
+- Electronic Design Automation (EDA)
+- Data analytics
+- Genomics processing
+- Web content management
+
+### Storage Selection Reminder
+
+Use **Filestore** when an application needs a shared file system.
+
+Use **Cloud Storage** when the workload needs object storage instead.
 
 ## Storage Service Selection
 
