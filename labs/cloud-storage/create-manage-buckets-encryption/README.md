@@ -1,5 +1,26 @@
 # Create and Manage Cloud Storage Buckets and Encryption
 
+## Skills Practiced
+
+- Create Cloud Storage buckets
+- Configure object ACLs
+- Use customer-supplied encryption keys (CSEK)
+- Configure `.boto`
+- Rotate CSEK keys
+- Configure lifecycle management
+- Enable object versioning
+- Synchronize directories
+- Configure cross-project IAM access
+
+## Key Commands
+
+```bash
+export BUCKET_NAME_1=<bucket-name>
+gcloud storage cp setup.html gs://$BUCKET_NAME_1/
+gsutil config -n
+nano .boto
+```
+
 ## Lab Objectives
 
 This lab applies several Google Cloud Storage concepts through hands-on configuration.
