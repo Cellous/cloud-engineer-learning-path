@@ -14,6 +14,24 @@ CSEK keys must remain exact Base64-encoded AES-256 values.
 The encryption and decryption keys in `.boto` must correspond to
 the key used when the object was written.
 
+### CSEK Key Generation
+
+The generated key initially appears as a Python byte-string:
+
+![CSEK generated output](images/csek-key-generated-output.png)
+
+### Incorrect `.boto` Entry
+
+The key was initially copied with the Python byte-string formatting:
+
+![Incorrect CSEK .boto entry](images/csek-key-incorrect-boto-entry.png)
+
+### Corrected `.boto` Entry
+
+After removing the `b'`, trailing `'`, and `\n`, only the Base64 key remained:
+
+![Corrected CSEK encryption key](images/csek-encryption-key-format-fix.png)
+
 ---
 
 ## Configuration Recovery
@@ -48,7 +66,7 @@ The generated `.boto` file included:
 ```ini
 content_language = en
 ```
-
+![Successful .boto content-language fix](images/boto-content-language-fix-success.png)
 
 This screenshot documents a successful recovery from the .boto content_language problem. It shows that after editing ~/.boto, the command:
 ```bash
