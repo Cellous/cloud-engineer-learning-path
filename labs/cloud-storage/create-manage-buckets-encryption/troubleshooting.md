@@ -41,7 +41,34 @@ This can help identify which configuration path `gsutil` is using.
 > but it can show configuration-path information and help diagnose which config is active.
 
 ---
+### `.boto` Content-Language Fix
 
+The generated `.boto` file included:
+
+```ini
+content_language = en
+```
+
+
+This screenshot documents a successful recovery from the .boto content_language problem. It shows that after editing ~/.boto, the command:
+```bash
+gsutil cp setup2.html gs://$BUCKET_NAME_1/
+```
+completed successfully:
+
+Operation completed over 1 objects/58.0 KiB.
+
+During the lab, this setting caused a Cloud Storage upload error related to invalid content language.
+
+After editing `~/.boto` and disabling the setting, the upload succeeded:
+
+`gsutil cp setup2.html gs://$BUCKET_NAME_1/`
+
+### Lesson Learned
+
+When a Cloud Storage operation fails because of unexpected metadata, inspect the active .boto configuration for automatically applied headers or settings before assuming the bucket or object is the problem.
+
+---
 ## Key Lesson
 
 When an operation fails:
