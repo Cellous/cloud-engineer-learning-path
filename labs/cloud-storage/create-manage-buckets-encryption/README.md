@@ -177,6 +177,8 @@ Example use cases:
 
 Lifecycle policies reduce manual administration and can lower storage costs by automatically managing data based on age, storage class, or other object conditions.
 
+This lab task applies the same lifecycle-policy logic documented in the architecture diagram below.
+
 See also: [Cloud Storage Lifecycle Policy Flow](../../../architecture-diagrams/storage/gcs-lifecycle-policy-flow/)
 
 ---
