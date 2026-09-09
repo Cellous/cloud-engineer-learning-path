@@ -56,6 +56,25 @@ Commenting out a line is useful during troubleshooting because it disables the s
 > for real systems, I would **not recommend leaving old encryption keys sitting commented out in `.boto` long-term**.
 > A commented >line is still plain text in the file. Once the old key is no longer needed,
 > remove it securely rather than treating `#` as a security control.
+
+### Multiple CSEK Decryption Keys
+
+The `.boto` configuration supports multiple `decryption_key` entries:
+
+```ini
+decryption_key1=<OLD_CSEK_1>
+decryption_key2=<OLD_CSEK_2>
+decryption_key3=<OLD_CSEK_3>
+```
+This allows gsutil to access objects that were encrypted with different customer-supplied encryption keys, which is particularly useful during CSEK key rotation.
+
+The active encryption_key is used for new writes, while numbered decryption_key entries provide access to objects encrypted with previous keys.
+
+> Multiple decryption keys support safe key rotation by allowing applications to continue reading objects
+> encrypted with previous CSEKs while new data is encrypted with the current key.
+
+That matters in situations like security policy changes, suspected key exposure, periodic key rotation, mergers between systems, or staged migrations. Instead of re-encrypting every object immediately, you can keep the old decryption keys available while gradually moving data to the new key.
+
 ---
 
 ## Lab Objectives
