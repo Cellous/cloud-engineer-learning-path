@@ -49,3 +49,54 @@ This lab reinforces concepts documented in:
 - Object versioning
 - Object Lifecycle Management
 - Directory synchronization
+
+---
+
+## Troubleshooting Lessons
+
+### CSEK Key Generation and Formatting
+
+The lab generates a 256-bit customer-supplied encryption key with:
+
+```bash
+python3 -c 'import base64; import os; print(base64.encodebytes(os.urandom(32)))'
+```
+Python returns the key as a byte-string representation that includes extra formatting characters.
+
+### Example:
+
+```text
+b'<BASE64_AES256_KEY>\n'
+```
+
+The value entered into .boto must contain only the Base64-encoded key.
+
+#### Incorrect format:
+
+```text
+encryption_key=b'<BASE64_AES256_KEY>\n'
+```
+
+#### Correct format:
+```text
+encryption_key=<BASE64_AES256_KEY>
+```
+### Key Lesson
+
+When copying the generated key:
+
+- Remove the leading b'
+- Remove the trailing '
+- Remove \n
+- Keep the Base64 padding = at the end
+- Do not add spaces or line breaks
+
+An incorrectly formatted CSEK can prevent Cloud Storage from encrypting or decrypting objects successfully.
+
+## Operational Takeaways
+
+- Verify environment variables before using bucket commands.
+- Keep encryption and decryption keys clearly documented during key rotation.
+- Review `.boto` carefully before retrying failed CSEK operations.
+- Treat customer-supplied encryption keys as sensitive credentials.
+- Use temporary placeholder values in public documentation instead of real active keys.
