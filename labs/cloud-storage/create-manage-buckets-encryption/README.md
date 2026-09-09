@@ -73,6 +73,23 @@ The active encryption_key is used for new writes, while numbered decryption_key 
 > Multiple decryption keys support safe key rotation by allowing applications to continue reading objects
 > encrypted with previous CSEKs while new data is encrypted with the current key.
 
+Imagine a company stores backups in Cloud Storage:
+
+- January files were encrypted with Key A
+- April files were encrypted with Key B
+- July files were encrypted with Key C
+- New files are now encrypted with Key D
+
+You could configure:
+```ini
+encryption_key=<KEY_D>
+
+decryption_key1=<KEY_A>
+decryption_key2=<KEY_B>
+decryption_key3=<KEY_C>
+```
+Now new objects use Key D, while older objects can still be read with A, B, or C.
+
 That matters in situations like security policy changes, suspected key exposure, periodic key rotation, mergers between systems, or staged migrations. Instead of re-encrypting every object immediately, you can keep the old decryption keys available while gradually moving data to the new key.
 
 ---
