@@ -33,6 +33,7 @@ If you lose the CSEK used to encrypt an object, you can lose access to that encr
 ```bash
 python3 -c 'import base64; import os; print(base64.encodebytes(os.urandom(32)))'
 ```
+---
 
 ## Lab Objectives
 
