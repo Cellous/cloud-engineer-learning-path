@@ -33,6 +33,29 @@ If you lose the CSEK used to encrypt an object, you can lose access to that encr
 ```bash
 python3 -c 'import base64; import os; print(base64.encodebytes(os.urandom(32)))'
 ```
+### Commenting Out Encryption Settings
+
+In `.boto`, a line beginning with `#` is treated as a comment and is not active.
+
+Example:
+
+```ini
+# encryption_key=<OLD_CSEK>
+decryption_key1=<OLD_CSEK>
+encryption_key=<NEW_CSEK>
+```
+During key rotation:
+
+The old encryption key can be moved to a decryption_key entry so existing objects can still be read.
+The old encryption_key line can be commented out with #.
+The new key becomes the active encryption_key.
+After objects are re-encrypted and the old key is no longer required, remove the obsolete key from the configuration.
+
+Commenting out a line is useful during troubleshooting because it disables the setting without immediately deleting it.
+
+> for real systems, I would **not recommend leaving old encryption keys sitting commented out in `.boto` long-term**.
+> A commented >line is still plain text in the file. Once the old key is no longer needed,
+> remove it securely rather than treating `#` as a security control.
 ---
 
 ## Lab Objectives
