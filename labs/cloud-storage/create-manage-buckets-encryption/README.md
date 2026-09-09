@@ -154,6 +154,33 @@ encryption_key=b'<BASE64_AES256_KEY>\n'
 ```text
 encryption_key=<BASE64_AES256_KEY>
 ```
+
+---
+
+## Task 5. Enable Lifecycle Management
+
+Object Lifecycle Management automatically performs actions on Cloud Storage objects when defined conditions are met.
+
+Common lifecycle actions include:
+
+- Change an object's storage class
+- Delete objects after a specified age
+- Retain only a certain number of object versions
+
+Example use cases:
+
+- Move older objects from Standard to Nearline or Coldline storage
+- Delete temporary objects after a set number of days
+- Automatically clean up older object versions
+
+### Why It Matters
+
+Lifecycle policies reduce manual administration and can lower storage costs by automatically managing data based on age, storage class, or other object conditions.
+
+See also: [Cloud Storage Lifecycle Policy Flow](../../../architecture-diagrams/storage/gcs-lifecycle-policy-flow/)
+
+---
+
 ### Key Lesson
 
 When copying the generated key:
