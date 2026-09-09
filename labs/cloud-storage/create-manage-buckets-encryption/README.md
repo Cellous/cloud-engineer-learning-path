@@ -20,6 +20,16 @@ gcloud storage cp setup.html gs://$BUCKET_NAME_1/
 gsutil config -n
 nano .boto
 ```
+
+### CSEK = Customer-Supplied Encryption Key
+
+A useful distinction is:
+
+Google-managed key → Google manages the encryption key lifecycle.
+CSEK → you supply the key and are responsible for keeping it available and secure.
+
+If you lose the CSEK used to encrypt an object, you can lose access to that encrypted object.
+
 ```bash
 python3 -c 'import base64; import os; print(base64.encodebytes(os.urandom(32)))'
 ```
