@@ -20,6 +20,9 @@ gcloud storage cp setup.html gs://$BUCKET_NAME_1/
 gsutil config -n
 nano .boto
 ```
+```bash
+python3 -c 'import base64; import os; print(base64.encodebytes(os.urandom(32)))'
+```
 
 ## Lab Objectives
 
