@@ -181,6 +181,32 @@ This lab task applies the same lifecycle-policy logic documented in the architec
 
 See also: [Cloud Storage Lifecycle Policy Flow](../../../architecture-diagrams/storage/gcs-lifecycle-policy-flow/)
 
+Create the lifecycle policy file:
+
+```bash
+nano life.json
+```
+> Note: The file can also be created with the Cloud Shell Editor.
+
+
+The **more important material to document** is the JSON itself, because that defines the actual lifecycle behavior:
+
+```json
+{
+  "rule": [
+    {
+      "action": {
+        "type": "Delete"
+      },
+      "condition": {
+        "age": 31
+      }
+    }
+  ]
+}
+```
+> This lifecycle rule automatically deletes objects when they reach 31 days of age.
+
 ---
 
 ### Key Lesson
