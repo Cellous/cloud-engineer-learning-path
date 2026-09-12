@@ -46,7 +46,7 @@ Hands-on lab covering:
 
 See:
 
-Configure Cloud SQL
+- ![ Configure Cloud SQL](README.md)
 
 ## ACE Recognition Notes
 - Cloud SQL is a managed relational database service.
