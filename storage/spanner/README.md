@@ -70,6 +70,12 @@ This architecture supports:
 - Strong consistency
 - Geographic distribution
 
+### Architecture Diagrams
+- [Spanner Architecture](../../architecture-diagrams/storage/spanner/spanner-architecture.png)
+- [Choosing Spanner](../../architecture-diagrams/storage/spanner/choosing-spanner.png)
+
+---
+
 ## Cloud SQL vs Spanner
 | Requirement                                   | Cloud SQL | Spanner   |
 | --------------------------------------------- | --------- | --------- |
@@ -88,8 +94,8 @@ This architecture supports:
 
 A useful decision shortcut:
 
-Relational + normal application scale → Cloud SQL
+**Relational + normal application scale → Cloud SQL**
 
-Relational + horizontal/global scale + strong consistency → Spanner
+**Relational + horizontal/global scale + strong consistency → Spanner**
 
 If full relational capability is not required, consider a NoSQL service instead.
