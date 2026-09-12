@@ -1,72 +1,57 @@
-# Cloud SQL Deployment Lab
+# Cloud SQL Labs
 
-## Objective
+This section documents hands-on Google Cloud SQL exercises, deployment patterns,
+connectivity methods, and troubleshooting notes.
 
-Deploy a Cloud SQL instance for Cymbal Superstore's supply chain application.
+## Core Concepts
 
----
+Cloud SQL is a fully managed relational database service supporting:
 
-## Deployment Method
+- MySQL
+- PostgreSQL
+- Microsoft SQL Server
 
-This deployment uses the Google Cloud CLI (`gcloud`).
+Key operational concepts include:
 
----
-## gcloud Command Recognition
+- Managed database provisioning
+- High availability and regional failover
+- Automated backups and point-in-time recovery
+- Read replicas
+- Private IP connectivity
+- Cloud SQL Auth Proxy
+- IAM and VPC integration
 
-    gcloud functions deploy → deploying event-driven serverless code.
-    gcloud run deploy → deploying containers.
-    gcloud sql instances create → creating managed databases
-    
-## Example Command
+## Deployment Recognition
 
-```bash
-gcloud sql instances create cymbal_supplychain_db \
---cpu 8 \
---memory 512MB \
---region us-central1 \
---availability-type=regional
+Common `gcloud` commands:
+
+```text
+gcloud functions deploy        → deploy event-driven serverless functions
+gcloud run deploy              → deploy containerized applications
+gcloud sql instances create    → create managed Cloud SQL instances
 ```
 
 ---
 
-## Key Parameters
+## Labs
+### Configure Cloud SQL
 
-| Parameter | Purpose |
-|---|---|
-| --cpu | Number of virtual CPUs |
-| --memory | Allocated RAM |
-| --region | Deployment region |
+Hands-on lab covering:
 
----
+- Creating a Cloud SQL database
+- Configuring a VM to run a proxy
+- Connecting an application to Cloud SQL
+- Connecting through Private IP
+- Comparing external proxy and private-network connectivity
 
-## Concepts Learned
+See:
 
-- Managed relational databases
-- Regional deployment
-- CLI deployment workflows
-- Infrastructure automation
-- Google Cloud SQL provisioning
-
----
-
-## Related Services
-
-- Compute Engine
-- Cloud SQL
-- Internal VPC networking
-- HTTPS Load Balancing
-
----
-
-- HA failover
-- regional redundancy
-- Cloud SQL vs self-managed MySQL
-
----
+Configure Cloud SQL
 
 ## ACE Recognition Notes
-
-- Cloud Run = serverless containers
-- Cloud Run functions = event-driven snippets
-- GKE = Kubernetes orchestration
-- N2 = balanced production workloads
+- Cloud SQL is a managed relational database service.
+- Private IP keeps database traffic on private Google Cloud networking.
+- Cloud SQL Auth Proxy simplifies authentication and encrypted connectivity.
+- Regional HA uses a primary and standby instance.
+- Read replicas support read scaling.
+- Spanner is generally considered when global scale or horizontal scalability is required
