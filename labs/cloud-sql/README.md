@@ -23,7 +23,7 @@ This deployment uses the Google Cloud CLI (`gcloud`).
 gcloud sql instances create cymbal_supplychain_db \
 --cpu 8 \
 --memory 512MB \
---region us-central \
+--region us-central1 \
 --availability-type=regional
 ```
 
@@ -69,5 +69,4 @@ gcloud sql instances create cymbal_supplychain_db \
 - Cloud Run = serverless containers
 - Cloud Run functions = event-driven snippets
 - GKE = Kubernetes orchestration
-- Cloud SQL does NOT support MySQL UDFs
 - N2 = balanced production workloads
