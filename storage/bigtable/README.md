@@ -110,9 +110,9 @@ This type of Boolean predicate can be used to filter sensor observations,
 derive features, trigger alerts, or classify records before storing or
 analyzing them.
 
-```markdown
+
 ![AI/ML Feature Engineering Flow](../../architecture-diagrams/storage/bigtable/ai-ml-feature-engineering-flow.png)
-```
+
 ```text
 Temperature > 90 ──┐
                     ├── AND ──► Danger Condition ──► Bigtable
