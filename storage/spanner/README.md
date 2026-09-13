@@ -92,6 +92,8 @@ This architecture supports:
 
 ## ACE Recognition Notes
 
+Spanner → ACID + global scale. Remember ACID as Atomicity, Consistency, Isolation, Durability; Spanner combines transactional relational behavior with global scalability.
+
 A useful decision shortcut:
 
 **Relational + normal application scale → Cloud SQL**
