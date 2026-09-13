@@ -4,7 +4,7 @@ Architecture diagrams documenting Google Cloud Resource Manager concepts.
 
 ## Organization and Project Delegation
 
-![Organization Project Delegation](./organization-project-delegation.png)
+![Organization Project Delegation](./diagram/organization-project-delegation.png)
 
 Shows:
 
