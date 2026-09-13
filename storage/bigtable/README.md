@@ -54,3 +54,31 @@ Discrete Math
 → Feature Engineering
 → Machine Learning
 → Intelligent Applications
+
+---
+
+## ACE Recognition Note
+
+Use Bigtable when the workload requires:
+
+- Very large NoSQL datasets
+- High read/write throughput
+- Low latency
+- Horizontal scaling
+- HBase compatibility
+
+Think:
+
+IoT + telemetry + massive scale + high throughput → Bigtable
+
+---
+
+## Related Academic Foundations
+
+This topic reinforces concepts studied in:
+
+- Discrete Mathematics
+- Data Structures and Algorithms
+- Database Management Systems
+- Artificial Intelligence and Machine Learning
+- Internet of Things
