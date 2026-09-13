@@ -63,3 +63,8 @@ Use Cloud SQL when:
 - You do not require the horizontal scaling or global availability provided by Spanner
 
 ![Choosing Cloud SQL](./choosing-cloud-sql.png)
+
+---
+
+## ACE recognition
+Cloud SQL → managed traditional relational database. Think MySQL/PostgreSQL managed service when moving a conventional relational database into Google Cloud.
