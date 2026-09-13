@@ -310,3 +310,34 @@ Use **Cloud Storage** when the workload needs object storage instead.
 
 The selection process begins with the structure and access characteristics
 of the data rather than the database product itself.
+
+---
+
+## Module Review
+
+From an infrastructure perspective, the key goal is to recognize which
+Google Cloud storage or database service fits a particular workload.
+
+| Service | Primary Use |
+|---|---|
+| Cloud Storage | Fully managed object storage |
+| Filestore | Fully managed file storage |
+| Cloud SQL | Managed MySQL and PostgreSQL relational databases |
+| Spanner | Relational database with transactional consistency, global scale, and high availability |
+| AlloyDB | Fully managed PostgreSQL-compatible database for demanding workloads |
+| Firestore | Fully managed NoSQL document database |
+| Bigtable | Fully managed NoSQL wide-column database |
+| Memorystore | Fully managed in-memory datastore for Redis |
+
+### ACE Recognition Shortcut
+
+- Object data → **Cloud Storage**
+- Shared file system / NAS → **Filestore**
+- Standard relational database → **Cloud SQL**
+- Relational + global scale + strong transactional consistency → **Spanner**
+- PostgreSQL-compatible + demanding transactional/analytical workloads → **AlloyDB**
+- Document-oriented application data → **Firestore**
+- Massive low-latency wide-column / telemetry workloads → **Bigtable**
+- In-memory caching / very low latency → **Memorystore**
+
+> The objective here is infrastructure service selection, not designing an entire data strategy.
