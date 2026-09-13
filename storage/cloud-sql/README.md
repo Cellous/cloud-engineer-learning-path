@@ -68,3 +68,5 @@ Use Cloud SQL when:
 
 ## ACE recognition
 Cloud SQL → managed traditional relational database. Think MySQL/PostgreSQL managed service when moving a conventional relational database into Google Cloud.
+
+BigQuery → data warehouse + interactive SQL analytics. The course explanation emphasizes storing huge datasets and analyzing them without moving the data to a separate processing system.
