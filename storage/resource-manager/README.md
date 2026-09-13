@@ -4,7 +4,7 @@ Architecture diagrams documenting Google Cloud Resource Manager concepts.
 
 ## Organization and Project Delegation
 
-![Organization Project Delegation](./organization-project-delegation.png)
+![Organization Project Delegation](diagrams/organization-project-delegation.png)
 
 Shows:
 
@@ -17,7 +17,7 @@ Shows:
 
 ## Resource Manager Hierarchy
 
-![Resource Manager Hierarchy](./resource-manager-hierarchy.png)
+![Resource Manager Hierarchy](diagrams/resource-manager-hierarchy.png)
 
 Shows:
 
@@ -37,7 +37,7 @@ accumulate upward.**
 
 ## Resource Scope and Projects
 
-![Resource Scope and Projects](./resource-scope-and-projects.png)
+![Resource Scope and Projects](diagrams/resource-scope-and-projects.png)
 
 Shows the relationship between:
 
