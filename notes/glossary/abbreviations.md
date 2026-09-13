@@ -27,3 +27,5 @@
 | ------- | ------------------------------ |
 | CIDR    | Classless Inter-Domain Routing |
 | SSO     | Single Sign-On                 |
+| ACID    | Atomicity, Consistency, Isolation, Durability |
+
