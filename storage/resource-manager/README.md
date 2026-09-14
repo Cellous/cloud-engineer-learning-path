@@ -253,3 +253,4 @@ environment=prod → Label
 
 web-server → Network tag
 ```
+![Labels](diagrams/label-flow.png)
