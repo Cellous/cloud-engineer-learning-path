@@ -254,3 +254,125 @@ environment=prod → Label
 web-server → Network tag
 ```
 ![Labels](diagrams/label-flow.png)
+
+---
+
+## Billing and Cost Management
+
+Google Cloud billing is accumulated from the resources used by projects.
+
+Budgets help track spending and provide alerts as costs approach defined thresholds.
+
+### Budgets
+
+A budget can be configured for a project or group of projects.
+
+Budget amounts can be based on:
+
+- A specified amount
+- Previous spending
+
+Alerts can be configured at percentage thresholds such as:
+
+- 50%
+- 90%
+- 100%
+
+Alerts can be triggered using:
+
+- Actual spend
+- Forecasted spend
+
+### Budget Alerts
+
+Budget alerts can send email notifications when spending reaches configured thresholds.
+
+A budget alert can include:
+
+- Project information
+- Percentage of budget consumed
+- Budget amount
+- Threshold exceeded
+
+### Programmatic Cost Management
+
+Budget notifications can also be published through Pub/Sub.
+
+This enables automation such as:
+
+```text
+Cloud Billing Budget
+        ↓
+      Pub/Sub
+        ↓
+Cloud Run function
+        ↓
+Automated cost-management action
+```
+Potential automated actions could include:
+
+- Sending additional notifications
+- Creating incident records
+- Triggering cost-management workflows
+- Flagging unexpectedly expensive resources
+
+> A budget alert monitors spending. It does not automatically stop resource
+> consumption unless you build automation around the notification.
+
+### Labels and Billing Analysis
+
+Labels make it possible to categorize resource costs.
+
+#### Examples:
+```text
+environment=production
+team=research
+component=frontend
+owner=marcellous
+```
+Billing data can then be analyzed by these labels.
+
+This can help answer questions such as:
+
+- Which team is generating the most cost?
+- Which environment costs the most?
+- Which application component is expensive?
+- Which region or project is generating unexpected network costs?
+
+### Billing Data with BigQuery
+
+Google Cloud billing data can be exported to BigQuery for detailed analysis.
+
+A conceptual query is:
+```sql
+SELECT
+  TO_JSON_STRING(labels) AS labels,
+  SUM(cost) AS cost
+FROM `project.dataset.table`
+GROUP BY labels;
+```
+This allows costs to be aggregated according to resource labels.
+
+### Cost Visualization
+
+Billing information can also be visualized using dashboards and reporting tools.
+
+### Budget Alerts and Automation
+
+![Billing Budget Alert Automation](diagrams/billing-budget-alert-automation.png)
+
+A budget is not a hard spending cap. Budgets monitor spending and can trigger
+alerts or Pub/Sub notifications. Automation can then respond to those
+notifications.
+
+### Billing Analysis and Cost Optimization
+
+![Billing Cost Analysis Flow](diagrams/billing-cost-analysis-flow.png)
+
+Labels can be included with exported billing data so that BigQuery queries
+and dashboards can analyze spending by team, environment, application,
+owner, or other business dimensions.
+>
+> Budget → alert/notification → optional automation, not budget → automatic shutdown.
+>
+---
