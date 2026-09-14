@@ -128,6 +128,87 @@ particular region.
 
 ---
 
+## Labels
+
+Labels are user-defined key-value pairs used to organize Google Cloud resources.
+
+Labels can be attached to resources such as:
+
+- Virtual machines
+- Disks
+- Snapshots
+- Images
+
+They can be created and managed using:
+
+- Google Cloud console
+- `gcloud`
+- Resource Manager API
+
+A resource can have multiple labels.
+
+### Common Label Uses
+
+Labels can identify:
+
+- Environment
+- Team
+- Cost center
+- Application component
+- Resource owner
+- Resource state
+
+Examples:
+
+```text
+environment=production
+environment=test
+
+team=marketing
+team=research
+
+component=redis
+component=frontend
+
+owner=gaurav
+contact=opm
+
+state=inuse
+state=readyfordeletion
+```
+### Why Labels Matter
+
+Labels can help with:
+
+- Resource inventory
+- Cost analysis
+- Budgeting
+- Bulk operations
+- Automation scripts
+- Resource ownership tracking
+- Environment separation
+
+For example, a script could locate all resources with:
+```text
+environment=production
+```
+and perform an inventory or maintenance operation on that group.
+
+### Labels vs Network Tags
+
+Do not confuse labels with network tags.
+| Feature                | Labels                | Network Tags |
+| ---------------------- | --------------------- | ------------ |
+| Format                 | Key-value pairs       | Strings      |
+| Primary purpose        | Resource organization | Networking   |
+| Billing use            | Yes                   | No           |
+| Inventory/search       | Yes                   | Limited      |
+| Firewall rules         | No                    | Yes          |
+| Static route targeting | No                    | Yes          |
+| Applied primarily to   | Many resource types   | VM instances |
+
+---
+
 ## ACE Recognition Notes
 Remember:
 ```text
@@ -161,4 +242,14 @@ Capacity planning
 ```text
 Quota ≠ guaranteed availability
 ```
+```text
+Labels → organization, cost, inventory, ownership
 
+Network tags → firewall rules and networking
+```
+A useful shortcut:
+```text
+environment=prod → Label
+
+web-server → Network tag
+```
