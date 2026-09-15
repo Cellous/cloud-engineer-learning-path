@@ -209,13 +209,296 @@ Do not confuse labels with network tags.
 
 ---
 
+## Billing and Cost Management
+
+Google Cloud billing is accumulated from the resources used by projects.
+Billing and cost management includes:
+
+- Monitoring resource costs
+- Creating budgets
+- Configuring alerts
+- Reviewing transactions
+- Categorizing costs with labels
+- Exporting billing data
+- Analyzing billing data with BigQuery
+- Automating responses with Pub/Sub and Cloud Run functions
+
+---
+Budgets help track spending and provide alerts as costs approach defined thresholds.
+
+### Budgets
+
+A budget can be configured for a project or group of projects.
+
+Budget amounts can be based on:
+
+- A specified amount
+- Previous spending
+
+Alert thresholds can be triggered using:
+
+- Actual spend
+- Forecasted spend
+
+Example thresholds:
+
+- 50%
+- 90%
+- 100%
+
+> **Important:** A Google Cloud budget is not a hard spending cap.
+> It monitors spending and generates notifications when configured
+> thresholds are reached.
+
+### Budget Workflow
+
+A budget can be scoped to one or more projects.
+
+The basic workflow is:
+
+```text
+Billing
+  ↓
+Budgets & alerts
+  ↓
+Create Budget
+  ↓
+Scope
+  ↓
+Amount
+  ↓
+Alert Thresholds
+  ↓
+Optional Pub/Sub Automation
+```
+### Budget Alerts
+
+Budget alerts can send email notifications (to billing administrators and other configured
+recipients) when spending reaches configured thresholds.
+
+A budget alert can include:
+
+- Project information
+- Percentage of budget consumed
+- Budget amount
+- Threshold exceeded
+
+---
+
+### Programmatic Cost Management
+
+Budget notifications can also be published through Pub/Sub.
+
+This enables automation such as:
+
+```text
+Cloud Billing Budget
+        ↓
+Threshold Reached
+        ↓
+      Pub/Sub
+        ↓
+Cloud Run function
+        ↓
+Automated Response to cost-management action
+```
+Potential automated actions could include:
+
+- Sending additional notifications
+- Creating incident records
+- Triggering cost-management workflows
+- Flagging unexpectedly expensive resources
+
+> A budget alert monitors spending. It does not automatically stop resource
+> `Budget → alert/notification → optional automation`
+> consumption unless you build automation around the notification.
+> `Budget ≠ automatic shutdown`
+
+#### Budget Alerts and Automation
+
+![Billing Budget Alert Automation](diagrams/billing-budget-alert-automation.png)
+
+A budget is not a hard spending cap. Budgets monitor spending and can trigger
+alerts or Pub/Sub notifications. Automation can then respond to those
+notifications.
+---
+
+### Transactions
+
+The Billing Transactions view provides detailed information about:
+
+- Resource charges
+- Compute usage
+- Disk usage
+- Credits
+- Billing adjustments
+
+This helps trace a billing total back to individual services and resource usage.
+
+---
+
+## Labels and Billing Analysis
+
+Labels make it possible to categorize resource costs.
+
+#### Examples:
+```text
+environment=production
+team=research
+component=frontend
+owner=marcellous
+```
+Billing data can then be analyzed by these labels.
+
+This can help answer questions such as:
+
+- Which team is generating the most cost?
+- Which environment costs the most?
+- Which application component is expensive?
+- Which region or project is generating unexpected network costs?
+- Which resources belong to a particular owner?
+
+---
+
+### Billing Data Export
+
+Billing data can be exported for deeper analysis.
+
+#### BigQuery Export
+
+```text
+Billing Account
+      ↓
+Billing Export
+      ↓
+BigQuery Dataset
+      ↓
+SQL Queries
+      ↓
+Cost Analysis
+```
+A BigQuery dataset must exist before configuring the export.
+
+#### File Export
+
+Billing data can also be exported as files.
+
+Supported examples shown in the course:
+
+- CSV
+- JSON
+
+Conceptually:
+```text
+Billing Data
+    ↓
+CSV / JSON
+    ↓
+Cloud Storage Bucket
+```
+A Cloud Storage bucket must exist before configuring the file export.
+
+---
+
+## Billing Data with BigQuery
+
+Google Cloud billing data can be exported to BigQuery for detailed analysis.
+
+A conceptual query is:
+```sql
+SELECT
+  TO_JSON_STRING(labels) AS labels,
+  SUM(cost) AS cost
+FROM `project.dataset.table`
+GROUP BY labels;
+```
+This allows spending to be grouped by labels such as:
+
+- Team
+- Environment
+- Application
+- Owner
+- Cost center.
+
+---
+
+### Cost Visualization
+
+Billing information can also be visualized using dashboards and reporting tools.
+
+A conceptual flow is:
+```text
+Google Cloud Resources
+        ↓
+      Labels
+        ↓
+ Billing Data Export
+        ↓
+     BigQuery
+        ↓
+Dashboard / Reporting
+        ↓
+Cost Optimization
+```
+#### Billing Analysis and Cost Optimization
+
+![Billing Cost Analysis Flow](diagrams/billing-cost-analysis-flow.png)
+
+Labels can be included with exported billing data so that BigQuery queries
+and dashboards can analyze spending by team, environment, application,
+owner, or other business dimensions.
+
+
+---
+
+## Billing Administration
+
+Google Cloud billing administration includes monitoring costs,
+creating budgets, configuring alerts, reviewing transactions,
+and exporting billing data for further analysis.
+
+---
 ## ACE Recognition Notes
 Remember:
+`Quota = limits how much you can provision or consume.`
+`Budget = monitors spending and alerts you.`
+`Billing export = sends cost data elsewhere for analysis.`
+`Labels = let you categorize resources so spending can be analyzed meaningfully.`
+Also remember:
+`Quota ≠ guaranteed availability`
+Having sufficient quota does not guarantee that Google Cloud currently
+has capacity available.
+
+Useful shortcuts:
 ```text
-Quota = permission/capacity limit
+environment=prod
+→ Label
+
+web-server
+→ Network tag
+
+Budget
+→ monitoring and notification
+
+Quota
+→ resource/API limit
+```
+
+```text
+Quota = resource or API usage limit
 Availability = whether Google Cloud currently has the resource available
 ```
-Having quota does not guarantee capacity.
+Having quota does not guarantee capacity. A quota is not really a permission. 
+IAM controls permission. Quotas control how much of a resource or API operation can be consumed.
+
+So the relationship becomes:
+```text
+IAM      → Who is allowed to do it?
+Quota    → How much can be used?
+Budget   → How much money are we approaching?
+Billing  → What did we actually consume and pay for?
+Labels   → How do we categorize and analyze it?
+```
 
 Also distinguish quotas from budgets:
 ```text
@@ -255,124 +538,3 @@ web-server → Network tag
 ```
 ![Labels](diagrams/label-flow.png)
 
----
-
-## Billing and Cost Management
-
-Google Cloud billing is accumulated from the resources used by projects.
-
-Budgets help track spending and provide alerts as costs approach defined thresholds.
-
-### Budgets
-
-A budget can be configured for a project or group of projects.
-
-Budget amounts can be based on:
-
-- A specified amount
-- Previous spending
-
-Alerts can be configured at percentage thresholds such as:
-
-- 50%
-- 90%
-- 100%
-
-Alerts can be triggered using:
-
-- Actual spend
-- Forecasted spend
-
-### Budget Alerts
-
-Budget alerts can send email notifications when spending reaches configured thresholds.
-
-A budget alert can include:
-
-- Project information
-- Percentage of budget consumed
-- Budget amount
-- Threshold exceeded
-
-### Programmatic Cost Management
-
-Budget notifications can also be published through Pub/Sub.
-
-This enables automation such as:
-
-```text
-Cloud Billing Budget
-        ↓
-      Pub/Sub
-        ↓
-Cloud Run function
-        ↓
-Automated cost-management action
-```
-Potential automated actions could include:
-
-- Sending additional notifications
-- Creating incident records
-- Triggering cost-management workflows
-- Flagging unexpectedly expensive resources
-
-> A budget alert monitors spending. It does not automatically stop resource
-> consumption unless you build automation around the notification.
-
-### Labels and Billing Analysis
-
-Labels make it possible to categorize resource costs.
-
-#### Examples:
-```text
-environment=production
-team=research
-component=frontend
-owner=marcellous
-```
-Billing data can then be analyzed by these labels.
-
-This can help answer questions such as:
-
-- Which team is generating the most cost?
-- Which environment costs the most?
-- Which application component is expensive?
-- Which region or project is generating unexpected network costs?
-
-### Billing Data with BigQuery
-
-Google Cloud billing data can be exported to BigQuery for detailed analysis.
-
-A conceptual query is:
-```sql
-SELECT
-  TO_JSON_STRING(labels) AS labels,
-  SUM(cost) AS cost
-FROM `project.dataset.table`
-GROUP BY labels;
-```
-This allows costs to be aggregated according to resource labels.
-
-### Cost Visualization
-
-Billing information can also be visualized using dashboards and reporting tools.
-
-### Budget Alerts and Automation
-
-![Billing Budget Alert Automation](diagrams/billing-budget-alert-automation.png)
-
-A budget is not a hard spending cap. Budgets monitor spending and can trigger
-alerts or Pub/Sub notifications. Automation can then respond to those
-notifications.
-
-### Billing Analysis and Cost Optimization
-
-![Billing Cost Analysis Flow](diagrams/billing-cost-analysis-flow.png)
-
-Labels can be included with exported billing data so that BigQuery queries
-and dashboards can analyze spending by team, environment, application,
-owner, or other business dimensions.
->
-> Budget → alert/notification → optional automation, not budget → automatic shutdown.
->
----
