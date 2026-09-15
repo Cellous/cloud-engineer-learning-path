@@ -538,3 +538,6 @@ web-server → Network tag
 ```
 ![Labels](diagrams/label-flow.png)
 
+### Related Lab
+
+[Examine Billing Data with BigQuery](../../labs/bigquery/examine-billing-data/)
