@@ -1,4 +1,5 @@
 # Google Cloud Resource Management
+Reporting is an important part of resource management. It connects the technical side of cloud engineering with governance and FinOps.
 
 ## Overview
 
