@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="LyNtX6wEO6EBIQuDxLRt">
+    <mxGraphModel dx="847" dy="553" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="74" width="259" x="411" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Monitor the health and behavior of those resources&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="457" x="195" y="349" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#D5E8D4,#009900);gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Observability&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="457" x="195" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Manage resources and cost&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="457" x="195" y="201" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-5" edge="1" parent="1" source="vAdqt7jUYCgnC2Nc8jG9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="421.60003662109375" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Resource Management&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="457" x="195" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="424.69996337890626" y="236" as="sourcePoint" />
+            <mxPoint x="422.3" y="269" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="424.69996337890626" y="310" as="sourcePoint" />
+            <mxPoint x="422.3" y="343" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;Blue&amp;nbsp; = Resource governance and cost&lt;br&gt;Green = Monitoring and operational visibility&lt;/div&gt;" vertex="1">
+          <mxGeometry height="49" width="248" x="417" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Legend" vertex="1">
+          <mxGeometry height="30" width="60" x="417" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="vAdqt7jUYCgnC2Nc8jG9-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410.32" y="444.4" as="sourcePoint" />
+            <mxPoint x="669.69" y="440.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vAdqt7jUYCgnC2Nc8jG9-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 31px;&quot;&gt;Google Cloud Observability&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="49" width="556" x="151" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
