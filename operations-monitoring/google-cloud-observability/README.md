@@ -8,6 +8,8 @@ diagnostics, tracing, and application-performance tools for cloud systems.
 It can dynamically discover cloud resources and application services
 across environments such as Google Cloud and AWS.
 
+![Google Cloud Observability](diagram/google-cloud-observability.png)
+
 ## Core Services
 
 | Service | Purpose |
