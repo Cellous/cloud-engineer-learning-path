@@ -159,7 +159,7 @@ Alert
 Notification channel
 ```
 Example:
-
+![Alerting Policies](diagrams/alerting-policies.png)
 
 ## Uptime Checks
 
