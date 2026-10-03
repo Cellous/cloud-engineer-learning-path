@@ -114,6 +114,7 @@ Conceptually:
                                       |
                                 AWS Account
 ```
+![Single Pane of Glass](single-pane-of-glass.png)
 
 ---
 ## Uptime Checks
