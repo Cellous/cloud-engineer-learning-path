@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="HznBlEVecWCp37CB4fRu">
+    <mxGraphModel dx="1226" dy="810" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;For 1 minute&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="330" x="260" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-8" edge="1" parent="1" source="_fTicE4fJcrjPeOLjxWK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="423.79998779296875" y="162.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Network outbound traffic&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="330" x="260" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Above threshold&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="330" x="260" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Alert triggered&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="330" x="260" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Email / SMS / other notification&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="330" x="260" y="381" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.20001220703125" y="204" as="sourcePoint" />
+            <mxPoint x="424" y="233.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426.20001220703125" y="278" as="sourcePoint" />
+            <mxPoint x="425" y="307.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426.20001220703125" y="346" as="sourcePoint" />
+            <mxPoint x="425" y="375.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
