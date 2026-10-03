@@ -159,7 +159,16 @@ Alert
 Notification channel
 ```
 Example:
+
 ![Alerting Policies](diagrams/alerting-policies.png)
+
+#### Alerting Best Practices
+- Alert on symptoms rather than only causes
+- Use multiple notification channels
+- Make alerts actionable
+- Include troubleshooting guidance
+- Avoid unnecessary alert noise
+---
 
 ## Uptime Checks
 
