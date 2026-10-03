@@ -8,7 +8,7 @@ diagnostics, tracing, and application-performance tools for cloud systems.
 It can dynamically discover cloud resources and application services
 across environments such as Google Cloud and AWS.
 
-![Google Cloud Observability](diagram/google-cloud-observability.png)
+![Google Cloud Observability](diagrams/google-cloud-observability.png)
 
 ## Core Services
 
@@ -114,7 +114,7 @@ Conceptually:
                                       |
                                 AWS Account
 ```
-![Single Pane of Glass](single-pane-of-glass.png)
+![Single Pane of Glass](./diagrams/single-pane-of-glass.png)
 
 ---
 ## Uptime Checks
