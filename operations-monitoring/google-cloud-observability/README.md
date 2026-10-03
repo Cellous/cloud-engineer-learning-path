@@ -86,7 +86,7 @@ That data can then be used to build:
 
 ---
 
-## Metrics Scopes
+### Metrics Scopes
 
 A metrics scope is the root entity that stores monitoring and
 configuration information for monitored projects.
@@ -117,6 +117,50 @@ Conceptually:
 ![Single Pane of Glass](./diagrams/single-pane-of-glass.png)
 
 ---
+
+### Dashboards
+
+Cloud Monitoring dashboards can visualize metrics such as:
+
+- CPU utilization
+- Network traffic
+- Packets sent
+- Packets received
+- Dropped packets
+
+Charts can use:
+
+- Filters
+- Groups
+- Aggregations
+
+Dashboards provide visual operational awareness, but they require
+someone to be looking at them.
+
+---
+
+### Alerting Policies
+
+Alerting policies automatically notify operators when defined
+conditions are met.
+
+Conceptually:
+```text
+Metric
+  ↓
+Condition
+  ↓
+Threshold
+  ↓
+Duration
+  ↓
+Alert
+  ↓
+Notification channel
+```
+Example:
+
+
 ## Uptime Checks
 
 Uptime checks test whether public services are reachable and responding.
