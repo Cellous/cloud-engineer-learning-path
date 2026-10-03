@@ -62,6 +62,60 @@ Trace → Where is the request slowing down?
 Profiler → Where is the application consuming resources?
 ```
 
+## Cloud Monitoring
+
+Cloud Monitoring provides visibility into platform, system, and
+application performance.
+
+It can dynamically configure monitoring after resources are deployed
+and provides intelligent defaults for common monitoring tasks.
+
+Monitoring data can include:
+
+- Metrics
+- Events
+- Metadata
+
+That data can then be used to build:
+
+- Dashboards
+- Charts
+- Alerts
+- Uptime checks
+- Health checks
+
+---
+
+## Metrics Scopes
+
+A metrics scope is the root entity that stores monitoring and
+configuration information for monitored projects.
+
+A metrics scope can include:
+
+- Custom dashboards
+- Alerting policies
+- Uptime checks
+- Notification channels
+- Group definitions
+
+A single metrics scope can monitor multiple Google Cloud projects.
+
+Conceptually:
+
+```text
+                  Metrics Scope
+                       |
+        +--------------+--------------+
+        |              |              |
+   Project A        Project B      Project C
+                                      |
+                               AWS Connector
+                                      |
+                                AWS Account
+```
+
+---
 ## Uptime Checks
 
 Uptime checks test whether public services are reachable and responding.
