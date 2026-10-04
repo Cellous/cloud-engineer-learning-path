@@ -251,6 +251,8 @@ Cloud Monitoring API
 > Compute Engine VM instances and sends it to Cloud Monitoring.
 
 ---
+![Ops Agent Flow](diagrams/ops-agent-flow.png)
+
 ![Monitoring Pipeline](diagrams/monitoring-pipeline.png)
 
 
