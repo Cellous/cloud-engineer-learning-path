@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="HznBlEVecWCp37CB4fRu">
+    <mxGraphModel dx="1226" dy="810" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="169" as="sourcePoint" />
+            <mxPoint x="423.79998779296875" y="198.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Optional AWS Connector&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="270" x="290" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.20001220703125" y="240" as="sourcePoint" />
+            <mxPoint x="424" y="269.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426.20001220703125" y="314" as="sourcePoint" />
+            <mxPoint x="425" y="343.59999084472656" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 31px;&quot;&gt;Metrics Scope Architecture&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="420" x="215" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Projects A/B/C&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="36" width="270" x="290" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Metrics Scope&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="270" x="290" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="_fTicE4fJcrjPeOLjxWK-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Scoping Project&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="36" width="270" x="290" y="131" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
