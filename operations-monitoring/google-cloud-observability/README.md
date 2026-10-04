@@ -250,9 +250,8 @@ Cloud Monitoring API
 > The Ops Agent collects system and application telemetry from
 > Compute Engine VM instances and sends it to Cloud Monitoring.
 
-![Monitoring Pipeline](diagrams/monitoring-pipeline.png)
 ---
-
+![Monitoring Pipeline](diagrams/monitoring-pipeline.png)
 
 
 ---
@@ -341,7 +340,7 @@ Autoscaling decision
 ### Metric-Based Autoscaling Flow
 
 ![Metric-Based Autoscaling](diagrams/autoscaling-with-metrics.png)
----
+
 
 ## ACE Recognition
 ```text
