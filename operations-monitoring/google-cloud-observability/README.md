@@ -88,7 +88,7 @@ That data can then be used to build:
 
 ### Metrics Scopes
 
-A metrics scope is the root entity that stores monitoring and
+A metrics scope is the root entity that holds monitoring and
 configuration information for monitored projects.
 
 A metrics scope can include:
@@ -115,6 +115,9 @@ Conceptually:
                                 AWS Account
 ```
 ![Single Pane of Glass](./diagrams/single-pane-of-glass.png)
+
+
+![Metrics Scope Architecture](diagrams/metrics-scope-architecture.png)
 
 ---
 
@@ -168,6 +171,13 @@ Example:
 - Make alerts actionable
 - Include troubleshooting guidance
 - Avoid unnecessary alert noise
+
+![Alert Policy Flow](diagrams/alert-policy-flow.png)
+```text
+Dashboard = passive visibility
+
+Alert = active notification
+```
 ---
 
 ## Uptime Checks
@@ -237,11 +247,15 @@ Cloud Monitoring API
 | Notifications                |
 +------------------------------+
 ```
-The Ops Agent is the primary Google Cloud agent for collecting telemetry from
-Compute Engine workloads.
+> The Ops Agent collects system and application telemetry from
+> Compute Engine VM instances and sends it to Cloud Monitoring.
 
+![Monitoring Pipeline](diagrams/monitoring-pipeline.png)
 ---
 
+
+
+---
 ## Custom Metrics
 
 If built-in Monitoring metrics do not represent the condition that matters to
@@ -277,6 +291,13 @@ Cloud Monitoring
     ↓
 Dashboard / Alert / Autoscaling
 ```
+
+### Custom Metric to Time Series
+
+This diagram shows how an application-defined metric becomes time-series data in Cloud Monitoring and can then drive dashboards, alerts, or autoscaling.
+
+![Custom Metric to Time Series](diagrams/custom-metric-time-series.png)
+
 ---
 
 ## Autoscaling with Metrics
@@ -300,9 +321,9 @@ VM metrics
 Average metric value across VMs
    ↓
 Compare with utilization target
-
+```
 If the metric represents the entire managed instance group:
-
+```text
 Group-wide metric
    ↓
 Compare directly with utilization target
@@ -317,7 +338,9 @@ Select individual value
   ↓
 Autoscaling decision
 ```
+### Metric-Based Autoscaling Flow
 
+![Metric-Based Autoscaling](diagrams/autoscaling-with-metrics.png)
 ---
 
 ## ACE Recognition
