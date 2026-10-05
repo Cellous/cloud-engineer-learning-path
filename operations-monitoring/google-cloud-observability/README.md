@@ -297,7 +297,7 @@ Dashboard / Alert / Autoscaling
 
 This diagram shows how an application-defined metric becomes time-series data in Cloud Monitoring and can then drive dashboards, alerts, or autoscaling.
 
-![Custom Metric to Time Series](diagrams/custom-metric-time-series.png)
+![Custom Metric to Time Series](diagrams/custom-metric.png)
 
 ---
 
