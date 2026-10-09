@@ -583,4 +583,4 @@ Need raw application logs
 Need grouped exceptions
 → Error Reporting
 
-!Cloud Trace Request](diagrams/cloud-trace-request-flow.png)
+![Cloud Trace Request](diagrams/cloud-trace-request-flow.png)
