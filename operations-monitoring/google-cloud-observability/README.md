@@ -424,3 +424,87 @@ Example use cases include:
 - Incident investigation
 - Network forensics
 - Identifying high-traffic IP addresses
+
+---
+
+## Error Reporting
+
+Error Reporting is a Google Cloud Observability service that counts,
+analyzes, and aggregates errors from running cloud services.
+
+It provides a centralized interface where errors can be:
+
+- Grouped
+- Sorted
+- Filtered
+- Reviewed
+- Monitored with notifications
+
+Real-time notifications can be configured when new errors are detected.
+
+### Supported Services
+
+The course lists support for:
+
+- App Engine
+- Apps Script
+- Compute Engine
+- Cloud Run
+- Cloud Run functions
+- Google Kubernetes Engine (GKE)
+- Amazon EC2
+
+### Supported Languages
+
+The exception stack trace parser can process:
+
+- Go
+- Java
+- .NET
+- Node.js
+- PHP
+- Python
+- Ruby
+
+### Conceptual Flow
+
+```text
+Application / Cloud Service
+          ↓
+      Exception
+          ↓
+    Error Reporting
+          ↓
+ Count / Analyze / Aggregate
+          ↓
+ Centralized Error Dashboard
+          ↓
+ Filter / Investigate / Notify
+```
+## ACE Recognition
+
+Repeated application exceptions
+→ Error Reporting
+
+Need to group similar failures
+→ Error Reporting
+
+Need notification when a new application error appears
+→ Error Reporting
+
+Need raw log searching
+→ Cloud Logging
+
+## Logging vs Error Reporting
+
+| Need                                  | Service         |
+| ------------------------------------- | --------------- |
+| Search raw log entries                | Cloud Logging   |
+| Filter application/system logs        | Cloud Logging   |
+| Group repeated application exceptions | Error Reporting |
+| Track occurrence of recurring errors  | Error Reporting |
+| Notify when new errors appear         | Error Reporting |
+
+
+---
+
