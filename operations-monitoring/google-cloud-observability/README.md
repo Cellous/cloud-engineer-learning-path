@@ -584,3 +584,97 @@ Need grouped exceptions
 → Error Reporting
 
 ![Cloud Trace Request](diagrams/cloud-trace-request-flow.png)
+
+---
+
+## Cloud Profiler
+
+Cloud Profiler continuously analyzes application performance to identify
+CPU-intensive and memory-intensive functions.
+
+It is designed for production environments and uses statistical techniques
+with low-impact instrumentation so profiling can run across production
+application instances without significantly slowing the application.
+
+### Why Profiling Matters
+
+Poorly performing code can increase:
+
+- Application latency
+- Infrastructure cost
+- CPU consumption
+- Memory consumption
+
+Development-time profiling does not always reflect production behavior, so
+Cloud Profiler provides visibility into how code actually performs under
+real workloads.
+
+### Core Capabilities
+
+Cloud Profiler can:
+
+- Continuously analyze production performance
+- Identify CPU-intensive functions
+- Identify memory-intensive functions
+- Run with low instrumentation overhead
+- Analyze applications across production instances
+
+### Environments
+
+The course notes that Profiler can analyze applications running in:
+
+- Google Cloud
+- Other cloud platforms
+- On-premises environments
+
+### Supported Languages
+
+The course lists support for:
+
+- Java
+- Go
+- Node.js
+- Python
+
+### Conceptual Flow
+
+```text
+Production Application
+        ↓
+Profiler Instrumentation
+        ↓
+CPU / Memory Samples
+        ↓
+Cloud Profiler
+        ↓
+Performance Analysis
+        ↓
+Hot Functions / Bottlenecks
+        ↓
+Code Optimization
+```
+## ACE Recognition
+
+High CPU inside application code
+→ Cloud Profiler
+
+Memory-intensive functions
+→ Cloud Profiler
+
+Slow request across multiple services
+→ Cloud Trace
+
+Repeated application exceptions
+→ Error Reporting
+
+Raw event or application records
+→ Cloud Logging
+
+### Trace vs Profiler
+| Question                                   | Service        |
+| ------------------------------------------ | -------------- |
+| Where is a request slowing down?           | Cloud Trace    |
+| Which function is consuming CPU?           | Cloud Profiler |
+| Which function is using excessive memory?  | Cloud Profiler |
+| How does a request travel across services? | Cloud Trace    |
+
