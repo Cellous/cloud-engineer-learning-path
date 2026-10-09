@@ -509,3 +509,78 @@ Need raw log searching
 
 ---
 
+## Cloud Trace
+
+Cloud Trace is a distributed tracing system that collects latency data
+from applications and displays performance information in the Google
+Cloud console.
+
+It helps engineers understand how requests propagate through an
+application and where latency is introduced.
+
+### Core Capabilities
+
+Cloud Trace provides:
+
+- Near real-time trace data
+- Latency reporting
+- Per-URL latency sampling
+- Request-path analysis
+- Performance degradation detection
+
+### Trace Sources
+
+The course identifies trace data from:
+
+- App Engine
+- Global external Application Load Balancers
+- Applications instrumented with the Cloud Trace API
+
+### Conceptual Flow
+
+```text
+User Request
+     ↓
+Application
+     ↓
+Service A
+     ↓
+Service B
+     ↓
+Database / Backend
+     ↓
+Cloud Trace
+     ↓
+Latency Analysis
+     ↓
+Performance Insight
+```
+### Cloud Trace helps answer questions such as:
+```text
+- Where is the request slowing down?
+
+- Which service contributes the most latency?
+
+- Did application latency increase over time?
+
+- Which URL or request path is performing poorly?
+
+```
+## ACE Recognition
+
+Request latency
+→ Cloud Trace
+
+Distributed request path
+→ Cloud Trace
+
+Need to identify a slow service in a request chain
+→ Cloud Trace
+
+Need raw application logs
+→ Cloud Logging
+
+Need grouped exceptions
+→ Error Reporting
+
+!Cloud Trace Request](diagrams/cloud-trace-request-flow.png)
