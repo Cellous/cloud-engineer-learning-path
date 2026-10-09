@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="vxymbLCEBzGxBHro1cjS">
+    <mxGraphModel dx="1057" dy="698" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2MrlSZKK07slcMS8ENTW-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 31px;&quot;&gt;Cloud Trace Flow&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="380" x="235" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Service A&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="351.94" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Frontend&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="350.5" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Client&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="350.5" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Group&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="350.5" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#F5F5F5,#FF8000);gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Database&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="351" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Cloud Trace&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="351" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="157" as="sourcePoint" />
+            <mxPoint x="425" y="183.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="221" as="sourcePoint" />
+            <mxPoint x="425" y="247.71000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425.94000000000005" y="547" as="sourcePoint" />
+            <mxPoint x="425.94" y="584.23" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="426.44" y="353" as="sourcePoint" />
+            <mxPoint x="426.44" y="379.71000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="424" y="287" as="sourcePoint" />
+            <mxPoint x="424" y="313.71000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425.00000000000006" y="422" as="sourcePoint" />
+            <mxPoint x="425.00000000000006" y="448.71000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Service B&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="350.5" y="389" as="geometry" />
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-16" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="518.72" as="sourcePoint" />
+            <mxPoint x="425" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2MrlSZKK07slcMS8ENTW-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Latency Analysis&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="32" width="149" x="351.94" y="588" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
