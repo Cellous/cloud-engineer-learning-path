@@ -387,6 +387,15 @@ Core capabilities include:
 
 Logs can be routed to different destinations depending on the use case:
 
+![Cloud Logging Routing Flow](diagrams/cloud-logging-routing-flow.png)
+
+Typical destinations include:
+
+- Cloud Storage for long-term retention
+- BigQuery for SQL analysis
+- Pub/Sub for streaming and automation
+
+
 ```text
 Cloud Logging
      |
@@ -400,3 +409,18 @@ Cloud Logging
             Streaming / automation
 ```
 
+### BigQuery Log Analysis
+
+Routing logs to BigQuery enables large-scale SQL analysis of
+operational and network data.
+
+![BigQuery Log Analysis Flow](diagrams/bigquery-log-analysis-flow.png)
+
+Example use cases include:
+
+- Traffic analysis
+- Capacity forecasting
+- Network cost optimization
+- Incident investigation
+- Network forensics
+- Identifying high-traffic IP addresses
