@@ -505,6 +505,7 @@ Need raw log searching
 | Track occurrence of recurring errors  | Error Reporting |
 | Notify when new errors appear         | Error Reporting |
 
+![Error Reporting](diagrams/error-reporting-flow.png)
 
 ---
 
