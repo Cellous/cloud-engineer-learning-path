@@ -678,3 +678,4 @@ Raw event or application records
 | Which function is using excessive memory?  | Cloud Profiler |
 | How does a request travel across services? | Cloud Trace    |
 
+![Cloud Profiler Analysis Flow](diagrams/cloud-profiler-analysis-flow.png)
