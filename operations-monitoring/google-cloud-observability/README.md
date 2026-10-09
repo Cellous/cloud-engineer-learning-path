@@ -361,3 +361,42 @@ Alerting policy
 Autoscaling metric
 → When should capacity change automatically?
 ```
+
+## Cloud Logging
+
+Cloud Logging is a fully managed service for storing, searching,
+analyzing, monitoring, and alerting on log data from Google Cloud
+and AWS environments.
+
+Cloud Logging can collect:
+
+- Platform logs
+- System logs
+- Application logs
+
+Core capabilities include:
+
+- Reading and writing log entries
+- Searching and filtering logs
+- Logs Explorer
+- Log-based metrics
+- Alerting on log events
+- Routing logs to other Google Cloud services
+
+### Log Routing
+
+Logs can be routed to different destinations depending on the use case:
+
+```text
+Cloud Logging
+     |
+     +--> Cloud Storage
+     |      Long-term storage
+     |
+     +--> BigQuery
+     |      SQL analysis / reporting
+     |
+     +--> Pub/Sub
+            Streaming / automation
+```
+
