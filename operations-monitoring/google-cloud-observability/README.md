@@ -679,3 +679,54 @@ Raw event or application records
 | How does a request travel across services? | Cloud Trace    |
 
 ![Cloud Profiler Analysis Flow](diagrams/cloud-profiler-analysis-flow.png)
+
+---
+
+## Partner Integrations
+
+Google Cloud Observability can integrate with third-party monitoring,
+operations, security, and analytics platforms.
+
+These integrations extend observability beyond native Google Cloud
+resources and can support hybrid-cloud and on-premises environments.
+
+### BindPlane Integration
+
+The course shows BindPlane collecting logs and metrics from on-premises
+systems and forwarding them into Google Cloud Observability.
+
+Conceptually:
+
+```text
+On-Premises Sources
+        │
+        ├── Logs
+        │    ↓
+        │ Cloud Logging API
+        │    ↓
+        │ Cloud Logging
+        │
+        └── Metrics
+             ↓
+          BindPlane
+             ↓
+      Cloud Monitoring API
+             ↓
+       Cloud Monitoring
+```
+Once logs are ingested into Cloud Logging, they can be:
+
+- Viewed and searched
+- Used to create log-based metrics
+- Monitored alongside other metrics
+- Used for alerts
+- Routed to other destinations
+
+Cloud Logging can also route data to:
+
+- Pub/Sub
+- Cloud Storage
+- BigQuery
+---
+
+
