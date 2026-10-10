@@ -753,6 +753,19 @@ Pub/Sub, and Dataflow before delivery to Splunk.
 
 This flow shows how failed log-delivery messages can be routed to an
 unprocessed topic and retried through a secondary Dataflow pipeline.
+
 ---
 
+## Module Review / ACE Recognition
 
+```text
+Site Reliability Engineering foundation
+→ Monitoring
+
+Application latency analysis
+→ Cloud Trace
+
+Integrated observability
+→ Reduces overhead, reduces noise,
+  streamlines operations, and helps fix problems faster
+```
