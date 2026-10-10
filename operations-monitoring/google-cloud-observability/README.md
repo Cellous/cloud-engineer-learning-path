@@ -769,3 +769,65 @@ Integrated observability
 → Reduces overhead, reduces noise,
   streamlines operations, and helps fix problems faster
 ```
+## Module Review
+
+Google Cloud Observability brings together several operational services:
+
+- Monitoring
+- Logging
+- Error Reporting
+- Cloud Trace
+- Cloud Profiler
+
+The course emphasizes that integrating these capabilities into Google Cloud
+helps engineers operate and maintain applications more effectively.
+
+This operational discipline is closely associated with **Site Reliability
+Engineering (SRE)**.
+
+### Conceptual Summary
+
+```text
+Google Cloud Observability
+        |
+        +-- Monitoring
+        +-- Logging
+        +-- Error Reporting
+        +-- Trace
+        +-- Profiler
+        |
+        v
+Operate and maintain applications
+        |
+        v
+Site Reliability Engineering (SRE)
+```
+---
+
+## ACE Recognition
+
+Monitoring
+→ foundational operational visibility
+
+Logging
+→ event and log analysis
+
+Error Reporting
+→ aggregated application errors
+
+Cloud Trace
+→ request latency and tracing
+
+Cloud Profiler
+→ CPU and memory performance analysis
+
+Integrated observability
+→ supports application operations and maintenance
+
+Operations + reliability practices
+→ SRE
+
+```text
+Want deeper SRE knowledge?
+→ SRE book / SRE courses
+```
