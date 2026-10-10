@@ -18,6 +18,7 @@ Google Cloud Engineer Certification (May – June 2026 Cohort)
 
 Status: Active Learning Journey
 Latest Milestone
+
 ✅ Essential Google Cloud Infrastructure: Foundation — Completed
 
 ✅ Essential Cloud Infrastructure: Core Services — Completed
