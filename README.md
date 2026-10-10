@@ -329,3 +329,4 @@ Google Associate Cloud Engineer (ACE)
 | Course | Status |
 |----------|---------|
 | Essential Google Cloud Infrastructure: Foundation | ✅ Completed |
+| Essential Google Cloud Infrastructure: Core Services | ✅ Completed |
