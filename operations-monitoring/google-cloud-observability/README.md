@@ -727,6 +727,32 @@ Cloud Logging can also route data to:
 - Pub/Sub
 - Cloud Storage
 - BigQuery
+
+## Partner Integrations part 2
+
+Google Cloud Observability can integrate with on-premises and third-party
+platforms for monitoring, logging, and analysis.
+
+### On-Premises Observability with BindPlane
+
+![BindPlane Observability Flow](diagrams/bindplane-observability-flow.png)
+
+This flow shows how on-premises telemetry can be sent through BindPlane
+into Cloud Logging and Cloud Monitoring.
+
+### Splunk Log Export Architecture
+
+![Splunk Log Export Architecture](diagrams/splunk-log-export-architecture.png)
+
+This flow shows how Cloud Logging can export log data through a log sink,
+Pub/Sub, and Dataflow before delivery to Splunk.
+
+### Failure Recovery
+
+![Failure Recovery Flow](diagrams/failure-recovery-flow.png)
+
+This flow shows how failed log-delivery messages can be routed to an
+unprocessed topic and retried through a secondary Dataflow pipeline.
 ---
 
 
