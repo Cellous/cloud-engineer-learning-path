@@ -24,3 +24,18 @@ Upcoming topics:
 2. Load Balancing and Autoscaling
 3. Infrastructure Automation
 4. Managed Services
+
+---
+
+```text
+Core Services
+     ↓
+Operate resources
+     ↓
+Monitor resources
+     ↓
+Scale resources
+     ↓
+Automate infrastructure
+```
+
