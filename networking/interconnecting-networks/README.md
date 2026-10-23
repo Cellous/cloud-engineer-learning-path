@@ -6,6 +6,8 @@ solutions.
 Google Cloud provides multiple options for connecting external infrastructure
 to Google Cloud and for sharing networking resources within Google Cloud.
 
+![Interconnecting Networks Overview](diagrams/interconnecting-networks.png)
+
 ## Module Topics
 
 1. Cloud VPN
@@ -100,6 +102,9 @@ On-Premises VPN Gateway
       |
 On-Premises Network
 ```
+
+![Cloud Router BGP Routing Flow](diagrams/cloud-router-bgp-routing-flow.png)
+
 ### MTU Consideration
 The course notes that the on-premises VPN gateway MTU must not exceed:
 ```text
