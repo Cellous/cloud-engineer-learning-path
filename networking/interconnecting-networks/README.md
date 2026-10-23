@@ -102,9 +102,6 @@ On-Premises VPN Gateway
       |
 On-Premises Network
 ```
-
-![Cloud Router BGP Routing Flow](diagrams/cloud-router-bgp-routing-flow.png)
-
 ### MTU Consideration
 The course notes that the on-premises VPN gateway MTU must not exceed:
 ```text
@@ -216,6 +213,8 @@ Peer VPN Gateway
       |
 Peer Network
 ```
+![Cloud Router BGP Routing Flow](diagrams/cloud-router-bgp-routing-flow.png)
+
 ### Why Dynamic Routing Matters
 Suppose new subnets are added:
 ```text
