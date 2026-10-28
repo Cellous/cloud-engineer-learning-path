@@ -79,9 +79,11 @@ Cloud Router               Cloud Router
 In Cloud Shell, I created a second Virtual Private Cloud (VPC) named on-prem to simulate an on-premises environment that connects to Google Cloud.
 
 I configured firewall rules and created the Compute Engine VM instances used by the lab.
+
 ![VPC Demo Instances](screenshots/03-vpc-demo-instances.png)
 
 I then listed the VM instances to verify their zones and IP addresses.
+
 ![VM Instances and Zones](screenshots/04-vm-instances-and-zones.png)
 
 ## Dynamic Routing with BGP
@@ -105,14 +107,17 @@ Dynamic routing allows network routes to be exchanged automatically through Clou
 #### Task 3: Set up HA VPN gateways and Cloud Routers
 
 I created an HA VPN gateway in each VPC network.
+
 ![HA VPN Gateways](screenshots/05-ha-vpn-gateways.png)
 
 I also created a Cloud Router for each network to support dynamic routing.
+
 ![Cloud Routers](screenshots/06-cloud-routers.png)
 
 #### Task 4: Create VPN tunnels
 
 I created redundant VPN tunnels between the two HA VPN gateways.
+
 ![VPN Tunnels Created](screenshots/07-vpn-tunnels-created.png)
 
 For the HA VPN configuration, interface 0 on one gateway connects to interface 0 on the remote gateway, and interface 1 connects to interface 1 on the remote gateway.
@@ -120,15 +125,18 @@ For the HA VPN configuration, interface 0 on one gateway connects to interface 0
 #### Task 5: Create BGP peering
 
 I configured Border Gateway Protocol (BGP) peering for the VPN tunnels.
+
 ![BGP Peering](screenshots/08-bgp-peer-vpc-demo-tunnel1.png)
 
 #### Task 6: Verify router configurations and connectivity
 I verified the Cloud Router configurations, firewall rules, VPN tunnel status, and private connectivity between the two VPC networks.
 
 HA VPN uses dynamic routing with BGP to support the high-availability configuration.
+
 ![VPN Tunnels List](screenshots/09-vpn-tunnels-list.png)
 
 I confirmed that the VPN tunnels were established and running.
+
 ![VPN Tunnels Established](screenshots/10-vpn-tunnels-established.png)
 
 ## Private Connectivity Test
@@ -143,7 +151,6 @@ The prompt changed to:
 ```
 From that SSH session, I tested private connectivity to the vpc-demo network.
 
-Under Private Connectivity Test, after your 0% packet loss result:
 ![Private Connectivity Success](screenshots/11-private-connectivity-success.png)
 
 Because HA VPN and Cloud Router are regional resources, I enabled global routing on vpc-demo so Cloud Router could see and advertise routes from other regions.
