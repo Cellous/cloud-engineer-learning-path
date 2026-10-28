@@ -238,6 +238,143 @@ The BGP endpoints use addresses from:
 ```
 These addresses are used only for the BGP session and are not part of the
 normal address space of either connected network.
+---
+
+## Task 1: Set up a Global VPC environment
+
+In Cloud Shell, I created a custom-mode VPC network named `vpc-demo`.
+
+![VPC Demo Created](screenshots/01-vpc-demo-created.png)
+
+I then created two custom subnets in the `vpc-demo` network.
+
+![VPC Demo Subnets](screenshots/02-vpc-demo-subnets.png)
+
+## Task 2: Set up a simulated on-premises environment
+
+In Cloud Shell, I created a second Virtual Private Cloud (VPC) named `on-prem` to simulate an on-premises environment that connects to Google Cloud.
+
+I configured firewall rules and created the Compute Engine VM instances used by the lab.
+
+![VPC Demo Instances](screenshots/03-vpc-demo-instances.png)
+
+I then listed the VM instances to verify their zones and IP addresses.
+
+![VM Instances and Zones](screenshots/04-vm-instances-and-zones.png)
+
+## Task 3: Set up HA VPN gateways and Cloud Routers
+
+I created an HA VPN gateway in each VPC network.
+
+![HA VPN Gateways](screenshots/05-ha-vpn-gateways.png)
+
+I also created a Cloud Router for each network to support dynamic routing.
+
+![Cloud Routers](screenshots/06-cloud-routers.png)
+
+## Task 4: Create VPN tunnels
+
+I created redundant VPN tunnels between the two HA VPN gateways.
+
+For the HA VPN configuration, interface 0 on one gateway connects to interface 0 on the remote gateway, and interface 1 connects to interface 1 on the remote gateway.
+
+![VPN Tunnels](screenshots/07-vpn-tunnels-created.png)
+
+## Task 5: Create BGP peering
+
+I configured Border Gateway Protocol (BGP) peering for the VPN tunnels.
+
+HA VPN uses dynamic routing with BGP to support the high-availability configuration.
+
+![BGP Peering](screenshots/08-bgp-peer-vpc-demo-tunnel1.png)
+
+## Task 6: Verify router configurations and connectivity
+
+I verified the Cloud Router configurations, firewall rules, VPN tunnel status, and private connectivity between the two VPC networks.
+
+![VPN Tunnels List](screenshots/09-vpn-tunnels-list.png)
+
+I confirmed that the VPN tunnels were established and running.
+
+![VPN Tunnels Established](screenshots/10-vpn-tunnels-established.png)
+
+Next, I connected to `on-prem-instance1` using SSH:
+
+```text
+gcloud compute ssh on-prem-instance1 --zone us-east4-b
+```
+
+The prompt changed to:
+
+```text
+...@on-prem-instance1:~$
+```
+
+From that SSH session, I tested private connectivity to the `vpc-demo` network.
+
+![Private Connectivity Success](screenshots/11-private-connectivity-success.png)
+
+Because HA VPN and Cloud Router are regional resources, I enabled global routing on `vpc-demo` so Cloud Router could see and advertise routes from other regions.
+
+![Global Routing Enabled](screenshots/12-global-routing-enabled.png)
+
+I then returned to the SSH session on `on-prem-instance1` and tested connectivity to the VM in the second region.
+
+![Cross-Region Connectivity Success](screenshots/13-cross-region-connectivity-success.png)
+
+## Task 7: Verify HA VPN failover
+
+To test high availability, I removed `vpc-demo-tunnel0` in region `us-east4`.
+
+I then checked the peer tunnel with:
+
+```text
+gcloud compute vpn-tunnels describe on-prem-tunnel0 --region us-east4
+```
+
+The peer tunnel reported that it was no longer receiving traffic from its peer.
+
+I returned to the open SSH session on `on-prem-instance1` and tested connectivity again.
+
+![HA VPN Failover Success](screenshots/14-ha-vpn-failover-success.png)
+
+The ping test succeeded with:
+
+```text
+3 packets transmitted
+3 packets received
+0% packet loss
+```
+
+This demonstrated that traffic continued through the remaining VPN tunnel.
+
+## Task 8: Resource cleanup
+
+I practiced manually deleting the lab resources from Cloud Shell.
+
+The cleanup order followed the resource dependencies:
+
+```text
+VPN tunnels
+    ↓
+BGP peers
+    ↓
+Cloud Routers
+    ↓
+VPN gateways
+    ↓
+VM instances
+    ↓
+Firewall rules
+    ↓
+Subnets
+    ↓
+VPC networks
+```
+
+VM instances and Cloud Routers took longer to delete than simpler resources such as firewall rules.
+
+Manual cleanup is useful in a real cloud environment because removing unused resources can reduce unnecessary resource usage and cost.
 
 ---
 
