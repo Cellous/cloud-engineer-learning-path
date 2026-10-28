@@ -294,11 +294,70 @@ Need AWS multipath traffic distribution
 
 ---
 
-build only **three** from this lesson:
+## Resource Cleanup and Cost Control
+
+Cloud resources should be removed in dependency-aware order when they are no longer needed.
+
+Manual cleanup is useful in a real Google Cloud environment because unused resources can continue consuming resources or generating charges.
+
+The HA VPN lab demonstrated a practical cleanup sequence:
+
+![Manual Cloud Resource Cleanup Order](diagrams/manual-cloud-resource-cleanup-order.png)
+
+### Cleanup Order
 
 ```text
-cloud-vpn-classic-vs-ha.png
-ha-vpn-redundancy-flow.png
-cloud-router-bgp-routing-flow.png
+VPN tunnels
+    ↓
+BGP peers
+    ↓
+Cloud Routers
+    ↓
+VPN gateways
+    ↓
+VM instances
+    ↓
+Firewall rules
+    ↓
+Subnets
+    ↓
+VPC networks
+```
 
+### Why the Order Matters
+
+Cloud resources can depend on other resources.
+
+For example:
+
+- VPN tunnels depend on VPN gateways and Cloud Routers.
+- BGP peers are configured on Cloud Routers.
+- VM instances depend on VPC subnets.
+- Subnets belong to VPC networks.
+
+Removing dependent resources first makes it easier to delete the parent resources later.
+
+### Cost-Control Recognition
+
+```text
+Unused cloud resource
+        ↓
+Continued resource consumption
+        ↓
+Potential ongoing cost
+
+Proper cleanup
+        ↓
+Delete dependent resources first
+        ↓
+Remove parent infrastructure
+        ↓
+Reduce unnecessary resource usage
+```
+
+### Lab Observation
+
+During manual cleanup, VM instances and Cloud Routers took longer to delete than simpler resources such as firewall rules.
+
+The lab also used temporary Google Cloud resources that are automatically removed when the lab ends, but manual cleanup was practiced to demonstrate how resources should be removed in a real environment.
 
