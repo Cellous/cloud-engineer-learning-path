@@ -42,9 +42,11 @@ The `on-prem` VPC simulated an external customer data center.
 
 #### Task 1: Set up a Global VPC environment
 In Cloud Shell, I created a custom-mode VPC network named vpc-demo.
+
 ![VPC Demo Created](screenshots/01-vpc-demo-created.png)
 
 I then created two custom subnets in the vpc-demo network.
+
 ![VPC Demo Subnets](screenshots/02-vpc-demo-subnets.png)
 
 ---
