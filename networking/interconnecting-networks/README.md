@@ -241,6 +241,64 @@ normal address space of either connected network.
 
 ---
 
+## Cloud Interconnect and Peering
+
+Google Cloud provides several services for connecting external infrastructure to Google's network.
+
+These services can be compared by:
+
+- Dedicated vs. shared connectivity
+- Layer 2 vs. Layer 3 connectivity
+
+### Connectivity Services
+
+| Service | Connection Type | Network Layer |
+|---|---|---|
+| Direct Peering | Dedicated | Layer 3 |
+| Carrier Peering | Shared | Layer 3 |
+| Dedicated Interconnect | Dedicated | Layer 2 |
+| Partner Interconnect | Shared | Layer 2 or Layer 3 |
+
+### Dedicated vs. Shared
+
+**Dedicated connections** provide a direct connection to Google's network.
+
+**Shared connections** provide connectivity to Google's network through a service provider or partner.
+
+### Layer 2 Connectivity
+
+Layer 2 connectivity uses VLAN-based connectivity into the Google Cloud environment.
+
+It can provide access to internal IP addresses within RFC 1918 private address space.
+
+### Layer 3 Connectivity
+
+Layer 3 connectivity provides access to services such as:
+
+- Google Workspace
+- YouTube
+- Google Cloud APIs
+
+These services are reached using public IP addresses.
+
+### Cloud VPN Comparison
+
+Cloud VPN differs from Interconnect and Peering because it uses the public internet while encrypting traffic.
+
+Cloud VPN can still provide access to internal IP addresses.
+
+```text
+Cloud VPN
+Public Internet
+      +
+Encrypted traffic
+      +
+Internal IP connectivity
+```
+
+This makes Cloud VPN useful alongside Direct Peering and Carrier Peering when encrypted private connectivity is required.
+
+---
 ## ACE-style notes, simple recognition block:
 
 ```text
@@ -291,6 +349,24 @@ Need AWS multipath traffic distribution
 | High availability design | Limited | Yes |
 | Gateway interfaces | Legacy model | Two |
 | Multiple redundant tunnels | Possible | Core design |
+
+Dedicated Interconnect
+→ Dedicated Layer 2 connectivity
+
+Partner Interconnect
+→ Shared connectivity through a partner
+
+Direct Peering
+→ Dedicated Layer 3 connection to Google
+
+Carrier Peering
+→ Shared Layer 3 connection through a carrier
+
+Layer 2
+→ Private/internal RFC 1918 connectivity
+
+Layer 3
+→ Public Google services and APIs
 
 ---
 
