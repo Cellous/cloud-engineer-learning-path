@@ -241,6 +241,59 @@ normal address space of either connected network.
 
 ---
 
+## ACE-style notes, simple recognition block:
+
+```text
+Cloud VPN
+→ Hybrid connectivity using VPN
+
+Cloud Interconnect
+→ Dedicated/private connectivity to Google Cloud
+
+Peering
+→ Network-to-network connectivity
+
+Shared VPC
+→ Share VPC networking resources across Google Cloud projects
+```
+```text
+Need encrypted site-to-site connectivity over the public internet
+→ Cloud VPN
+
+Need high availability
+→ HA VPN
+
+Need 99.99% VPN SLA
+→ Properly configured HA VPN
+
+Need static routes
+→ Classic VPN
+
+Need dynamic route propagation
+→ Cloud Router + BGP
+
+HA VPN routing
+→ Dynamic BGP only
+
+Need automatic propagation of newly added subnets
+→ Cloud Router
+
+Need AWS multipath traffic distribution
+→ AWS Transit Gateway + ECMP
+```
+
+## Classic VPN vs HA VPN
+| Feature | Classic VPN | HA VPN |
+|---|---|---|
+| SLA | 99.9% | 99.99% when properly configured |
+| Routing | Static or dynamic | Dynamic BGP |
+| Cloud Router | Optional for dynamic routing | Required |
+| High availability design | Limited | Yes |
+| Gateway interfaces | Legacy model | Two |
+| Multiple redundant tunnels | Possible | Core design |
+
+---
+
 ## Cloud Interconnect and Peering
 
 Google Cloud provides several services for connecting external infrastructure to Google's network.
@@ -299,56 +352,63 @@ Internal IP connectivity
 This makes Cloud VPN useful alongside Direct Peering and Carrier Peering when encrypted private connectivity is required.
 
 ---
+
+## Cloud Interconnect Options
+
+Google Cloud provides several connectivity options for connecting VPC networks to on-premises networks or other cloud providers.
+
+The primary options covered in this lesson are:
+
+- Cloud VPN
+- Dedicated Interconnect
+- Partner Interconnect
+- Cross-Cloud Interconnect
+
+## Dedicated Interconnect
+
+Dedicated Interconnect provides a direct physical connection between an on-premises network and Google's network.
+
+It is designed for organizations that need to transfer large amounts of data without relying on the public internet.
+
+### Requirements
+
+Dedicated Interconnect requires:
+
+- A supported colocation facility
+- A physical cross-connect between the customer router and Google's network
+- Cloud Router
+- BGP routing between the Cloud Router and on-premises router
+
+Conceptually:
+
+```text
+Google Cloud VPC
+      |
+Cloud Router
+      |
+BGP
+      |
+Google Peering Edge
+      |
+Physical Cross-Connect
+      |
+On-Premises Router
+      |
+On-Premises Network
+```
+
+Dedicated Interconnect can support high-throughput connectivity using:
+
+```text
+10 Gbps
+or
+100 Gbps
+per link
+```
+
+The course notes that configurations can support either 99.9% or 99.99% availability depending on the redundancy design.
+
 ## ACE-style notes, simple recognition block:
-
-```text
-Cloud VPN
-→ Hybrid connectivity using VPN
-
-Cloud Interconnect
-→ Dedicated/private connectivity to Google Cloud
-
-Peering
-→ Network-to-network connectivity
-
-Shared VPC
-→ Share VPC networking resources across Google Cloud projects
-```
-```text
-Need encrypted site-to-site connectivity over the public internet
-→ Cloud VPN
-
-Need high availability
-→ HA VPN
-
-Need 99.99% VPN SLA
-→ Properly configured HA VPN
-
-Need static routes
-→ Classic VPN
-
-Need dynamic route propagation
-→ Cloud Router + BGP
-
-HA VPN routing
-→ Dynamic BGP only
-
-Need automatic propagation of newly added subnets
-→ Cloud Router
-
-Need AWS multipath traffic distribution
-→ AWS Transit Gateway + ECMP
-```
-
-## Classic VPN vs HA VPN
-| Feature | Classic VPN | HA VPN |
-|---|---|---|
-| SLA | 99.9% | 99.99% when properly configured |
-| Routing | Static or dynamic | Dynamic BGP |
-| Cloud Router | Optional for dynamic routing | Required |
-| High availability design | Limited | Yes |
-| Gateway interfaces | Legacy model | Two |
-| Multiple redundant tunnels | Possible | Core design |
 
 Dedicated Interconnect
 → Dedicated Layer 2 connectivity
@@ -367,7 +427,119 @@ Layer 2
 
 Layer 3
 → Public Google services and APIs
+---
 
+## Partner Interconnect
+
+Partner Interconnect provides connectivity between an on-premises network and Google Cloud through a supported service provider.
+
+This option is useful when:
+
+- A customer cannot physically reach a Google-supported colocation facility.
+- Bandwidth requirements do not justify Dedicated Interconnect.
+- A service provider already has connectivity to Google's network.
+
+Conceptually:
+
+```text
+Google Cloud VPC
+      |
+Cloud Router
+      |
+Google Peering Edge
+      |
+Service Provider Network
+      |
+Service Provider Peering Edge
+      |
+On-Premises Router
+      |
+On-Premises Network
+```
+
+BGP is used between Cloud Router and the on-premises network to exchange routes.
+
+Partner Interconnect supports connection capacities ranging from:
+
+```text
+50 Mbps
+to
+50 Gbps
+per connection
+```
+
+## Cross-Cloud Interconnect
+
+Cross-Cloud Interconnect provides high-bandwidth dedicated connectivity between Google Cloud and a network hosted by another cloud service provider.
+
+It supports integrated multi-cloud architectures.
+
+The course lists support for:
+
+- Amazon Web Services
+- Microsoft Azure
+- Oracle Cloud Infrastructure
+- Alibaba Cloud
+
+Cross-Cloud Interconnect connection sizes are:
+
+```text
+10 Gbps
+or
+100 Gbps
+```
+
+A redundant design requires primary and redundant ports on both Google Cloud and the remote cloud provider.
+
+Conceptually:
+
+```text
+Google Cloud VPC
+      |
+Cross-Cloud Interconnect
+      |
+Remote Cloud Provider
+      |
+Remote Cloud Network
+```
+
+---
+
+## Interconnect Comparison
+
+| Connectivity Option | Provides | Capacity | Requirement |
+|---|---|---:|---|
+| Cloud VPN | Encrypted connectivity over public internet | 1.5–3 Gbps per tunnel | Remote VPN gateway |
+| Dedicated Interconnect | Direct physical connection to VPC networks | 10 or 100 Gbps per link | Colocation facility |
+| Partner Interconnect | Connectivity through a service provider | 50 Mbps–50 Gbps | Supported service provider |
+| Cross-Cloud Interconnect | Dedicated connection to another cloud provider | 10 or 100 Gbps | Primary and redundant ports |
+
+All of these options can provide access to internal IP addresses.
+
+## ACE Recognition Notes
+
+```text
+Lower cost / lower bandwidth / migration testing
+→ Cloud VPN
+
+High throughput + direct physical connection
+→ Dedicated Interconnect
+
+Cannot reach a Google colocation facility
+→ Partner Interconnect
+
+Need connectivity through a service provider
+→ Partner Interconnect
+
+Google Cloud ↔ AWS / Azure / OCI / Alibaba Cloud
+→ Cross-Cloud Interconnect
+
+Need 10 or 100 Gbps dedicated cloud-to-cloud connectivity
+→ Cross-Cloud Interconnect
+
+Need private connectivity using BGP
+→ Cloud Router
+```
 ---
 
 ## Resource Cleanup and Cost Control
