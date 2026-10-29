@@ -303,7 +303,7 @@ These services can be compared by:
 - Dedicated vs. shared connectivity
 - Layer 2 vs. Layer 3 connectivity
 
-![Cloud Interconnect Peering Matrix](diagrams/cloud-interconnect-peering-matrix.png)
+![Dedicated vs Shared Partner Interconnect](diagrams/dedicated-vs-partner-interconnect.png)
 
 ### Connectivity Services
 
@@ -336,7 +336,7 @@ Layer 3 connectivity provides access to services such as:
 
 These services are reached using public IP addresses.
 
-![Dedicated vs Shared Partner Interconnect](diagrams/dedicated-vs-partner-interconnect.png)
+![Cloud Interconnect Peering Matrix](diagrams/cloud-interconnect-peering-matrix.png)
 
 ### Cloud VPN Comparison
 
@@ -411,8 +411,6 @@ per link
 ```
 
 The course notes that configurations can support either 99.9% or 99.99% availability depending on the redundancy design.
-
-![Interconnect Options Comparison](diagrams/interconnect-options-comparison.png)
 
 ## ACE-style notes, simple recognition block:
 
@@ -521,6 +519,8 @@ Remote Cloud Network
 | Cross-Cloud Interconnect | Dedicated connection to another cloud provider | 10 or 100 Gbps | Primary and redundant ports |
 
 All of these options can provide access to internal IP addresses.
+
+![Interconnect Options Comparison](diagrams/interconnect-options-comparison.png)
 
 ## ACE Recognition Notes
 
