@@ -371,6 +371,7 @@ Google Network
       |
 Google Services
 ```
+![Direct vs Carrier Peering](diagrams/direct-vs-carrier-peering.png)
 
 ### Direct Peering vs. Carrier Peering
 
