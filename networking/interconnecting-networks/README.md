@@ -305,6 +305,106 @@ These services can be compared by:
 
 ![Dedicated vs Shared Partner Interconnect](diagrams/dedicated-vs-partner-interconnect.png)
 
+---
+
+## Direct Peering and Carrier Peering
+
+Google Cloud provides two peering options for accessing Google's public infrastructure:
+
+- Direct Peering
+- Carrier Peering
+
+Both provide access to Google services using public IP addresses.
+
+### Direct Peering
+
+Direct Peering establishes a direct connection between a business network and Google's network.
+
+It uses BGP to exchange routes between Google and the peering network.
+
+Characteristics:
+
+- Direct connection to Google's network
+- BGP route exchange
+- Access to Google services and Google Cloud public services
+- Uses Google Edge Points of Presence (PoPs)
+- 10 Gbps per link
+- Requires meeting Google's peering requirements
+- No SLA
+
+Conceptually:
+
+```text
+Business Network
+      |
+     BGP
+      |
+Google Edge PoP
+      |
+Google Network
+      |
+Google Services
+```
+
+### Carrier Peering
+
+Carrier Peering provides access to Google's public infrastructure through a supported service provider.
+
+It is useful when an organization cannot meet Google's Direct Peering requirements or cannot directly reach a suitable peering location.
+
+Characteristics:
+
+- Connectivity through a carrier or service provider
+- Access to Google public services
+- Capacity depends on the provider
+- Requirements depend on the provider
+- No SLA
+
+Conceptually:
+
+```text
+Business Network
+      |
+Service Provider
+      |
+Google Network
+      |
+Google Services
+```
+
+### Direct Peering vs. Carrier Peering
+
+| Feature | Direct Peering | Carrier Peering |
+|---|---|---|
+| Connection | Direct to Google | Through provider |
+| Routing | BGP | Provider-dependent |
+| Access | Public Google services | Public Google services |
+| Capacity | 10 Gbps per link | Varies by provider |
+| Requirements | Google peering requirements | Provider requirements |
+| SLA | None | None |
+
+### ACE Recognition Notes
+
+```text
+Need direct access to Google's public services
+→ Direct Peering
+
+Cannot meet Direct Peering requirements
+→ Carrier Peering
+
+Need a service provider to reach Google's network
+→ Carrier Peering
+
+Need internal/private VPC IP connectivity
+→ Use Cloud VPN or Cloud Interconnect instead
+
+Direct Peering / Carrier Peering
+→ Public IP access
+→ No SLA
+```
+
+---
+
 ### Connectivity Services
 
 | Service | Connection Type | Network Layer |
