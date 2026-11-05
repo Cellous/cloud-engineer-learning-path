@@ -649,6 +649,142 @@ Need private connectivity using BGP
 ```
 ---
 
+## Choosing a Network Connection Option
+
+Google Cloud connectivity services can be grouped into two broad categories:
+
+### Interconnect Services
+
+Interconnect services provide access to RFC 1918 private IP addresses in a VPC and can provide an SLA.
+
+Examples include:
+
+- Dedicated Interconnect
+- Partner Interconnect
+- Cloud VPN
+
+### Peering Services
+
+Peering services provide access to Google's public IP addresses and do not provide an SLA.
+
+Examples include:
+
+- Direct Peering
+- Carrier Peering
+
+## Connectivity Decision Guide
+
+### Access to Google Public Services
+
+If the goal is access to services such as Google Workspace, YouTube, or Google Cloud APIs:
+
+```text
+Need Google public services
+        ↓
+Meet Google's peering requirements?
+        ↓
+   Yes        No
+    ↓          ↓
+Direct       Carrier
+Peering      Peering
+```
+
+### Connect Google Cloud to Another Cloud Provider
+
+If the goal is connecting Google Cloud to another cloud provider:
+
+```text
+Google Cloud ↔ Other Cloud
+        ↓
+Need dedicated high bandwidth?
+        ↓
+   Yes             No
+    ↓               ↓
+Cross-Cloud      Need Google-managed
+Interconnect     encryption?
+                     ↓
+                  Cloud VPN
+```
+
+Cross-Cloud Interconnect is appropriate for high-bandwidth, dedicated multi-cloud connectivity.
+
+Cloud VPN is useful when bandwidth requirements are lower and Google-managed encryption is preferred.
+
+### Connect On-Premises to Google Cloud
+
+For private connectivity between an on-premises network and Google Cloud:
+
+```text
+On-Premises ↔ Google Cloud
+        ↓
+Need dedicated high bandwidth?
+        ↓
+   Yes                       No
+    ↓                         ↓
+Can meet Google       Cloud VPN or
+at colocation?        Partner Interconnect
+    ↓
+   Yes
+    ↓
+Dedicated Interconnect
+```
+
+If a supported colocation facility cannot be reached, use:
+
+- Cloud VPN for modest bandwidth, short-term use, trials, or encrypted connectivity.
+- Partner Interconnect for higher bandwidth through a service provider.
+
+### Partner Interconnect
+
+Partner Interconnect can operate as either:
+
+```text
+L2 Partner Interconnect
+→ Use when BGP peering is required
+
+L3 Partner Interconnect
+→ Use when BGP peering is not required
+```
+
+### Encryption with Interconnect
+
+If Google-managed encryption is required over an Interconnect connection, Cloud VPN over Cloud Interconnect can be used.
+
+## ACE Recognition Notes
+
+```text
+Google Workspace / Google APIs / public Google services
+→ Direct Peering or Carrier Peering
+
+Meet Google's peering requirements
+→ Direct Peering
+
+Cannot meet Google's peering requirements
+→ Carrier Peering
+
+Need RFC 1918 private VPC connectivity
+→ Interconnect or Cloud VPN
+
+Need modest bandwidth + encryption
+→ Cloud VPN
+
+Need high-throughput private connectivity
+→ Dedicated or Partner Interconnect
+
+Can physically meet Google at colocation
+→ Dedicated Interconnect
+
+Cannot reach Google colocation
+→ Partner Interconnect
+
+Google Cloud ↔ another cloud provider
+→ Cross-Cloud Interconnect
+
+Need Google-managed encryption over Interconnect
+→ Cloud VPN over Cloud Interconnect
+```
+
+---
 ## Resource Cleanup and Cost Control
 
 Cloud resources should be removed in dependency-aware order when they are no longer needed.
