@@ -610,6 +610,10 @@ Remote Cloud Network
 
 ---
 
+## Choosing a Hybrid Connectivity Option
+![Hybrid Connectivity Decision Flow](diagrams/hybrid-connectivity-decision-flow.png)
+
+---
 ## Interconnect Comparison
 
 | Connectivity Option | Provides | Capacity | Requirement |
