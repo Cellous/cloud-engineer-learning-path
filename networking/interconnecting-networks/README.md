@@ -990,4 +990,20 @@ Host project + service projects
 
 Two independently managed VPC networks
 → VPC Network Peering
+
+Carrier Peering
+→ Google Workspace / YouTube access when Direct Peering requirements cannot be met
+
+Shared VPC
+→ Centralized multi-project networking
+→ Security and network policy in one designated VPC
+
+Dedicated Interconnect
+→ Requires Google Cloud colocation facility
+→ 10 Gbps per link
+
+VPN
+→ Uses IPsec tunnels
+→ Encapsulated and encrypted path
+→ Secure communication across an untrusted network
 ```
