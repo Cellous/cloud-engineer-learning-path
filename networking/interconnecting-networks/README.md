@@ -856,3 +856,136 @@ During manual cleanup, VM instances and Cloud Routers took longer to delete than
 
 The lab also used temporary Google Cloud resources that are automatically removed when the lab ends, but manual cleanup was practiced to demonstrate how resources should be removed in a real environment.
 
+---
+
+## Sharing VPC Networks
+
+Google Cloud provides two primary ways to share or connect VPC networking across projects:
+
+- Shared VPC
+- VPC Network Peering
+
+## Shared VPC
+
+Shared VPC allows resources from multiple projects in the same Google Cloud organization to use a common VPC network.
+
+One project is designated as the:
+
+```text
+Host Project
+```
+
+Other projects attached to it are:
+
+```text
+Service Projects
+```
+
+The VPC network resides in the host project, while eligible resources in service projects can use subnets from the Shared VPC network.
+
+Conceptually:
+
+```text
+             Host Project
+                  |
+          Shared VPC Network
+             /           \
+        Subnet A        Subnet B
+           |               |
+   Service Project A   Service Project B
+```
+
+### Shared VPC Administration
+
+Shared VPC uses a centralized network administration model.
+
+Network resources such as:
+
+- Subnets
+- Routes
+- Firewall rules
+
+remain under centralized control, while administrators can delegate responsibilities such as creating and managing VM instances to service project administrators.
+
+### Project Types
+
+A project participating in Shared VPC is either:
+
+```text
+Host Project
+or
+Service Project
+```
+
+A project that does not participate in Shared VPC is called a:
+
+```text
+Standalone Project
+```
+
+## VPC Network Peering
+
+VPC Network Peering provides private RFC 1918 connectivity between two VPC networks.
+
+The VPC networks can belong to:
+
+- Different projects
+- The same project
+- Different organizations
+- The same organization
+
+Each VPC maintains its own:
+
+- Firewall rules
+- Routing tables
+- Network administration
+
+For peering to become active, both network administrators configure peering toward the other network.
+
+Conceptually:
+
+```text
+VPC Network A
+     |
+Peering
+     |
+VPC Network B
+```
+
+Once both peering relationships are established, routes are exchanged and VM instances can communicate using internal IP addresses.
+
+## Shared VPC vs. VPC Network Peering
+
+| Consideration | Shared VPC | VPC Network Peering |
+|---|---|---|
+| Across organizations | No | Yes |
+| Within same project | No | Yes |
+| Across projects | Yes | Yes |
+| Network administration | Centralized | Decentralized |
+| Shared common VPC | Yes | No |
+| Each VPC keeps own firewall/routing | No | Yes |
+
+## ACE Recognition Notes
+
+```text
+Need one centrally managed VPC across several projects
+→ Shared VPC
+
+Need centralized network administration
+→ Shared VPC
+
+Need private connectivity across different organizations
+→ VPC Network Peering
+
+Need connectivity between two VPCs in the same project
+→ VPC Network Peering
+
+Need each VPC to retain its own firewall and routing tables
+→ VPC Network Peering
+
+Host project + service projects
+→ Shared VPC
+
+Two independently managed VPC networks
+→ VPC Network Peering
+```
