@@ -1007,3 +1007,51 @@ VPN
 → Encapsulated and encrypted path
 → Secure communication across an untrusted network
 ```
+## Module Review
+
+This module covered five primary ways to connect external infrastructure to Google Cloud:
+
+- Dedicated Interconnect
+- Partner Interconnect
+- Cloud VPN
+- Direct Peering
+- Carrier Peering
+
+The appropriate connectivity service depends on factors such as bandwidth, encryption, access type, physical location, service-provider requirements, and whether private or public IP connectivity is needed.
+
+Connectivity requirements can also change over time, so an organization may begin with one solution and later migrate to another as its needs evolve.
+
+The module also covered two approaches for sharing or connecting VPC networks across Google Cloud projects:
+
+```text
+Shared VPC
+→ Centralized multi-project networking
+
+VPC Network Peering
+→ Private connectivity between independently managed VPC networks
+```
+
+### Final Recognition Summary
+
+```text
+Cloud VPN
+→ Encrypted connectivity over the public internet
+
+Dedicated Interconnect
+→ High-throughput direct physical connectivity
+
+Partner Interconnect
+→ Connectivity through a supported service provider
+
+Direct Peering
+→ Direct access to Google's public services
+
+Carrier Peering
+→ Public Google access through a carrier
+
+Shared VPC
+→ Centralized network sharing across projects
+
+VPC Network Peering
+→ Decentralized private connectivity between VPC networks
+```
