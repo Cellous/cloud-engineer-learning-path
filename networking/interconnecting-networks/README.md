@@ -881,6 +881,8 @@ Other projects attached to it are:
 Service Projects
 ```
 
+![Shared VPC vs VPC Peering](diagrams/shared-vpc-vs-vpc-peering.png)
+
 The VPC network resides in the host project, while eligible resources in service projects can use subnets from the Shared VPC network.
 
 Conceptually:
