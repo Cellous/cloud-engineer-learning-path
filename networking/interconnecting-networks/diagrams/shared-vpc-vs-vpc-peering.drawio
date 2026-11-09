@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="r-azQFgHxCKGBN0UWaE-">
+    <mxGraphModel dx="833" dy="540" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1gBDTbtOQmunEjt7H7ni-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font face=&quot;Tahoma&quot; style=&quot;font-size: 31px;&quot;&gt;&lt;code&gt;&lt;b&gt;Shared VPC vs VPC Peering&lt;/b&gt;&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="36" width="426" x="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="1gBDTbtOQmunEjt7H7ni-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#00FF00);" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;&lt;code&gt;&lt;font&gt;VPC PEERING&lt;/font&gt;&lt;/code&gt;&lt;/b&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="194" x="517.75" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="1gBDTbtOQmunEjt7H7ni-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#7F00FF);" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;b&gt;&lt;code&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;SHARED VPC&lt;/font&gt;&lt;/code&gt;&lt;/b&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="194" x="193.25" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="1gBDTbtOQmunEjt7H7ni-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Service Project A&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="85" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="1gBDTbtOQmunEjt7H7ni-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;b&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Shared VPC Network&lt;/font&gt;&lt;/code&gt;&lt;/b&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="193.25" y="211" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="177.5" y="274" as="sourcePoint" />
+            <mxPoint x="397.92" y="274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="1gBDTbtOQmunEjt7H7ni-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="286" y="272.39" as="sourcePoint" />
+            <mxPoint x="286.45" y="243" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="176.75" y="273" as="sourcePoint" />
+            <mxPoint x="176.75" y="297.3999938964844" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="397.75" y="275" as="sourcePoint" />
+            <mxPoint x="397.75" y="299.3999938964844" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;code&gt;&lt;b&gt;Host Project&lt;/b&gt;&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="193.25" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-8" edge="1" parent="1" source="1gBDTbtOQmunEjt7H7ni-10" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="285.5" y="200.39999999999998" as="sourcePoint" />
+            <mxPoint x="285.5" y="179" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;VPC Network A&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="522" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Service Project B&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="298.75" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FFFFFF);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Centralized&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Same organization&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="47" width="172" x="200" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Peering&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="522" y="211" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="UNWe8b_xLeo7AJE98dA4-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="614.75" y="272.39" as="sourcePoint" />
+            <mxPoint x="615.2" y="243" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-14" edge="1" parent="1" source="UNWe8b_xLeo7AJE98dA4-12" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="614.25" y="200.39999999999998" as="sourcePoint" />
+            <mxPoint x="614.25" y="179" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FFFFFF);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Decentralized&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Same or different orgs&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="47" width="172" x="528.75" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="UNWe8b_xLeo7AJE98dA4-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;VPC Network B&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="185.5" x="522" y="273" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
