@@ -14,6 +14,10 @@ It can help provide:
 
 Google Cloud Load Balancing is a fully distributed, software-defined, managed service rather than a physical load-balancing appliance.
 
+## Managed Instance Groups
+![Managed Instance Group Architecture](diagrams/managed-instance-group-architecture.png)
+
+
 ## Primary Load Balancer Types
 
 Google Cloud provides two primary load-balancer categories:
