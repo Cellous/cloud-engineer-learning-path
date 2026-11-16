@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="cpjGq2VmyO8zH8jpySZg">
+    <mxGraphModel dx="1433" dy="878" grid="0" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font face=&quot;Tahoma&quot;&gt;&lt;b&gt;&lt;code&gt;&lt;font style=&quot;font-size: 31px;&quot;&gt;Load Balancer Types&lt;/font&gt;&lt;/code&gt;&lt;/b&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="46" width="501" x="175" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;b&gt;&lt;font face=&quot;Tahoma&quot; style=&quot;font-size: 21px;&quot;&gt;&lt;code&gt;APPLICATION LOAD BALANCER&lt;/code&gt;&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="327" x="98" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font face=&quot;Tahoma&quot; style=&quot;font-size: 22px;&quot;&gt;&lt;code&gt;&lt;b&gt; NETWORK LOAD BALANCER&lt;/b&gt;&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="327" x="425" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;Layer 7&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="98" y="217" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;Layer 4&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="425" y="217" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;HTTP(S)&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="98.5" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;TCP / UDP&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="425.5" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;Headers&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="98.5" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;IP addresses&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="425.5" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;Cookies&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="98.5" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;Ports&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="425.5" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;URL paths&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="99" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;High throughput&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="426" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;SSL/TLS termination&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="99" y="427" as="geometry" />
+        </mxCell>
+        <mxCell id="nzCuoapkdZLKkDaVRrCM-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;code&gt;Low latency&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="42" width="327" x="426" y="427" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
