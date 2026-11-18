@@ -45,6 +45,12 @@ They also support features such as:
 - Session affinity
 - Content-based routing
 
+## Application Load Balancers
+
+Detailed notes and architecture:
+
+[Application Load Balancers](application-load-balancers/README.md)
+
 ### Network Load Balancers
 
 Network Load Balancers operate at:
