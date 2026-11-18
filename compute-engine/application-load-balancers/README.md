@@ -4,8 +4,6 @@ Application Load Balancers operate at Layer 7 of the OSI model and distribute HT
 
 Because they operate at the application layer, routing decisions can be based on the content of a request, including URL paths.
 
-![External Application Load Balancer Architecture](diagrams/external-application-load-balancer-architecture.png)
-
 ### Deployment Modes
 
 External Application Load Balancers can be deployed as:
@@ -17,6 +15,8 @@ External Application Load Balancers can be deployed as:
 Global external Application Load Balancers use Google's global network to direct traffic toward healthy backends with available capacity.
 
 ## External Application Load Balancer Architecture
+
+![External Application Load Balancer Architecture](diagrams/external-application-load-balancer-architecture.png)
 
 The basic request flow is:
 
