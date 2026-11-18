@@ -4,6 +4,8 @@ Application Load Balancers operate at Layer 7 of the OSI model and distribute HT
 
 Because they operate at the application layer, routing decisions can be based on the content of a request, including URL paths.
 
+![External Application Load Balancer Architecture](diagrams/external-application-load-balancer-architecture.png)
+
 ### Deployment Modes
 
 External Application Load Balancers can be deployed as:
