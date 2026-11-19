@@ -132,6 +132,52 @@ Balancing target = 80% CPU
 Capacity scaler  = 50%
 → Use approximately half of that backend capacity
 ```
+---
+
+## Cross-Region and Content-Based Load Balancing
+### Cross-Region Load Balancing
+
+A global Application Load Balancer can direct users to the closest healthy backend that has available capacity.
+
+For example:
+
+```text
+North America user
+→ us-central1-a backend
+
+EMEA user
+→ europe-west1-d backend
+```
+
+If the closest backend has no healthy instances or no available capacity, the request can be sent to the next closest region.
+
+```text
+Closest region unavailable
+        ↓
+Next closest healthy region
+```
+
+This is called **cross-region load balancing**.
+
+### Content-Based Routing
+
+Application Load Balancers can also route requests based on URL paths.
+
+A URL map determines which backend service should receive the request.
+
+Example:
+
+```text
+/video
+→ video backend service
+
+all other paths
+→ default web backend service
+```
+
+This allows multiple application components to be served through a single global IP address.
+
+---
 
 ### ACE Recognition Notes
 
