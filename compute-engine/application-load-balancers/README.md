@@ -135,6 +135,8 @@ Capacity scaler  = 50%
 ---
 
 ## Cross-Region and Content-Based Load Balancing
+![Application Load Balancer Routing Examples](diagrams/application-load-balancer-routing-examples.png)
+
 ### Cross-Region Load Balancing
 
 A global Application Load Balancer can direct users to the closest healthy backend that has available capacity.
