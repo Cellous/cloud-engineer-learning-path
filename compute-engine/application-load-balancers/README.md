@@ -183,7 +183,7 @@ This allows multiple application components to be served through a single global
 
 ## HTTPS Load Balancing
 
-![Application Load Balancer Backend Options](application-load-balancer-backend-options.png)
+![Application Load Balancer Backend Options](diagrams/application-load-balancer-backend-options.png)
 
 An Application Load Balancer configured for HTTPS uses the same general architecture as HTTP, but the frontend uses a **target HTTPS proxy**.
 
