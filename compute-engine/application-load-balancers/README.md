@@ -181,6 +181,169 @@ This allows multiple application components to be served through a single global
 
 ---
 
+## HTTPS Load Balancing
+
+![Application Load Balancer Backend Options](application-load-balancer-backend-options.png)
+
+An Application Load Balancer configured for HTTPS uses the same general architecture as HTTP, but the frontend uses a **target HTTPS proxy**.
+
+The course highlights these HTTPS requirements:
+
+- Target HTTPS proxy
+- At least one signed SSL certificate
+- Client SSL session terminates at the load balancer
+- QUIC transport support
+
+For HTTPS, at least one SSL certificate resource must be associated with the target HTTPS proxy.
+
+The course states that a target proxy can use up to:
+
+```text
+15 SSL certificates
+```
+
+Conceptually:
+
+```text
+Client
+  ↓
+HTTPS
+  ↓
+Target HTTPS Proxy
+  ↓
+SSL/TLS termination
+  ↓
+URL Map
+  ↓
+Backend Service
+```
+
+### QUIC
+
+QUIC can provide:
+
+- Faster connection establishment
+- Reduced head-of-line blocking for multiplexed streams
+- Connection migration when the client's IP address changes
+
+---
+
+## Backend Buckets
+
+Backend buckets allow an external Application Load Balancer to use **Cloud Storage buckets** as backends.
+
+A URL map can route requests either to:
+
+```text
+Backend Service
+or
+Backend Bucket
+```
+
+A common pattern is:
+
+```text
+Dynamic content
+→ Backend Service
+
+Static content
+→ Cloud Storage Backend Bucket
+```
+
+For example:
+
+```text
+/love-to-fetch/*
+→ europe-north1 Cloud Storage bucket
+
+Other paths
+→ us-east1 Cloud Storage bucket
+```
+
+This allows URL-based routing to different Cloud Storage locations.
+
+---
+
+## Network Endpoint Groups (NEGs)
+
+A Network Endpoint Group (NEG) is a configuration object that represents a group of backend endpoints or services.
+
+The course covers four NEG types:
+
+| NEG Type | Purpose |
+|---|---|
+| Zonal | VM or service endpoints inside a zone |
+| Internet | A backend endpoint outside Google Cloud |
+| Hybrid connectivity | Services outside Google Cloud |
+| Serverless | Serverless Google Cloud services |
+
+### Zonal NEG
+
+A zonal NEG can contain endpoints represented by:
+
+```text
+IP address
+or
+IP:port
+```
+
+These endpoints can be Compute Engine VMs or services running on those VMs.
+
+### Internet NEG
+
+An Internet NEG represents a single endpoint hosted outside Google Cloud.
+
+It can be identified by:
+
+```text
+FQDN:port
+or
+IP:port
+```
+
+### Hybrid Connectivity NEG
+
+A hybrid connectivity NEG points to services outside Google Cloud through hybrid connectivity.
+
+### Serverless NEG
+
+A serverless NEG points to services such as:
+
+- Cloud Run
+- App Engine
+- Cloud Run functions
+
+The serverless service resides in the same region as the NEG.
+
+## ACE Recognition Notes
+
+```text
+HTTPS frontend
+→ Target HTTPS Proxy
+
+Need TLS termination
+→ Target HTTPS Proxy + SSL certificate
+
+Static content in Cloud Storage
+→ Backend Bucket
+
+Route by URL path
+→ URL Map
+
+Need granular backend endpoints
+→ NEG
+
+VM/service endpoint by IP:port
+→ Zonal NEG
+
+External backend
+→ Internet NEG
+
+Cloud Run / App Engine / Functions
+→ Serverless NEG
+```
+
+---
 ### ACE Recognition Notes
 
 ```text
